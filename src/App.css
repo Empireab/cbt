@@ -55,7 +55,7 @@ button {
   background: var(--brand);
   color: #fff;
   border-radius: 0 0 24px 24px;
-  padding: 7px 0;
+  padding: 10px 0;
   box-shadow: 0 10px 20px rgba(6, 30, 39, 0.12);
   z-index: 50;
 }
@@ -63,7 +63,7 @@ button {
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
