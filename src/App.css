@@ -63,7 +63,7 @@ button {
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -82,8 +82,8 @@ button {
 
 .header-text h1 {
   margin: 0;
-  font-size: clamp(1.2rem, 2.0vw, 1.25rem);
-  letter-spacing: -0.02em;
+  font-size: clamp(1.3rem, 2.1vw, 1.45rem);
+  letter-spacing: -0.03em;
 }
 
 .header-text p {
@@ -106,7 +106,7 @@ button {
 
 .hero {
   display: grid;
-  gap: 32px;
+  gap: 29px;
   padding: 40px 0;
 }
 
