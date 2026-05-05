@@ -55,7 +55,7 @@ button {
   background: var(--brand);
   color: #fff;
   border-radius: 0 0 24px 24px;
-  padding: 12px 0;
+  padding: 7px 0;
   box-shadow: 0 10px 20px rgba(6, 30, 39, 0.12);
   z-index: 50;
 }
