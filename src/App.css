@@ -63,7 +63,7 @@ button {
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -82,14 +82,14 @@ button {
 
 .header-text h1 {
   margin: 0;
-  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(1.2rem, 2.0vw, 1.25rem);
+  letter-spacing: -0.02em;
 }
 
 .header-text p {
   margin: 4px 0 0;
   color: rgba(255, 255, 255, 0.92);
-  font-size: 0.9rem;
+  font-size: 0.5rem;
 }
 
 .badge {
