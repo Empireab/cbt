@@ -197,38 +197,39 @@ function ExamPage({ form, onBack }) {
                                     const isCorrect = isAnswered && answers[idx] === q.correct
                                     const subjectName = q.subject || form.subjects[Math.floor(idx / Math.floor(50 / form.subjects.length))]
                                     return (
-                                        <div key={idx} className="review-item" style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid #e2eaef' }}>
-                                            <div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '8px' }}>
-                                                <span style={{ fontSize: '0.85rem', color: '#4c5f6d', marginRight: '8px', minWidth: '200px' }}>
+                                        <div key={idx} className="review-item">
+                                            <div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '8px', flexWrap: 'wrap', gap: '8px' }}>
+                                                <span style={{ fontSize: '0.9rem', color: '#4c5f6d', fontWeight: 600 }}>
                                                     Q{idx + 1} · {subjectName}
                                                 </span>
                                                 <span style={{
-                                                    fontSize: '0.75rem',
-                                                    padding: '2px 8px',
+                                                    fontSize: '0.8rem',
+                                                    padding: '4px 10px',
                                                     borderRadius: '12px',
                                                     backgroundColor: isCorrect ? 'rgba(15, 85, 51, 0.12)' : isAnswered ? 'rgba(177, 39, 29, 0.12)' : 'rgba(74, 74, 74, 0.12)',
-                                                    color: isCorrect ? '#0f5533' : isAnswered ? '#b1271d' : '#4a4a4a'
+                                                    color: isCorrect ? '#0f5533' : isAnswered ? '#b1271d' : '#4a4a4a',
+                                                    fontWeight: 600
                                                 }}>
                                                     {isCorrect ? '✓ Correct' : isAnswered ? '✗ Wrong' : 'Not answered'}
                                                 </span>
                                             </div>
-                                            <p style={{ margin: '8px 0', fontSize: '0.95rem', color: '#1b2732', fontWeight: 500 }}>
+                                            <p style={{ margin: '8px 0', fontSize: '1rem', color: '#1b2732', fontWeight: 500, lineHeight: '1.5' }}>
                                                 {q.question}
                                             </p>
                                             {isAnswered && (
-                                                <div style={{ marginTop: '8px', fontSize: '0.9rem' }}>
-                                                    <p style={{ margin: '4px 0', color: isCorrect ? '#0f5533' : '#b1271d' }}>
+                                                <div style={{ marginTop: '8px', fontSize: '0.95rem', lineHeight: '1.4' }}>
+                                                    <p style={{ margin: '6px 0', color: isCorrect ? '#0f5533' : '#b1271d' }}>
                                                         ✓ Your answer: <strong>{q.options[answers[idx]]}</strong>
                                                     </p>
                                                     {!isCorrect && (
-                                                        <p style={{ margin: '4px 0', color: '#0f5533' }}>
+                                                        <p style={{ margin: '6px 0', color: '#0f5533' }}>
                                                             ✓ Correct: <strong>{q.options[q.correct]}</strong>
                                                         </p>
                                                     )}
                                                 </div>
                                             )}
                                             {!isAnswered && (
-                                                <div style={{ marginTop: '8px', fontSize: '0.9rem', color: '#4c5f6d' }}>
+                                                <div style={{ marginTop: '8px', fontSize: '0.95rem', color: '#4c5f6d', lineHeight: '1.4' }}>
                                                     ℹ Not answered. Correct answer: <strong>{q.options[q.correct]}</strong>
                                                 </div>
                                             )}

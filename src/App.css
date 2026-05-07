@@ -833,12 +833,15 @@ button {
 .answer-review {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 16px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .answer-review h4 {
   margin: 0 0 20px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--heading);
   font-weight: 600;
 }
@@ -846,7 +849,14 @@ button {
 .review-item {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 12px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2eaef;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 @media (max-width: 1200px) {
