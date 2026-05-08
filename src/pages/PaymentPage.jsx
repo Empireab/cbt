@@ -76,11 +76,38 @@ function PaymentPage({ form, onPaymentComplete, onBack }) {
         if (file && file.type.startsWith('image/')) {
             const reader = new FileReader()
             reader.onload = (e) => {
-                setPaymentScreenshot({
-                    file,
-                    data: e.target.result,
-                    name: file.name
-                })
+                const img = new Image()
+                img.onload = () => {
+                    // Create canvas and compress image
+                    const canvas = document.createElement('canvas')
+                    let width = img.width
+                    let height = img.height
+
+                    // Limit max dimensions to reduce file size
+                    const maxWidth = 800
+                    const maxHeight = 600
+
+                    if (width > maxWidth || height > maxHeight) {
+                        const ratio = Math.min(maxWidth / width, maxHeight / height)
+                        width = width * ratio
+                        height = height * ratio
+                    }
+
+                    canvas.width = width
+                    canvas.height = height
+                    const ctx = canvas.getContext('2d')
+                    ctx.drawImage(img, 0, 0, width, height)
+
+                    // Convert to compressed JPEG
+                    const compressedData = canvas.toDataURL('image/jpeg', 0.7)
+
+                    setPaymentScreenshot({
+                        file,
+                        data: compressedData,
+                        name: file.name
+                    })
+                }
+                img.src = e.target.result
             }
             reader.readAsDataURL(file)
         } else {
@@ -122,30 +149,37 @@ function PaymentPage({ form, onPaymentComplete, onBack }) {
 
         setIsLoading(true)
         try {
+            const payload = {
+                email: form.email,
+                name: form.name,
+                phone: form.phone,
+                screenshot: paymentScreenshot.data,
+                screenshotName: paymentScreenshot.name
+            }
+
+            console.log('Submitting payment, payload size:', JSON.stringify(payload).length / 1024, 'KB')
+
             const response = await fetch(`${API_BASE}/payments/submit`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    email: form.email,
-                    name: form.name,
-                    phone: form.phone,
-                    screenshot: paymentScreenshot.data,
-                    screenshotName: paymentScreenshot.name
-                })
+                body: JSON.stringify(payload)
             })
+
+            console.log('Payment response status:', response.status)
 
             if (response.ok) {
                 setPaymentStatus('submitted')
                 alert('Payment submitted for verification. You will be notified once approved.')
             } else {
-                const error = await response.json()
-                alert(error.error || 'Failed to submit payment')
+                const errorData = await response.json()
+                console.error('Payment submission error:', errorData)
+                alert(errorData.error || 'Failed to submit payment')
             }
         } catch (error) {
             console.error('Error submitting payment:', error)
-            alert('Failed to submit payment. Please try again.')
+            alert('Failed to submit payment. Please try again. Error: ' + error.message)
         }
         setIsLoading(false)
     }
