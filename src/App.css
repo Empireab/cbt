@@ -264,7 +264,9 @@ button {
   background: var(--panel);
   border-radius: 32px;
   box-shadow: var(--shadow);
-  padding: 36px;
+  padding: 24px;
+  width: 100%;
+  margin: 0;
 }
 
 .form-header h2 {
@@ -322,9 +324,16 @@ button {
   font-weight: 600;
 }
 
-.subject-note {
-  color: var(--text-soft);
-  font-weight: 500;
+.verification-section h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  color: var(--heading);
+}
+
+.payment-instructions h3 {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+  color: var(--heading);
 }
 
 .subject-checkboxes {
@@ -502,7 +511,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   width: min(1126px, calc(100% - 40px));
-  padding: 16px 20px;
+  padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -531,6 +540,12 @@ button {
 
 .page-exam {
   padding-bottom: 140px;
+}
+
+.page-results {
+  width: 100%;
+  margin: 0;
+  padding: 20px 10px;
 }
 
 .exam-sidebar {

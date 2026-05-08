@@ -12,6 +12,31 @@ function ExamPage({ form, onBack }) {
     const [results, setResults] = useState(null)
     const [showConfirmation, setShowConfirmation] = useState(false)
 
+    // Check payment verification
+    useEffect(() => {
+        checkPaymentAccess()
+    }, [form.email, onBack])
+
+    const checkPaymentAccess = async () => {
+        try {
+            const response = await fetch(`http://localhost:5000/api/payments/status/${form.email}`)
+            const data = await response.json()
+
+            const hasAccess = (data.paymentStatus === 'approved' && data.expiryDate && new Date(data.expiryDate) > new Date()) || data.trialUsed
+
+            if (!hasAccess) {
+                // Redirect to payment page if no access
+                alert('Payment verification required. Redirecting to payment page.')
+                onBack()
+                return
+            }
+        } catch (error) {
+            console.error('Error checking payment status:', error)
+            alert('Unable to verify payment status. Please try again.')
+            onBack()
+        }
+    }
+
     useEffect(() => {
         generateExamQuestions()
     }, [])
@@ -35,20 +60,25 @@ function ExamPage({ form, onBack }) {
         const baseCount = Math.floor(50 / selectedSubjects.length)
         const remainder = 50 % selectedSubjects.length
         let allExamQs = []
+        const usedQuestions = new Set() // Track used questions to prevent duplicates
 
         selectedSubjects.forEach((subject, index) => {
             const subjectQuestions = allQuestions[subject] || []
             const requiredCount = baseCount + (index < remainder ? 1 : 0)
             const selected = []
-            const pool = [...subjectQuestions]
+            const availableQuestions = subjectQuestions.filter(q => !usedQuestions.has(q.question))
 
-            while (selected.length < requiredCount) {
-                if (!pool.length) {
-                    pool.push(...subjectQuestions)
-                }
+            // If we don't have enough unique questions, we'll have to allow some duplicates
+            // but try to minimize them
+            const pool = availableQuestions.length >= requiredCount
+                ? availableQuestions
+                : [...availableQuestions, ...subjectQuestions.filter(q => !availableQuestions.includes(q))]
+
+            while (selected.length < requiredCount && pool.length > 0) {
                 const randomIndex = Math.floor(Math.random() * pool.length)
-                const [question] = pool.splice(randomIndex, 1)
+                const question = pool.splice(randomIndex, 1)[0]
                 selected.push({ ...question, subject })
+                usedQuestions.add(question.question)
             }
 
             allExamQs = [...allExamQs, ...selected]
@@ -133,7 +163,7 @@ function ExamPage({ form, onBack }) {
         }
         const percentageColor = percentage >= 66 ? '#0f5533' : percentage >= 46 ? '#d4a017' : '#b1271d'
         return (
-            <main className="page page-exam">
+            <main className="page page-exam page-results">
                 <div className="form-container">
                     <div className="form-header">
                         <h2>Results</h2>
@@ -175,13 +205,27 @@ function ExamPage({ form, onBack }) {
                             </div>
 
                             <div className="results-actions" style={{ display: 'flex', gap: '12px', marginBottom: '32px' }}>
-                                <button type="button" className="btn" onClick={() => {
-                                    setSubmitted(false)
-                                    setResults(null)
-                                    setAnswers({})
-                                    setCurrentQuestion(0)
-                                    setTimeLeft(30 * 60)
-                                    generateExamQuestions()
+                                <button type="button" className="btn" onClick={async () => {
+                                    // Check if user can retake exam
+                                    try {
+                                        const response = await fetch(`http://localhost:5000/api/users/${form.email}/can-retake`)
+                                        const data = await response.json()
+
+                                        if (data.canRetake) {
+                                            setSubmitted(false)
+                                            setResults(null)
+                                            setAnswers({})
+                                            setCurrentQuestion(0)
+                                            setTimeLeft(30 * 60)
+                                            generateExamQuestions()
+                                        } else {
+                                            alert('You cannot retake the exam. ' + (data.reason || 'Payment required for retakes.'))
+                                            onBack()
+                                        }
+                                    } catch (error) {
+                                        console.error('Error checking retake permission:', error)
+                                        alert('Unable to verify retake permission. Please try again.')
+                                    }
                                 }} style={{ flex: 1 }}>
                                     🔄 Retake Exam
                                 </button>
@@ -306,12 +350,6 @@ function ExamPage({ form, onBack }) {
                         </div>
                         <p className="answered-count">{Object.keys(answers).length} answered</p>
                     </div>
-
-                    <button type="button" className="btn btn-calc" onClick={() => setShowCalculator(!showCalculator)}>
-                        🧮 Calculator
-                    </button>
-
-                    {showCalculator && <Calculator />}
                 </div>
 
                 <div className="exam-main">
