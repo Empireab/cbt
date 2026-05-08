@@ -12,7 +12,7 @@ function AdminPanel() {
 
     // Admin password - in production, this should be properly secured
     const ADMIN_PASSWORD = 'admin123'
-    const API_BASE = 'http://localhost:5000/api'
+    const API_BASE = 'https://cbt-2-b01o.onrender.com/api'
 
     useEffect(() => {
         if (isAuthenticated) {

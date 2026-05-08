@@ -10,7 +10,7 @@ function PaymentPage({ form, onPaymentComplete, onBack }) {
     const [isDragOver, setIsDragOver] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
 
-    const API_BASE = 'http://localhost:5000/api'
+    const API_BASE = 'https://cbt-2-b01o.onrender.com/api'
 
     useEffect(() => {
         checkPaymentStatus()

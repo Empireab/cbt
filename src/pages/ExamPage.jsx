@@ -19,7 +19,7 @@ function ExamPage({ form, onBack }) {
 
     const checkPaymentAccess = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/payments/status/${form.email}`)
+            const response = await fetch(`https://cbt-2-b01o.onrender.com/api/payments/status/${form.email}`)
             const data = await response.json()
 
             const hasAccess = (data.paymentStatus === 'approved' && data.expiryDate && new Date(data.expiryDate) > new Date()) || data.trialUsed
@@ -208,7 +208,7 @@ function ExamPage({ form, onBack }) {
                                 <button type="button" className="btn" onClick={async () => {
                                     // Check if user can retake exam
                                     try {
-                                        const response = await fetch(`http://localhost:5000/api/users/${form.email}/can-retake`)
+                                        const response = await fetch(`https://cbt-2-b01o.onrender.com/api/users/${form.email}/can-retake`)
                                         const data = await response.json()
 
                                         if (data.canRetake) {
