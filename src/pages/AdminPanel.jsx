@@ -12,7 +12,10 @@ function AdminPanel() {
 
     // Admin password - in production, this should be properly secured
     const ADMIN_PASSWORD = 'admin123'
-    const API_BASE = 'https://cbt-2-b01o.onrender.com/api'
+    const API_BASE =
+    window.location.hostname === 'localhost'
+        ? 'http://localhost:5000/api'
+        : 'https://cbt-2-b01o.onrender.com/api'
 
     useEffect(() => {
         if (isAuthenticated) {
@@ -141,6 +144,37 @@ function AdminPanel() {
         }
         setIsLoading(false)
     }
+    const handleClearAdminPanel = async () => {
+        const confirmed = window.confirm(
+            'Are you sure you want to clear all payments? This cannot be undone.'
+        )
+
+        if (!confirmed) return
+
+        setIsLoading(true)
+
+        try {
+            const response = await fetch(`${API_BASE}/admin/clear`, {
+                method: 'DELETE'
+            })
+
+            const data = await response.json()
+
+            if (response.ok) {
+                alert(data.message || 'Admin panel cleared successfully!')
+
+                // Refresh dashboard immediately
+                loadData()
+            } else {
+                alert(data.error || 'Failed to clear admin panel')
+            }
+        } catch (error) {
+            console.error('Error clearing admin panel:', error)
+            alert('Something went wrong while clearing admin panel')
+        }
+
+        setIsLoading(false)
+    }
 
     const formatDate = (timestamp) => {
         return new Date(timestamp).toLocaleString()
@@ -214,6 +248,20 @@ function AdminPanel() {
                             }}
                         >
                             {isLoading ? 'Loading...' : 'Refresh'}
+                        </button>
+                        <button
+                            onClick={handleClearAdminPanel}
+                            disabled={isLoading}
+                            style={{
+                                padding: '8px 16px',
+                                background: '#ff9800',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: '6px',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            {isLoading ? 'Clearing...' : 'Clear Panel'}
                         </button>
                         <button
                             onClick={() => setIsAuthenticated(false)}

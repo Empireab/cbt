@@ -9,11 +9,18 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: ['https://uniportpostutme2026.vercel.app', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'],
+    origin: [
+        'https://uniportpostutme2026.vercel.app',
+        'http://localhost:5173',
+        'http://localhost:5174',
+        'http://localhost:5175'
+    ],
     credentials: true,
-    methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type']
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+app.options('*', cors());
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
@@ -249,11 +256,26 @@ app.get('/api/admin/payments', async (req, res) => {
 // Get user statistics
 app.get('/api/admin/stats', async (req, res) => {
     try {
-        const totalUsers = await User.countDocuments();
+        const totalUsers = await User.countDocuments({
+            $or: [
+                { trialUsed: true },
+                { email: { $in: await Payment.distinct('email') } }
+            ]
+        });
+
         const trialUsers = await User.countDocuments({ trialUsed: true });
-        const paidUsers = await Payment.countDocuments({ status: 'approved' });
-        const pendingPayments = await Payment.countDocuments({ status: 'pending' });
-        const declinedPayments = await Payment.countDocuments({ status: 'declined' });
+
+        const paidUsers = await Payment.countDocuments({
+            status: 'approved'
+        });
+
+        const pendingPayments = await Payment.countDocuments({
+            status: 'pending'
+        });
+
+        const declinedPayments = await Payment.countDocuments({
+            status: 'declined'
+        });
 
         res.json({
             totalUsers,
@@ -296,4 +318,35 @@ app.get('/api/users/:email/can-retake', async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 });
+app.delete('/api/admin/clear', async (req, res) => {
+    try {
 
+        // 1. Remove ONLY declined payments completely
+        await Payment.deleteMany({
+            status: 'declined'
+        });
+
+        // 2. Clear screenshots for approved payments
+        // (so admin panel looks fresh)
+        await Payment.updateMany(
+            { status: 'approved' },
+            {
+                $unset: {
+                    screenshot: "",
+                    screenshotName: "",
+                    adminNotes: ""
+                }
+            }
+        );
+
+        res.json({
+            message: 'Admin panel cleared successfully'
+        });
+
+    } catch (error) {
+        console.error('Error clearing admin panel:', error);
+        res.status(500).json({
+            error: 'Failed to clear admin panel'
+        });
+    }
+});

@@ -13,7 +13,19 @@ function PaymentPage({ form, onPaymentComplete, onBack }) {
     const API_BASE = 'https://cbt-2-b01o.onrender.com/api'
 
     useEffect(() => {
+        if (!form.email) return
+
+        // Check immediately
         checkPaymentStatus()
+
+        // Keep checking every 5 seconds
+        const interval = setInterval(() => {
+            checkPaymentStatus()
+        }, 3000)
+
+        // Cleanup when component unmounts
+        return () => clearInterval(interval)
+
     }, [form.email])
 
     const checkPaymentStatus = async () => {
@@ -36,6 +48,8 @@ function PaymentPage({ form, onPaymentComplete, onBack }) {
                 setPaymentStatus('submitted')
             } else if (data.paymentStatus === 'declined') {
                 setPaymentStatus('declined')
+            } else {
+                setPaymentStatus('pending')
             }
         } catch (error) {
             console.error('Error checking payment status:', error)
@@ -236,8 +250,8 @@ function PaymentPage({ form, onPaymentComplete, onBack }) {
                         <p style={{ marginBottom: '12px', fontWeight: '600' }}>Transfer ₦2,000 to:</p>
                         <div style={{ background: 'white', padding: '16px', borderRadius: '8px', border: '1px solid #dee2e6' }}>
                             <p style={{ margin: '0 0 8px 0', fontSize: '18px', fontWeight: 'bold' }}>OPay</p>
-                            <p style={{ margin: '0 0 8px 0', fontSize: '16px' }}>Account Number: <strong>9052806803</strong></p>
-                            <p style={{ margin: '0', fontSize: '16px' }}>Account Name: <strong>Abraham</strong></p>
+                            <p style={{ margin: '0 0 8px 0', fontSize: '16px' }}>Account Number: <strong>8163089445</strong></p>
+                            <p style={{ margin: '0', fontSize: '16px' }}>Account Name: <strong>Ilechukwu Amen Akachukwu</strong></p>
                         </div>
                         <p style={{ marginTop: '16px', fontSize: '14px', color: '#6c757d' }}>
                             After payment, upload a screenshot below and submit for verification.
