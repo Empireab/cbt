@@ -1,5 +1,5 @@
 export const stats = [
-    { label: 'Real Questions', value: '234' },
+    { label: 'Real Questions', value: '500+' },
     { label: 'Per Test', value: '50' },
     { label: 'Minutes', value: '30' },
 ]
