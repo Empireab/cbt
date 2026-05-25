@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Calculator from '../components/Calculator'
 import { allQuestions } from '../data/questions'
+import DOMPurify from "dompurify";
 
 function ExamPage({ form, onBack }) {
     const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -257,9 +258,18 @@ function ExamPage({ form, onBack }) {
                                                     {isCorrect ? '✓ Correct' : isAnswered ? '✗ Wrong' : 'Not answered'}
                                                 </span>
                                             </div>
-                                            <p style={{ margin: '8px 0', fontSize: '1rem', color: '#1b2732', fontWeight: 500, lineHeight: '1.5' }}>
-                                                {q.question}
-                                            </p>
+                                            <p
+                                                style={{
+                                                    margin: '8px 0',
+                                                    fontSize: '1rem',
+                                                    color: '#1b2732',
+                                                    fontWeight: 500,
+                                                    lineHeight: '1.5'
+                                                }}
+                                                dangerouslySetInnerHTML={{
+                                                    __html: q.question,
+                                                }}
+                                            />
                                             {isAnswered && (
                                                 <div style={{ marginTop: '8px', fontSize: '0.95rem', lineHeight: '1.4' }}>
                                                     <p style={{ margin: '6px 0', color: isCorrect ? '#0f5533' : '#b1271d' }}>
@@ -355,19 +365,33 @@ function ExamPage({ form, onBack }) {
                 <div className="exam-main">
                     <div className="question-container">
                         <div className="question-header">
-                            <h3>{currentQ.question}</h3>
+                            <h3
+                                dangerouslySetInnerHTML={{
+                                    __html: DOMPurify.sanitize(currentQ.question),
+                                }}
+                            />
                         </div>
 
                         <div className="options-list">
                             {currentQ.options.map((option, idx) => (
-                                <label key={idx} className={`option-label ${answers[currentQuestion] === idx ? 'selected' : ''}`}>
+                                <label
+                                    key={idx}
+                                    className={`option-label ${answers[currentQuestion] === idx ? 'selected' : ''
+                                        }`}
+                                >
                                     <input
                                         type="radio"
                                         name="answer"
                                         checked={answers[currentQuestion] === idx}
                                         onChange={() => handleAnswerSelect(idx)}
                                     />
-                                    <span className="option-text">{option}</span>
+
+                                    <span
+                                        className="option-text"
+                                        dangerouslySetInnerHTML={{
+                                            __html: option,
+                                        }}
+                                    />
                                 </label>
                             ))}
                         </div>
