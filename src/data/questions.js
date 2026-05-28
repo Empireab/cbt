@@ -241,7 +241,7 @@ export const allQuestions = {
   options: ['(x + 7)/5', '(x – 7)/5', '5x + 7', '(x + 5)/7'],
   correct: 0
 },
-```javascript id="mathext41"
+
 {
   id: 41,
   question: 'If f(x) = x² + 3x, what is f(-2)?',
@@ -484,7 +484,6 @@ export const allQuestions = {
   options: ['x = 2 or x = -1', 'x = 1 or x = -2', 'x = 2 only', 'x = -1 only'],
   correct: 0
 },
-```
 
 ],
   '🔬 Chemistry': [
