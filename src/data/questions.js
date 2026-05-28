@@ -1,30 +1,496 @@
 export const allQuestions = {
   '📐 Mathematics': [
-    { id: 1, question: 'Solve for x: 2x + 5 = 13', options: ['2', '4', '6', '8'], correct: 1 },
-    { id: 2, question: 'What is the derivative of x²?', options: ['x', '2x', '3x', 'x²'], correct: 1 },
-    { id: 3, question: 'Find the sum of angles in a triangle', options: ['90°', '180°', '270°', '360°'], correct: 1 },
-    { id: 4, question: 'What is 15% of 200?', options: ['20', '25', '30', '35'], correct: 2 },
-    { id: 5, question: 'Simplify √16 + √25', options: ['7', '8', '9', '10'], correct: 2 },
-    { id: 6, question: 'What is the area of a circle with radius 5?', options: ['25π', '10π', '50π', '15π'], correct: 0 },
-    { id: 7, question: 'Solve: 3x - 7 = 2', options: ['1', '2', '3', '4'], correct: 2 },
-    { id: 8, question: 'What is 2⁵?', options: ['16', '32', '64', '128'], correct: 1 },
-    { id: 9, question: 'Find x if 5x = 25', options: ['3', '4', '5', '6'], correct: 2 },
-    { id: 10, question: 'What is the hypotenuse of a 3-4-5 triangle?', options: ['5', '7', '9', '12'], correct: 0 },
-    { id: 11, question: 'Solve: x² = 16', options: ['-4 or 4', '-2 or 2', '-8 or 8', '-1 or 1'], correct: 0 },
-    { id: 12, question: 'What is log₂(8)?', options: ['2', '3', '4', '5'], correct: 1 },
-    { id: 13, question: 'Find the slope of y = 2x + 3', options: ['2', '3', '5', '1'], correct: 0 },
-    { id: 14, question: 'What is 10% of 50?', options: ['3', '4', '5', '6'], correct: 2 },
-    { id: 15, question: 'Solve: 4x + 2 = 18', options: ['2', '3', '4', '5'], correct: 2 },
-    { id: 16, question: 'What is the median of 2, 4, 6, 8, 10?', options: ['4', '6', '8', '5'], correct: 1 },
-    { id: 17, question: 'Find x: 2x² = 8', options: ['1', '2', '3', '4'], correct: 1 },
-    { id: 18, question: 'What is 7 × 8?', options: ['54', '56', '58', '60'], correct: 1 },
-    { id: 19, question: 'Solve: x/2 = 5', options: ['8', '10', '12', '15'], correct: 1 },
-    { id: 20, question: 'What is the LCM of 12 and 18?', options: ['24', '36', '48', '60'], correct: 1 },
-  ],
+    {
+    id: 1,
+    question: 'The set {1, 2, 3, 4, 5} is equivalent to?',
+    options: ['{2, 3, 1, 4}', '{1, 2, 3, 4, 5, 5}', '{1, 2, 3, 4}', '{4, 3, 1, 5, 2}'],
+    correct: 3
+  },
+  {
+    id: 2,
+    question: 'If n(A) = 10, n(B) = 15, and n(A ∩ B) = 5, find n(A ∪ B).',
+    options: ['15', '20', '25', '30'],
+    correct: 1
+  },
+  {
+    id: 3,
+    question: 'Which of the following is equal to (A ∪ B)′?',
+    options: ['A′ ∩ B′', 'A′ ∪ B′', 'A ∩ B', 'A ∪ B'],
+    correct: 0
+  },
+  {
+    id: 4,
+    question: 'If A ⊆ B, then A ∩ B equals:',
+    options: ['A', 'B', '∅', 'A ∪ B'],
+    correct: 0
+  },
+  {
+    id: 5,
+    question: 'In a class of 30 students, 20 like Mathematics, 15 like Physics, and 8 like both. How many like neither?',
+    options: ['2', '3', '5', '7'],
+    correct: 1
+  },
+  {
+    id: 6,
+    question: 'If n(A) = 12, n(B) = 8, and n(A ∪ B) = 15, find n(A ∩ B).',
+    options: ['3', '4', '5', '6'],
+    correct: 2
+  },
+  {
+    id: 7,
+    question: 'Which symbol represents the universal set?',
+    options: ['∩', '∪', 'μ or ξ', '⊆'],
+    correct: 2
+  },
+  {
+    id: 8,
+    question: 'If X = {2, 4, 6, 8} and Y = {1, 2, 3, 4}, find X ∪ Y.',
+    options: ['{2, 4}', '{1, 2, 3, 4, 6, 8}', '{1, 3, 6, 8}', '∅'],
+    correct: 1
+  },
+  {
+    id: 9,
+    question: 'If X = {2, 4, 6, 8} and Y = {1, 2, 3, 4}, find X ∩ Y.',
+    options: ['{2, 4}', '{1, 2, 3, 4, 6, 8}', '{1, 3, 6, 8}', '∅'],
+    correct: 0
+  },
+  {
+    id: 10,
+    question: 'Which of the following is a null set?',
+    options: ['{0}', '{∅}', '{}', '{ } with a space'],
+    correct: 2
+  },
+  {
+    id: 11,
+    question: 'If U = {1, 2, 3, 4, 5} and A = {2, 4}, find A′.',
+    options: ['{1, 3, 5}', '{2, 4}', '{1, 2, 3, 4, 5}', '∅'],
+    correct: 0
+  },
+  {
+    id: 12,
+    question: 'A set with a definite number of elements is called:',
+    options: ['Infinite set', 'Finite set', 'Empty set', 'Universal set'],
+    correct: 1
+  },
+  {
+    id: 13,
+    question: 'In a Venn diagram, the intersection of two sets is represented by:',
+    options: ['The union area', 'The overlapping region', 'The area outside both circles', 'One entire circle'],
+    correct: 1
+  },
+  {
+    id: 14,
+    question: 'If A and B are disjoint sets, then n(A ∪ B) = ?',
+    options: ['n(A) + n(B)', 'n(A) + n(B) – n(A ∩ B)', 'n(A) × n(B)', '0'],
+    correct: 0
+  },
+  {
+    id: 15,
+    question: 'Given that n(A) = 20, n(B) = 25, and n(A ∪ B) = 40, how many elements are in A ∩ B?',
+    options: ['5', '10', '15', '20'],
+    correct: 0
+  },
+  {
+    id: 16,
+    question: 'How many subsets does a set with 4 elements have?',
+    options: ['4', '8', '16', '32'],
+    correct: 2
+  },
+  {
+    id: 17,
+    question: 'Which of the following statements is true for any two sets P and Q?',
+    options: ['P ⊆ P ∪ Q', 'P ∪ Q ⊆ P', 'P ∪ Q ⊆ P ∩ Q', 'P ∩ Q ⊆ ∅'],
+    correct: 0
+  },
+  {
+    id: 18,
+    question: 'What type of set is {x : x is a positive integer less than 1}?',
+    options: ['Singleton set', 'Finite set', 'Null set', 'Infinite set'],
+    correct: 2
+  },
+  {
+    id: 19,
+    question: 'In a school of 100 students, 55 play football, 45 play basketball, and 20 play both. How many play exactly one sport?',
+    options: ['20', '40', '60', '80'],
+    correct: 2
+  },
+  {
+    id: 20,
+    question: 'Which of the following is equal to (A ∩ B)′?',
+    options: ['A′ ∪ B′', 'A′ ∩ B′', 'A ∪ B', 'A ∩ B'],
+    correct: 0
+  },
+ 
+{
+  id: 21,
+  question: 'If A = {a, b, c} and B = {b, c, d}, find A – B.',
+  options: ['{a}', '{b, c}', '{d}', '{a, d}'],
+  correct: 0
+},
+{
+  id: 22,
+  question: 'The power set of {x, y} is:',
+  options: ['{{x}, {y}}', '{∅, {x}, {y}}', '{∅, {x}, {y}, {x, y}}', '{{x, y}}'],
+  correct: 2
+},
+{
+  id: 23,
+  question: 'If X and Y are two sets such that X ⊂ Y, then X ∪ Y = ?',
+  options: ['X', 'Y', '∅', 'X ∩ Y'],
+  correct: 1
+},
+{
+  id: 24,
+  question: 'In a class of 40 students, 25 passed Mathematics, 20 passed English, and 10 passed both. How many passed at least one subject?',
+  options: ['15', '25', '35', '45'],
+  correct: 2
+},
+{
+  id: 25,
+  question: 'Two sets that have no elements in common are called:',
+  options: ['Equivalent sets', 'Disjoint sets', 'Equal sets', 'Subsets'],
+  correct: 1
+},
+{
+  id: 26,
+  question: 'If f(x) = 3x – 2 and g(x) = x² + 1, find f(g(2)).',
+  options: ['11', '13', '15', '17'],
+  correct: 1
+},
+{
+  id: 27,
+  question: 'Given f(x) = √(x – 4), what is the largest possible domain?',
+  options: ['x ≥ 0', 'x ≥ 4', 'x > 4', 'All real numbers'],
+  correct: 1
+},
+{
+  id: 28,
+  question: 'If f(x) = 2x + 3, find f⁻¹(x).',
+  options: ['(x – 3)/2', '(x + 3)/2', '2x – 3', '(x/2) – 3'],
+  correct: 0
+},
+{
+  id: 29,
+  question: 'For f(x) = x² + 1 with domain x ≥ 0, which statement is true?',
+  options: ['One-to-one but not onto', 'Many-to-one', 'One-to-one and onto', 'Neither one-to-one nor onto'],
+  correct: 0
+},
+{
+  id: 30,
+  question: 'If f(x) = x + 1 and g(x) = 2x, find (g ∘ f)(3).',
+  options: ['7', '8', '6', '9'],
+  correct: 1
+},
+{
+  id: 31,
+  question: 'If f(x) = 1/(x – 2), which value is NOT in the domain?',
+  options: ['0', '2', '1', '-1'],
+  correct: 1
+},
+{
+  id: 32,
+  question: 'If f(x) = 4x – 5, find f(0) + f(1).',
+  options: ['-4', '-5', '-6', '-7'],
+  correct: 2
+},
+{
+  id: 33,
+  question: 'Which mapping is an example of a one-to-one function?',
+  options: ['f(x) = x²', 'f(x) = |x|', 'f(x) = 2x + 1', 'f(x) = 4'],
+  correct: 2
+},
+{
+  id: 34,
+  question: 'Find the range of f(x) = 3x + 2 for x ∈ {1, 2, 3}.',
+  options: ['{3, 6, 9}', '{5, 8, 11}', '{2, 5, 8}', '{1, 2, 3}'],
+  correct: 1
+},
+{
+  id: 35,
+  question: 'If f(x) = x³ – 4, evaluate f(2).',
+  options: ['2', '4', '6', '8'],
+  correct: 1
+},
+{
+  id: 36,
+  question: 'Given f(x) = 2x and g(x) = x – 3, find (f ∘ g)(x).',
+  options: ['2x – 3', '2x – 6', '2x + 6', '2x'],
+  correct: 1
+},
+{
+  id: 37,
+  question: 'A function is defined as f(x) = 5. What type of function is this?',
+  options: ['Linear', 'Constant', 'Quadratic', 'Identity'],
+  correct: 1
+},
+{
+  id: 38,
+  question: 'If f(x) = x² – 4x + 3, find f(1).',
+  options: ['0', '1', '2', '3'],
+  correct: 0
+},
+{
+  id: 39,
+  question: 'Which of the following represents a many-to-one function?',
+  options: ['f(x) = 2x', 'f(x) = x + 5', 'f(x) = x²', 'f(x) = 3x – 1'],
+  correct: 2
+},
+{
+  id: 40,
+  question: 'Find the inverse of f(x) = 5x – 7.',
+  options: ['(x + 7)/5', '(x – 7)/5', '5x + 7', '(x + 5)/7'],
+  correct: 0
+},
+```javascript id="mathext41"
+{
+  id: 41,
+  question: 'If f(x) = x² + 3x, what is f(-2)?',
+  options: ['-2', '2', '-10', '10'],
+  correct: 0
+},
+{
+  id: 42,
+  question: 'The vertical line test is used to determine if a graph represents:',
+  options: ['A relation only', 'A function', 'A one-to-one function', 'An inverse'],
+  correct: 1
+},
+{
+  id: 43,
+  question: 'If f(x) = x² – 1 and g(x) = x + 1, find f(g(x)).',
+  options: ['x² + 2x', 'x² + 2x + 2', 'x² + 2x + 1', 'x² + 2'],
+  correct: 0
+},
+{
+  id: 44,
+  question: 'What is the domain of f(x) = 3/(x – 5)?',
+  options: ['All real numbers', 'All real numbers except 0', 'All real numbers except 5', 'x > 5'],
+  correct: 2
+},
+{
+  id: 45,
+  question: 'If f(x) = 7, find f(100).',
+  options: ['0', '7', '100', '700'],
+  correct: 1
+},
+{
+  id: 46,
+  question: 'Find the value of f(g(3)) if f(x) = 2x and g(x) = x + 4.',
+  options: ['10', '12', '14', '16'],
+  correct: 2
+},
+{
+  id: 47,
+  question: 'Which function is its own inverse?',
+  options: ['f(x) = x + 1', 'f(x) = 2x', 'f(x) = x', 'f(x) = x²'],
+  correct: 2
+},
+{
+  id: 48,
+  question: 'If f(x) = x/(x + 1), find f(2).',
+  options: ['2/3', '3/2', '2', '1/3'],
+  correct: 0
+},
+{
+  id: 49,
+  question: 'The composition of a function and its inverse yields:',
+  options: ['0', '1', 'x', 'f(x)'],
+  correct: 2
+},
+{
+  id: 50,
+  question: 'If f(x) = 4x – 3 and g(x) = 2x, find (f + g)(x).',
+  options: ['6x – 3', '6x + 3', '8x² – 6x', '2x – 3'],
+  correct: 0
+},
+{
+  id: 51,
+  question: 'When P(x) = x³ – 4x² + x + 6 is divided by x – 2, the remainder is:',
+  options: ['0', '2', '4', '6'],
+  correct: 0
+},
+{
+  id: 52,
+  question: 'Which of the following is a factor of P(x) = x³ – 3x² – x + 3?',
+  options: ['x – 1', 'x + 1', 'x – 2', 'x + 3'],
+  correct: 0
+},
+{
+  id: 53,
+  question: 'If x – 2 is a factor of x³ – kx² + 4x – 8, find k.',
+  options: ['1', '2', '3', '4'],
+  correct: 1
+},
+{
+  id: 54,
+  question: 'The remainder when x¹⁰ + 1 is divided by x + 1 is:',
+  options: ['0', '1', '2', '10'],
+  correct: 2
+},
+{
+  id: 55,
+  question: 'Which polynomial has x – 1 as a factor?',
+  options: ['x² + 1', 'x² – 2x + 1', 'x³ + 1', 'x³ – 1'],
+  correct: 1
+},
+{
+  id: 56,
+  question: 'For P(x) = 2x³ – 5x² + ax – 6, if P(2) = 0, then a = ?',
+  options: ['5', '6', '7', '8'],
+  correct: 0
+},
+{
+  id: 57,
+  question: 'Find the remainder when 3x³ – 2x² + x – 1 is divided by x + 1.',
+  options: ['-7', '-5', '-3', '7'],
+  correct: 0
+},
+{
+  id: 58,
+  question: 'If x + 2 is a factor of x³ + 2x² – 5x + k, find k.',
+  options: ['-10', '-6', '2', '6'],
+  correct: 0
+},
+{
+  id: 59,
+  question: 'The Factor Theorem states that if f(a) = 0, then:',
+  options: ['x + a is a factor', 'x – a is a factor', 'a is a factor', 'f(x) = a'],
+  correct: 1
+},
+{
+  id: 60,
+  question: 'When a polynomial is divided by x – c, the remainder is:',
+  options: ['f(0)', 'f(c)', 'f(-c)', 'c'],
+  correct: 1
+},
+
+{
+  id: 61,
+  question: 'Factorize x³ – 8 completely.',
+  options: ['(x – 2)(x² + 2x + 4)', '(x + 2)(x² – 2x + 4)', '(x – 2)(x² – 2x + 4)', '(x + 2)(x² + 2x + 4)'],
+  correct: 0
+},
+{
+  id: 62,
+  question: 'Find the remainder when x⁴ – 3x² + 2 is divided by x – 1.',
+  options: ['0', '1', '2', '3'],
+  correct: 0
+},
+{
+  id: 63,
+  question: 'If x – 3 is a factor of x³ – 7x + k, find k.',
+  options: ['-6', '-12', '12', '6'],
+  correct: 0
+},
+{
+  id: 64,
+  question: 'The remainder when x³ + 2x² – 3x + 4 is divided by x + 3 is:',
+  options: ['4', '-14', '14', '20'],
+  correct: 0
+},
+{
+  id: 65,
+  question: 'Which of these is a factor of x³ – 3x² – 4x + 12?',
+  options: ['x + 2', 'x – 2', 'x + 3', 'x – 4'],
+  correct: 1
+},
+{
+  id: 66,
+  question: 'Find the remainder when 4x³ – 3x² + 2x – 1 is divided by 2x – 1.',
+  options: ['-1/4', '0', '1/2', '1'],
+  correct: 0
+},
+{
+  id: 67,
+  question: 'If P(x) = 2x³ – 3x² + 5x – 7, find P(-1).',
+  options: ['-17', '-3', '3', '17'],
+  correct: 0
+},
+{
+  id: 68,
+  question: 'Factorize x³ + 27.',
+  options: ['(x + 3)(x² – 3x + 9)', '(x – 3)(x² + 3x + 9)', '(x + 3)(x² + 3x + 9)', '(x – 3)(x² – 3x + 9)'],
+  correct: 0
+},
+{
+  id: 69,
+  question: 'What is the value of k if x + 1 is a factor of x³ – 3x² + kx + 5?',
+  options: ['-9', '-7', '1', '9'],
+  correct: 2
+},
+
+{
+  id: 70,
+  question: 'Solve: y = 2x + 1 and y = x² – 3. How many real solutions?',
+  options: ['0', '1', '2', '3'],
+  correct: 2
+},
+{
+  id: 71,
+  question: 'Solve: x + y = 5 and x² + y² = 17. One solution is:',
+  options: ['(1,4)', '(2,3)', '(4,1)', '(3,2)'],
+  correct: 2
+},
+{
+  id: 72,
+  question: 'For which value of k does y = 2x + k intersect y = x² + 4x + 3 at exactly one point?',
+  options: ['1', '2', '3', '4'],
+  correct: 1
+},
+{
+  id: 73,
+  question: 'Solve: 2x + y = 7 and xy = 6. Which is NOT a solution?',
+  options: ['(2,3)', '(3,1)', '(1.5,4)', '(1,5)'],
+  correct: 3
+},
+{
+  id: 74,
+  question: 'The system y = x² and y = mx + 1 has exactly one solution if m = ?',
+  options: ['0', '1', '2', '-2'],
+  correct: 2
+},
+{
+  id: 75,
+  question: 'Solve: x – y = 1 and x² + y² = 5. The sum of the two x-solutions is:',
+  options: ['0', '1', '2', '3'],
+  correct: 1
+},
+{
+  id: 76,
+  question: 'Solve the system: 3x + 2y = 8 and x – y = 1. Find x.',
+  options: ['1', '2', '3', '4'],
+  correct: 1
+},
+{
+  id: 77,
+  question: 'The solutions to x + y = 4 and x² – y² = 8 are:',
+  options: ['(3,1)', '(4,0)', '(5,-1)', '(2,2)'],
+  correct: 0
+},
+{
+  id: 78,
+  question: 'If 2x – y = 5 and x² + y² = 25, find y.',
+  options: ['-5', '-3', '3', '5'],
+  correct: 2
+},
+{
+  id: 79,
+  question: 'How many solutions does y = x² and y = x + 2 have?',
+  options: ['0', '1', '2', 'Infinite'],
+  correct: 2
+},
+{
+  id: 80,
+  question: 'Solve x² – x – 2 = 0.',
+  options: ['x = 2 or x = -1', 'x = 1 or x = -2', 'x = 2 only', 'x = -1 only'],
+  correct: 0
+},
+```
+
+],
   '🔬 Chemistry': [
     {
       id: 1,
-      question: 'The solubility of a salt of molar mass 101g at 20°C is 0.34 moldm⁻³. If 3.40g of the salt is dissolved completely in 250cm³ of water in a beaker, the resulting solution is?',
+      question: 'The solubility of a salt of molar mass 101g at 20°C is 0.34 moldm⁻³. If 3.40g of the salt is dissolved completely in 250cm³ of water in a beaker, the resulting solution is?' ,
       options: ['Suspension', 'Saturated', 'Unsaturated', 'Super saturated'],
       correct: 2
     },
