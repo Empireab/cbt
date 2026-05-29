@@ -1,495 +1,495 @@
 export const allQuestions = {
   '📐 Mathematics': [
     {
-    id: 1,
-    question: 'The set {1, 2, 3, 4, 5} is equivalent to?',
-    options: ['{2, 3, 1, 4}', '{1, 2, 3, 4, 5, 5}', '{1, 2, 3, 4}', '{4, 3, 1, 5, 2}'],
-    correct: 3
-  },
-  {
-    id: 2,
-    question: 'If n(A) = 10, n(B) = 15, and n(A ∩ B) = 5, find n(A ∪ B).',
-    options: ['15', '20', '25', '30'],
-    correct: 1
-  },
-  {
-    id: 3,
-    question: 'Which of the following is equal to (A ∪ B)′?',
-    options: ['A′ ∩ B′', 'A′ ∪ B′', 'A ∩ B', 'A ∪ B'],
-    correct: 0
-  },
-  {
-    id: 4,
-    question: 'If A ⊆ B, then A ∩ B equals:',
-    options: ['A', 'B', '∅', 'A ∪ B'],
-    correct: 0
-  },
-  {
-    id: 5,
-    question: 'In a class of 30 students, 20 like Mathematics, 15 like Physics, and 8 like both. How many like neither?',
-    options: ['2', '3', '5', '7'],
-    correct: 1
-  },
-  {
-    id: 6,
-    question: 'If n(A) = 12, n(B) = 8, and n(A ∪ B) = 15, find n(A ∩ B).',
-    options: ['3', '4', '5', '6'],
-    correct: 2
-  },
-  {
-    id: 7,
-    question: 'Which symbol represents the universal set?',
-    options: ['∩', '∪', 'μ or ξ', '⊆'],
-    correct: 2
-  },
-  {
-    id: 8,
-    question: 'If X = {2, 4, 6, 8} and Y = {1, 2, 3, 4}, find X ∪ Y.',
-    options: ['{2, 4}', '{1, 2, 3, 4, 6, 8}', '{1, 3, 6, 8}', '∅'],
-    correct: 1
-  },
-  {
-    id: 9,
-    question: 'If X = {2, 4, 6, 8} and Y = {1, 2, 3, 4}, find X ∩ Y.',
-    options: ['{2, 4}', '{1, 2, 3, 4, 6, 8}', '{1, 3, 6, 8}', '∅'],
-    correct: 0
-  },
-  {
-    id: 10,
-    question: 'Which of the following is a null set?',
-    options: ['{0}', '{∅}', '{}', '{ } with a space'],
-    correct: 2
-  },
-  {
-    id: 11,
-    question: 'If U = {1, 2, 3, 4, 5} and A = {2, 4}, find A′.',
-    options: ['{1, 3, 5}', '{2, 4}', '{1, 2, 3, 4, 5}', '∅'],
-    correct: 0
-  },
-  {
-    id: 12,
-    question: 'A set with a definite number of elements is called:',
-    options: ['Infinite set', 'Finite set', 'Empty set', 'Universal set'],
-    correct: 1
-  },
-  {
-    id: 13,
-    question: 'In a Venn diagram, the intersection of two sets is represented by:',
-    options: ['The union area', 'The overlapping region', 'The area outside both circles', 'One entire circle'],
-    correct: 1
-  },
-  {
-    id: 14,
-    question: 'If A and B are disjoint sets, then n(A ∪ B) = ?',
-    options: ['n(A) + n(B)', 'n(A) + n(B) – n(A ∩ B)', 'n(A) × n(B)', '0'],
-    correct: 0
-  },
-  {
-    id: 15,
-    question: 'Given that n(A) = 20, n(B) = 25, and n(A ∪ B) = 40, how many elements are in A ∩ B?',
-    options: ['5', '10', '15', '20'],
-    correct: 0
-  },
-  {
-    id: 16,
-    question: 'How many subsets does a set with 4 elements have?',
-    options: ['4', '8', '16', '32'],
-    correct: 2
-  },
-  {
-    id: 17,
-    question: 'Which of the following statements is true for any two sets P and Q?',
-    options: ['P ⊆ P ∪ Q', 'P ∪ Q ⊆ P', 'P ∪ Q ⊆ P ∩ Q', 'P ∩ Q ⊆ ∅'],
-    correct: 0
-  },
-  {
-    id: 18,
-    question: 'What type of set is {x : x is a positive integer less than 1}?',
-    options: ['Singleton set', 'Finite set', 'Null set', 'Infinite set'],
-    correct: 2
-  },
-  {
-    id: 19,
-    question: 'In a school of 100 students, 55 play football, 45 play basketball, and 20 play both. How many play exactly one sport?',
-    options: ['20', '40', '60', '80'],
-    correct: 2
-  },
-  {
-    id: 20,
-    question: 'Which of the following is equal to (A ∩ B)′?',
-    options: ['A′ ∪ B′', 'A′ ∩ B′', 'A ∪ B', 'A ∩ B'],
-    correct: 0
-  },
- 
-{
-  id: 21,
-  question: 'If A = {a, b, c} and B = {b, c, d}, find A – B.',
-  options: ['{a}', '{b, c}', '{d}', '{a, d}'],
-  correct: 0
-},
-{
-  id: 22,
-  question: 'The power set of {x, y} is:',
-  options: ['{{x}, {y}}', '{∅, {x}, {y}}', '{∅, {x}, {y}, {x, y}}', '{{x, y}}'],
-  correct: 2
-},
-{
-  id: 23,
-  question: 'If X and Y are two sets such that X ⊂ Y, then X ∪ Y = ?',
-  options: ['X', 'Y', '∅', 'X ∩ Y'],
-  correct: 1
-},
-{
-  id: 24,
-  question: 'In a class of 40 students, 25 passed Mathematics, 20 passed English, and 10 passed both. How many passed at least one subject?',
-  options: ['15', '25', '35', '45'],
-  correct: 2
-},
-{
-  id: 25,
-  question: 'Two sets that have no elements in common are called:',
-  options: ['Equivalent sets', 'Disjoint sets', 'Equal sets', 'Subsets'],
-  correct: 1
-},
-{
-  id: 26,
-  question: 'If f(x) = 3x – 2 and g(x) = x² + 1, find f(g(2)).',
-  options: ['11', '13', '15', '17'],
-  correct: 1
-},
-{
-  id: 27,
-  question: 'Given f(x) = √(x – 4), what is the largest possible domain?',
-  options: ['x ≥ 0', 'x ≥ 4', 'x > 4', 'All real numbers'],
-  correct: 1
-},
-{
-  id: 28,
-  question: 'If f(x) = 2x + 3, find f⁻¹(x).',
-  options: ['(x – 3)/2', '(x + 3)/2', '2x – 3', '(x/2) – 3'],
-  correct: 0
-},
-{
-  id: 29,
-  question: 'For f(x) = x² + 1 with domain x ≥ 0, which statement is true?',
-  options: ['One-to-one but not onto', 'Many-to-one', 'One-to-one and onto', 'Neither one-to-one nor onto'],
-  correct: 0
-},
-{
-  id: 30,
-  question: 'If f(x) = x + 1 and g(x) = 2x, find (g ∘ f)(3).',
-  options: ['7', '8', '6', '9'],
-  correct: 1
-},
-{
-  id: 31,
-  question: 'If f(x) = 1/(x – 2), which value is NOT in the domain?',
-  options: ['0', '2', '1', '-1'],
-  correct: 1
-},
-{
-  id: 32,
-  question: 'If f(x) = 4x – 5, find f(0) + f(1).',
-  options: ['-4', '-5', '-6', '-7'],
-  correct: 2
-},
-{
-  id: 33,
-  question: 'Which mapping is an example of a one-to-one function?',
-  options: ['f(x) = x²', 'f(x) = |x|', 'f(x) = 2x + 1', 'f(x) = 4'],
-  correct: 2
-},
-{
-  id: 34,
-  question: 'Find the range of f(x) = 3x + 2 for x ∈ {1, 2, 3}.',
-  options: ['{3, 6, 9}', '{5, 8, 11}', '{2, 5, 8}', '{1, 2, 3}'],
-  correct: 1
-},
-{
-  id: 35,
-  question: 'If f(x) = x³ – 4, evaluate f(2).',
-  options: ['2', '4', '6', '8'],
-  correct: 1
-},
-{
-  id: 36,
-  question: 'Given f(x) = 2x and g(x) = x – 3, find (f ∘ g)(x).',
-  options: ['2x – 3', '2x – 6', '2x + 6', '2x'],
-  correct: 1
-},
-{
-  id: 37,
-  question: 'A function is defined as f(x) = 5. What type of function is this?',
-  options: ['Linear', 'Constant', 'Quadratic', 'Identity'],
-  correct: 1
-},
-{
-  id: 38,
-  question: 'If f(x) = x² – 4x + 3, find f(1).',
-  options: ['0', '1', '2', '3'],
-  correct: 0
-},
-{
-  id: 39,
-  question: 'Which of the following represents a many-to-one function?',
-  options: ['f(x) = 2x', 'f(x) = x + 5', 'f(x) = x²', 'f(x) = 3x – 1'],
-  correct: 2
-},
-{
-  id: 40,
-  question: 'Find the inverse of f(x) = 5x – 7.',
-  options: ['(x + 7)/5', '(x – 7)/5', '5x + 7', '(x + 5)/7'],
-  correct: 0
-},
+      id: 1,
+      question: 'The set {1, 2, 3, 4, 5} is equivalent to?',
+      options: ['{2, 3, 1, 4}', '{1, 2, 3, 4, 5, 5}', '{1, 2, 3, 4}', '{4, 3, 1, 5, 2}'],
+      correct: 3
+    },
+    {
+      id: 2,
+      question: 'If n(A) = 10, n(B) = 15, and n(A ∩ B) = 5, find n(A ∪ B).',
+      options: ['15', '20', '25', '30'],
+      correct: 1
+    },
+    {
+      id: 3,
+      question: 'Which of the following is equal to (A ∪ B)′?',
+      options: ['A′ ∩ B′', 'A′ ∪ B′', 'A ∩ B', 'A ∪ B'],
+      correct: 0
+    },
+    {
+      id: 4,
+      question: 'If A ⊆ B, then A ∩ B equals:',
+      options: ['A', 'B', '∅', 'A ∪ B'],
+      correct: 0
+    },
+    {
+      id: 5,
+      question: 'In a class of 30 students, 20 like Mathematics, 15 like Physics, and 8 like both. How many like neither?',
+      options: ['2', '3', '5', '7'],
+      correct: 1
+    },
+    {
+      id: 6,
+      question: 'If n(A) = 12, n(B) = 8, and n(A ∪ B) = 15, find n(A ∩ B).',
+      options: ['3', '4', '5', '6'],
+      correct: 2
+    },
+    {
+      id: 7,
+      question: 'Which symbol represents the universal set?',
+      options: ['∩', '∪', 'μ or ξ', '⊆'],
+      correct: 2
+    },
+    {
+      id: 8,
+      question: 'If X = {2, 4, 6, 8} and Y = {1, 2, 3, 4}, find X ∪ Y.',
+      options: ['{2, 4}', '{1, 2, 3, 4, 6, 8}', '{1, 3, 6, 8}', '∅'],
+      correct: 1
+    },
+    {
+      id: 9,
+      question: 'If X = {2, 4, 6, 8} and Y = {1, 2, 3, 4}, find X ∩ Y.',
+      options: ['{2, 4}', '{1, 2, 3, 4, 6, 8}', '{1, 3, 6, 8}', '∅'],
+      correct: 0
+    },
+    {
+      id: 10,
+      question: 'Which of the following is a null set?',
+      options: ['{0}', '{∅}', '{}', '{ } with a space'],
+      correct: 2
+    },
+    {
+      id: 11,
+      question: 'If U = {1, 2, 3, 4, 5} and A = {2, 4}, find A′.',
+      options: ['{1, 3, 5}', '{2, 4}', '{1, 2, 3, 4, 5}', '∅'],
+      correct: 0
+    },
+    {
+      id: 12,
+      question: 'A set with a definite number of elements is called:',
+      options: ['Infinite set', 'Finite set', 'Empty set', 'Universal set'],
+      correct: 1
+    },
+    {
+      id: 13,
+      question: 'In a Venn diagram, the intersection of two sets is represented by:',
+      options: ['The union area', 'The overlapping region', 'The area outside both circles', 'One entire circle'],
+      correct: 1
+    },
+    {
+      id: 14,
+      question: 'If A and B are disjoint sets, then n(A ∪ B) = ?',
+      options: ['n(A) + n(B)', 'n(A) + n(B) – n(A ∩ B)', 'n(A) × n(B)', '0'],
+      correct: 0
+    },
+    {
+      id: 15,
+      question: 'Given that n(A) = 20, n(B) = 25, and n(A ∪ B) = 40, how many elements are in A ∩ B?',
+      options: ['5', '10', '15', '20'],
+      correct: 0
+    },
+    {
+      id: 16,
+      question: 'How many subsets does a set with 4 elements have?',
+      options: ['4', '8', '16', '32'],
+      correct: 2
+    },
+    {
+      id: 17,
+      question: 'Which of the following statements is true for any two sets P and Q?',
+      options: ['P ⊆ P ∪ Q', 'P ∪ Q ⊆ P', 'P ∪ Q ⊆ P ∩ Q', 'P ∩ Q ⊆ ∅'],
+      correct: 0
+    },
+    {
+      id: 18,
+      question: 'What type of set is {x : x is a positive integer less than 1}?',
+      options: ['Singleton set', 'Finite set', 'Null set', 'Infinite set'],
+      correct: 2
+    },
+    {
+      id: 19,
+      question: 'In a school of 100 students, 55 play football, 45 play basketball, and 20 play both. How many play exactly one sport?',
+      options: ['20', '40', '60', '80'],
+      correct: 2
+    },
+    {
+      id: 20,
+      question: 'Which of the following is equal to (A ∩ B)′?',
+      options: ['A′ ∪ B′', 'A′ ∩ B′', 'A ∪ B', 'A ∩ B'],
+      correct: 0
+    },
 
-{
-  id: 41,
-  question: 'If f(x) = x² + 3x, what is f(-2)?',
-  options: ['-2', '2', '-10', '10'],
-  correct: 0
-},
-{
-  id: 42,
-  question: 'The vertical line test is used to determine if a graph represents:',
-  options: ['A relation only', 'A function', 'A one-to-one function', 'An inverse'],
-  correct: 1
-},
-{
-  id: 43,
-  question: 'If f(x) = x² – 1 and g(x) = x + 1, find f(g(x)).',
-  options: ['x² + 2x', 'x² + 2x + 2', 'x² + 2x + 1', 'x² + 2'],
-  correct: 0
-},
-{
-  id: 44,
-  question: 'What is the domain of f(x) = 3/(x – 5)?',
-  options: ['All real numbers', 'All real numbers except 0', 'All real numbers except 5', 'x > 5'],
-  correct: 2
-},
-{
-  id: 45,
-  question: 'If f(x) = 7, find f(100).',
-  options: ['0', '7', '100', '700'],
-  correct: 1
-},
-{
-  id: 46,
-  question: 'Find the value of f(g(3)) if f(x) = 2x and g(x) = x + 4.',
-  options: ['10', '12', '14', '16'],
-  correct: 2
-},
-{
-  id: 47,
-  question: 'Which function is its own inverse?',
-  options: ['f(x) = x + 1', 'f(x) = 2x', 'f(x) = x', 'f(x) = x²'],
-  correct: 2
-},
-{
-  id: 48,
-  question: 'If f(x) = x/(x + 1), find f(2).',
-  options: ['2/3', '3/2', '2', '1/3'],
-  correct: 0
-},
-{
-  id: 49,
-  question: 'The composition of a function and its inverse yields:',
-  options: ['0', '1', 'x', 'f(x)'],
-  correct: 2
-},
-{
-  id: 50,
-  question: 'If f(x) = 4x – 3 and g(x) = 2x, find (f + g)(x).',
-  options: ['6x – 3', '6x + 3', '8x² – 6x', '2x – 3'],
-  correct: 0
-},
-{
-  id: 51,
-  question: 'When P(x) = x³ – 4x² + x + 6 is divided by x – 2, the remainder is:',
-  options: ['0', '2', '4', '6'],
-  correct: 0
-},
-{
-  id: 52,
-  question: 'Which of the following is a factor of P(x) = x³ – 3x² – x + 3?',
-  options: ['x – 1', 'x + 1', 'x – 2', 'x + 3'],
-  correct: 0
-},
-{
-  id: 53,
-  question: 'If x – 2 is a factor of x³ – kx² + 4x – 8, find k.',
-  options: ['1', '2', '3', '4'],
-  correct: 1
-},
-{
-  id: 54,
-  question: 'The remainder when x¹⁰ + 1 is divided by x + 1 is:',
-  options: ['0', '1', '2', '10'],
-  correct: 2
-},
-{
-  id: 55,
-  question: 'Which polynomial has x – 1 as a factor?',
-  options: ['x² + 1', 'x² – 2x + 1', 'x³ + 1', 'x³ – 1'],
-  correct: 1
-},
-{
-  id: 56,
-  question: 'For P(x) = 2x³ – 5x² + ax – 6, if P(2) = 0, then a = ?',
-  options: ['5', '6', '7', '8'],
-  correct: 0
-},
-{
-  id: 57,
-  question: 'Find the remainder when 3x³ – 2x² + x – 1 is divided by x + 1.',
-  options: ['-7', '-5', '-3', '7'],
-  correct: 0
-},
-{
-  id: 58,
-  question: 'If x + 2 is a factor of x³ + 2x² – 5x + k, find k.',
-  options: ['-10', '-6', '2', '6'],
-  correct: 0
-},
-{
-  id: 59,
-  question: 'The Factor Theorem states that if f(a) = 0, then:',
-  options: ['x + a is a factor', 'x – a is a factor', 'a is a factor', 'f(x) = a'],
-  correct: 1
-},
-{
-  id: 60,
-  question: 'When a polynomial is divided by x – c, the remainder is:',
-  options: ['f(0)', 'f(c)', 'f(-c)', 'c'],
-  correct: 1
-},
+    {
+      id: 21,
+      question: 'If A = {a, b, c} and B = {b, c, d}, find A – B.',
+      options: ['{a}', '{b, c}', '{d}', '{a, d}'],
+      correct: 0
+    },
+    {
+      id: 22,
+      question: 'The power set of {x, y} is:',
+      options: ['{{x}, {y}}', '{∅, {x}, {y}}', '{∅, {x}, {y}, {x, y}}', '{{x, y}}'],
+      correct: 2
+    },
+    {
+      id: 23,
+      question: 'If X and Y are two sets such that X ⊂ Y, then X ∪ Y = ?',
+      options: ['X', 'Y', '∅', 'X ∩ Y'],
+      correct: 1
+    },
+    {
+      id: 24,
+      question: 'In a class of 40 students, 25 passed Mathematics, 20 passed English, and 10 passed both. How many passed at least one subject?',
+      options: ['15', '25', '35', '45'],
+      correct: 2
+    },
+    {
+      id: 25,
+      question: 'Two sets that have no elements in common are called:',
+      options: ['Equivalent sets', 'Disjoint sets', 'Equal sets', 'Subsets'],
+      correct: 1
+    },
+    {
+      id: 26,
+      question: 'If f(x) = 3x – 2 and g(x) = x² + 1, find f(g(2)).',
+      options: ['11', '13', '15', '17'],
+      correct: 1
+    },
+    {
+      id: 27,
+      question: 'Given f(x) = √(x – 4), what is the largest possible domain?',
+      options: ['x ≥ 0', 'x ≥ 4', 'x > 4', 'All real numbers'],
+      correct: 1
+    },
+    {
+      id: 28,
+      question: 'If f(x) = 2x + 3, find f⁻¹(x).',
+      options: ['(x – 3)/2', '(x + 3)/2', '2x – 3', '(x/2) – 3'],
+      correct: 0
+    },
+    {
+      id: 29,
+      question: 'For f(x) = x² + 1 with domain x ≥ 0, which statement is true?',
+      options: ['One-to-one but not onto', 'Many-to-one', 'One-to-one and onto', 'Neither one-to-one nor onto'],
+      correct: 0
+    },
+    {
+      id: 30,
+      question: 'If f(x) = x + 1 and g(x) = 2x, find (g ∘ f)(3).',
+      options: ['7', '8', '6', '9'],
+      correct: 1
+    },
+    {
+      id: 31,
+      question: 'If f(x) = 1/(x – 2), which value is NOT in the domain?',
+      options: ['0', '2', '1', '-1'],
+      correct: 1
+    },
+    {
+      id: 32,
+      question: 'If f(x) = 4x – 5, find f(0) + f(1).',
+      options: ['-4', '-5', '-6', '-7'],
+      correct: 2
+    },
+    {
+      id: 33,
+      question: 'Which mapping is an example of a one-to-one function?',
+      options: ['f(x) = x²', 'f(x) = |x|', 'f(x) = 2x + 1', 'f(x) = 4'],
+      correct: 2
+    },
+    {
+      id: 34,
+      question: 'Find the range of f(x) = 3x + 2 for x ∈ {1, 2, 3}.',
+      options: ['{3, 6, 9}', '{5, 8, 11}', '{2, 5, 8}', '{1, 2, 3}'],
+      correct: 1
+    },
+    {
+      id: 35,
+      question: 'If f(x) = x³ – 4, evaluate f(2).',
+      options: ['2', '4', '6', '8'],
+      correct: 1
+    },
+    {
+      id: 36,
+      question: 'Given f(x) = 2x and g(x) = x – 3, find (f ∘ g)(x).',
+      options: ['2x – 3', '2x – 6', '2x + 6', '2x'],
+      correct: 1
+    },
+    {
+      id: 37,
+      question: 'A function is defined as f(x) = 5. What type of function is this?',
+      options: ['Linear', 'Constant', 'Quadratic', 'Identity'],
+      correct: 1
+    },
+    {
+      id: 38,
+      question: 'If f(x) = x² – 4x + 3, find f(1).',
+      options: ['0', '1', '2', '3'],
+      correct: 0
+    },
+    {
+      id: 39,
+      question: 'Which of the following represents a many-to-one function?',
+      options: ['f(x) = 2x', 'f(x) = x + 5', 'f(x) = x²', 'f(x) = 3x – 1'],
+      correct: 2
+    },
+    {
+      id: 40,
+      question: 'Find the inverse of f(x) = 5x – 7.',
+      options: ['(x + 7)/5', '(x – 7)/5', '5x + 7', '(x + 5)/7'],
+      correct: 0
+    },
 
-{
-  id: 61,
-  question: 'Factorize x³ – 8 completely.',
-  options: ['(x – 2)(x² + 2x + 4)', '(x + 2)(x² – 2x + 4)', '(x – 2)(x² – 2x + 4)', '(x + 2)(x² + 2x + 4)'],
-  correct: 0
-},
-{
-  id: 62,
-  question: 'Find the remainder when x⁴ – 3x² + 2 is divided by x – 1.',
-  options: ['0', '1', '2', '3'],
-  correct: 0
-},
-{
-  id: 63,
-  question: 'If x – 3 is a factor of x³ – 7x + k, find k.',
-  options: ['-6', '-12', '12', '6'],
-  correct: 0
-},
-{
-  id: 64,
-  question: 'The remainder when x³ + 2x² – 3x + 4 is divided by x + 3 is:',
-  options: ['4', '-14', '14', '20'],
-  correct: 0
-},
-{
-  id: 65,
-  question: 'Which of these is a factor of x³ – 3x² – 4x + 12?',
-  options: ['x + 2', 'x – 2', 'x + 3', 'x – 4'],
-  correct: 1
-},
-{
-  id: 66,
-  question: 'Find the remainder when 4x³ – 3x² + 2x – 1 is divided by 2x – 1.',
-  options: ['-1/4', '0', '1/2', '1'],
-  correct: 0
-},
-{
-  id: 67,
-  question: 'If P(x) = 2x³ – 3x² + 5x – 7, find P(-1).',
-  options: ['-17', '-3', '3', '17'],
-  correct: 0
-},
-{
-  id: 68,
-  question: 'Factorize x³ + 27.',
-  options: ['(x + 3)(x² – 3x + 9)', '(x – 3)(x² + 3x + 9)', '(x + 3)(x² + 3x + 9)', '(x – 3)(x² – 3x + 9)'],
-  correct: 0
-},
-{
-  id: 69,
-  question: 'What is the value of k if x + 1 is a factor of x³ – 3x² + kx + 5?',
-  options: ['-9', '-7', '1', '9'],
-  correct: 2
-},
+    {
+      id: 41,
+      question: 'If f(x) = x² + 3x, what is f(-2)?',
+      options: ['-2', '2', '-10', '10'],
+      correct: 0
+    },
+    {
+      id: 42,
+      question: 'The vertical line test is used to determine if a graph represents:',
+      options: ['A relation only', 'A function', 'A one-to-one function', 'An inverse'],
+      correct: 1
+    },
+    {
+      id: 43,
+      question: 'If f(x) = x² – 1 and g(x) = x + 1, find f(g(x)).',
+      options: ['x² + 2x', 'x² + 2x + 2', 'x² + 2x + 1', 'x² + 2'],
+      correct: 0
+    },
+    {
+      id: 44,
+      question: 'What is the domain of f(x) = 3/(x – 5)?',
+      options: ['All real numbers', 'All real numbers except 0', 'All real numbers except 5', 'x > 5'],
+      correct: 2
+    },
+    {
+      id: 45,
+      question: 'If f(x) = 7, find f(100).',
+      options: ['0', '7', '100', '700'],
+      correct: 1
+    },
+    {
+      id: 46,
+      question: 'Find the value of f(g(3)) if f(x) = 2x and g(x) = x + 4.',
+      options: ['10', '12', '14', '16'],
+      correct: 2
+    },
+    {
+      id: 47,
+      question: 'Which function is its own inverse?',
+      options: ['f(x) = x + 1', 'f(x) = 2x', 'f(x) = x', 'f(x) = x²'],
+      correct: 2
+    },
+    {
+      id: 48,
+      question: 'If f(x) = x/(x + 1), find f(2).',
+      options: ['2/3', '3/2', '2', '1/3'],
+      correct: 0
+    },
+    {
+      id: 49,
+      question: 'The composition of a function and its inverse yields:',
+      options: ['0', '1', 'x', 'f(x)'],
+      correct: 2
+    },
+    {
+      id: 50,
+      question: 'If f(x) = 4x – 3 and g(x) = 2x, find (f + g)(x).',
+      options: ['6x – 3', '6x + 3', '8x² – 6x', '2x – 3'],
+      correct: 0
+    },
+    {
+      id: 51,
+      question: 'When P(x) = x³ – 4x² + x + 6 is divided by x – 2, the remainder is:',
+      options: ['0', '2', '4', '6'],
+      correct: 0
+    },
+    {
+      id: 52,
+      question: 'Which of the following is a factor of P(x) = x³ – 3x² – x + 3?',
+      options: ['x – 1', 'x + 1', 'x – 2', 'x + 3'],
+      correct: 0
+    },
+    {
+      id: 53,
+      question: 'If x – 2 is a factor of x³ – kx² + 4x – 8, find k.',
+      options: ['1', '2', '3', '4'],
+      correct: 1
+    },
+    {
+      id: 54,
+      question: 'The remainder when x¹⁰ + 1 is divided by x + 1 is:',
+      options: ['0', '1', '2', '10'],
+      correct: 2
+    },
+    {
+      id: 55,
+      question: 'Which polynomial has x – 1 as a factor?',
+      options: ['x² + 1', 'x² – 2x + 1', 'x³ + 1', 'x³ – 1'],
+      correct: 1
+    },
+    {
+      id: 56,
+      question: 'For P(x) = 2x³ – 5x² + ax – 6, if P(2) = 0, then a = ?',
+      options: ['5', '6', '7', '8'],
+      correct: 0
+    },
+    {
+      id: 57,
+      question: 'Find the remainder when 3x³ – 2x² + x – 1 is divided by x + 1.',
+      options: ['-7', '-5', '-3', '7'],
+      correct: 0
+    },
+    {
+      id: 58,
+      question: 'If x + 2 is a factor of x³ + 2x² – 5x + k, find k.',
+      options: ['-10', '-6', '2', '6'],
+      correct: 0
+    },
+    {
+      id: 59,
+      question: 'The Factor Theorem states that if f(a) = 0, then:',
+      options: ['x + a is a factor', 'x – a is a factor', 'a is a factor', 'f(x) = a'],
+      correct: 1
+    },
+    {
+      id: 60,
+      question: 'When a polynomial is divided by x – c, the remainder is:',
+      options: ['f(0)', 'f(c)', 'f(-c)', 'c'],
+      correct: 1
+    },
 
-{
-  id: 70,
-  question: 'Solve: y = 2x + 1 and y = x² – 3. How many real solutions?',
-  options: ['0', '1', '2', '3'],
-  correct: 2
-},
-{
-  id: 71,
-  question: 'Solve: x + y = 5 and x² + y² = 17. One solution is:',
-  options: ['(1,4)', '(2,3)', '(4,1)', '(3,2)'],
-  correct: 2
-},
-{
-  id: 72,
-  question: 'For which value of k does y = 2x + k intersect y = x² + 4x + 3 at exactly one point?',
-  options: ['1', '2', '3', '4'],
-  correct: 1
-},
-{
-  id: 73,
-  question: 'Solve: 2x + y = 7 and xy = 6. Which is NOT a solution?',
-  options: ['(2,3)', '(3,1)', '(1.5,4)', '(1,5)'],
-  correct: 3
-},
-{
-  id: 74,
-  question: 'The system y = x² and y = mx + 1 has exactly one solution if m = ?',
-  options: ['0', '1', '2', '-2'],
-  correct: 2
-},
-{
-  id: 75,
-  question: 'Solve: x – y = 1 and x² + y² = 5. The sum of the two x-solutions is:',
-  options: ['0', '1', '2', '3'],
-  correct: 1
-},
-{
-  id: 76,
-  question: 'Solve the system: 3x + 2y = 8 and x – y = 1. Find x.',
-  options: ['1', '2', '3', '4'],
-  correct: 1
-},
-{
-  id: 77,
-  question: 'The solutions to x + y = 4 and x² – y² = 8 are:',
-  options: ['(3,1)', '(4,0)', '(5,-1)', '(2,2)'],
-  correct: 0
-},
-{
-  id: 78,
-  question: 'If 2x – y = 5 and x² + y² = 25, find y.',
-  options: ['-5', '-3', '3', '5'],
-  correct: 2
-},
-{
-  id: 79,
-  question: 'How many solutions does y = x² and y = x + 2 have?',
-  options: ['0', '1', '2', 'Infinite'],
-  correct: 2
-},
-{
-  id: 80,
-  question: 'Solve x² – x – 2 = 0.',
-  options: ['x = 2 or x = -1', 'x = 1 or x = -2', 'x = 2 only', 'x = -1 only'],
-  correct: 0
-},
+    {
+      id: 61,
+      question: 'Factorize x³ – 8 completely.',
+      options: ['(x – 2)(x² + 2x + 4)', '(x + 2)(x² – 2x + 4)', '(x – 2)(x² – 2x + 4)', '(x + 2)(x² + 2x + 4)'],
+      correct: 0
+    },
+    {
+      id: 62,
+      question: 'Find the remainder when x⁴ – 3x² + 2 is divided by x – 1.',
+      options: ['0', '1', '2', '3'],
+      correct: 0
+    },
+    {
+      id: 63,
+      question: 'If x – 3 is a factor of x³ – 7x + k, find k.',
+      options: ['-6', '-12', '12', '6'],
+      correct: 0
+    },
+    {
+      id: 64,
+      question: 'The remainder when x³ + 2x² – 3x + 4 is divided by x + 3 is:',
+      options: ['4', '-14', '14', '20'],
+      correct: 0
+    },
+    {
+      id: 65,
+      question: 'Which of these is a factor of x³ – 3x² – 4x + 12?',
+      options: ['x + 2', 'x – 2', 'x + 3', 'x – 4'],
+      correct: 1
+    },
+    {
+      id: 66,
+      question: 'Find the remainder when 4x³ – 3x² + 2x – 1 is divided by 2x – 1.',
+      options: ['-1/4', '0', '1/2', '1'],
+      correct: 0
+    },
+    {
+      id: 67,
+      question: 'If P(x) = 2x³ – 3x² + 5x – 7, find P(-1).',
+      options: ['-17', '-3', '3', '17'],
+      correct: 0
+    },
+    {
+      id: 68,
+      question: 'Factorize x³ + 27.',
+      options: ['(x + 3)(x² – 3x + 9)', '(x – 3)(x² + 3x + 9)', '(x + 3)(x² + 3x + 9)', '(x – 3)(x² – 3x + 9)'],
+      correct: 0
+    },
+    {
+      id: 69,
+      question: 'What is the value of k if x + 1 is a factor of x³ – 3x² + kx + 5?',
+      options: ['-9', '-7', '1', '9'],
+      correct: 2
+    },
 
-],
+    {
+      id: 70,
+      question: 'Solve: y = 2x + 1 and y = x² – 3. How many real solutions?',
+      options: ['0', '1', '2', '3'],
+      correct: 2
+    },
+    {
+      id: 71,
+      question: 'Solve: x + y = 5 and x² + y² = 17. One solution is:',
+      options: ['(1,4)', '(2,3)', '(4,1)', '(3,2)'],
+      correct: 2
+    },
+    {
+      id: 72,
+      question: 'For which value of k does y = 2x + k intersect y = x² + 4x + 3 at exactly one point?',
+      options: ['1', '2', '3', '4'],
+      correct: 1
+    },
+    {
+      id: 73,
+      question: 'Solve: 2x + y = 7 and xy = 6. Which is NOT a solution?',
+      options: ['(2,3)', '(3,1)', '(1.5,4)', '(1,5)'],
+      correct: 3
+    },
+    {
+      id: 74,
+      question: 'The system y = x² and y = mx + 1 has exactly one solution if m = ?',
+      options: ['0', '1', '2', '-2'],
+      correct: 2
+    },
+    {
+      id: 75,
+      question: 'Solve: x – y = 1 and x² + y² = 5. The sum of the two x-solutions is:',
+      options: ['0', '1', '2', '3'],
+      correct: 1
+    },
+    {
+      id: 76,
+      question: 'Solve the system: 3x + 2y = 8 and x – y = 1. Find x.',
+      options: ['1', '2', '3', '4'],
+      correct: 1
+    },
+    {
+      id: 77,
+      question: 'The solutions to x + y = 4 and x² – y² = 8 are:',
+      options: ['(3,1)', '(4,0)', '(5,-1)', '(2,2)'],
+      correct: 0
+    },
+    {
+      id: 78,
+      question: 'If 2x – y = 5 and x² + y² = 25, find y.',
+      options: ['-5', '-3', '3', '5'],
+      correct: 2
+    },
+    {
+      id: 79,
+      question: 'How many solutions does y = x² and y = x + 2 have?',
+      options: ['0', '1', '2', 'Infinite'],
+      correct: 2
+    },
+    {
+      id: 80,
+      question: 'Solve x² – x – 2 = 0.',
+      options: ['x = 2 or x = -1', 'x = 1 or x = -2', 'x = 2 only', 'x = -1 only'],
+      correct: 0
+    },
+
+  ],
   '🔬 Chemistry': [
     {
       id: 1,
-      question: 'The solubility of a salt of molar mass 101g at 20°C is 0.34 moldm⁻³. If 3.40g of the salt is dissolved completely in 250cm³ of water in a beaker, the resulting solution is?' ,
+      question: 'The solubility of a salt of molar mass 101g at 20°C is 0.34 moldm⁻³. If 3.40g of the salt is dissolved completely in 250cm³ of water in a beaker, the resulting solution is?',
       options: ['Suspension', 'Saturated', 'Unsaturated', 'Super saturated'],
       correct: 2
     },
@@ -3341,4 +3341,4765 @@ export const allQuestions = {
       correct: 2
     }
   ],
+  '💰 Economics': [
+    {
+      id: 1,
+      question: 'The fundamental economic problem faced by all societies is:',
+      options: ['Inflation', 'Unemployment', 'Scarcity', 'Poverty'],
+      correct: 2
+    },
+    {
+      id: 2,
+      question: 'The concept that refers to the value of the next best alternative forgone when a choice is made is called:',
+      options: ['Scale of preference', 'Opportunity cost', 'Rationality', 'Choice'],
+      correct: 1
+    },
+    {
+      id: 3,
+      question: 'When a student chooses to study Economics instead of Accounting, the opportunity cost is:',
+      options: [
+        'The fees paid for Economics',
+        'The knowledge from Accounting',
+        'The time spent studying',
+        'The Economics textbook'
+      ],
+      correct: 1
+    },
+    {
+      id: 4,
+      question: 'A list of wants arranged in order of priority is called:',
+      options: ['Opportunity cost', 'Scale of preference', 'Choice', 'Scarcity'],
+      correct: 1
+    },
+    {
+      id: 5,
+      question: 'Which of the following best describes the economic problem of "what to produce"?',
+      options: [
+        'How to combine resources efficiently',
+        'Which goods and services to produce with available resources',
+        'Who gets the produced goods',
+        'How to maximize profit'
+      ],
+      correct: 1
+    },
+    {
+      id: 6,
+      question: 'The production possibility curve (PPC) is used to illustrate:',
+      options: [
+        'Population growth',
+        'Scarcity and choice',
+        'Money supply',
+        'Inflation rate'
+      ],
+      correct: 1
+    },
+    {
+      id: 7,
+      question: 'A point inside the production possibility curve indicates:',
+      options: [
+        'Unattainable production',
+        'Efficient production',
+        'Underutilization of resources',
+        'Technological advancement'
+      ],
+      correct: 2
+    },
+    {
+      id: 8,
+      question: 'The three basic economic questions are:',
+      options: [
+        'What, how, and for whom to produce',
+        'When, where, and why to produce',
+        'How much, how many, and how often',
+        'Production, distribution, consumption'
+      ],
+      correct: 0
+    },
+    {
+      id: 9,
+      question: 'Rationality in economics means:',
+      options: [
+        'Making random choices',
+        'Making decisions to maximize satisfaction or profit',
+        'Avoiding all risks',
+        'Following traditional practices'
+      ],
+      correct: 1
+    },
+    {
+      id: 10,
+      question: 'The opportunity cost of building a new school is:',
+      options: [
+        'The cost of construction materials',
+        "The teachers' salaries",
+        'The other projects that cannot be undertaken',
+        'The land used'
+      ],
+      correct: 2
+    },
+    {
+      id: 11,
+      question: 'When a production possibility curve shifts outward to the right, it indicates:',
+      options: [
+        'Economic decline',
+        'Economic growth',
+        'Unemployment',
+        'Inflation'
+      ],
+      correct: 1
+    },
+    {
+      id: 12,
+      question: 'The problem of "scarcity" arises because:',
+      options: [
+        'Resources are unlimited',
+        'Human wants are limited',
+        'Resources are limited relative to wants',
+        'Technology is advanced'
+      ],
+      correct: 2
+    },
+    {
+      id: 13,
+      question: 'Which statement about the production possibility curve is TRUE?',
+      options: [
+        'It slopes upward to the right',
+        'It is convex to the origin',
+        'It is concave to the origin',
+        'It is a straight line'
+      ],
+      correct: 2
+    },
+    {
+      id: 14,
+      question: 'The concept of "choice" in economics is necessitated by:',
+      options: ['Abundance', 'Scarcity', 'Money', 'Markets'],
+      correct: 1
+    },
+    {
+      id: 15,
+      question: 'A production possibility curve that is a straight line indicates:',
+      options: [
+        'Increasing opportunity cost',
+        'Decreasing opportunity cost',
+        'Constant opportunity cost',
+        'Zero opportunity cost'
+      ],
+      correct: 2
+    },
+    {
+      id: 16,
+      question: 'The distribution of goods and services refers to:',
+      options: [
+        'How they are produced',
+        'Who gets them',
+        'What is produced',
+        'When they are produced'
+      ],
+      correct: 1
+    },
+    {
+      id: 17,
+      question: 'Which of the following is a free good?',
+      options: ['Air', 'Water from a tap', 'Rice', 'A car'],
+      correct: 0
+    },
+    {
+      id: 18,
+      question: 'The four factors of production are:',
+      options: [
+        'Land, labor, capital, entrepreneur',
+        'Money, machinery, workers, buildings',
+        'Rent, wages, interest, profit',
+        'Raw materials, technology, management'
+      ],
+      correct: 0
+    },
+    {
+      id: 19,
+      question: 'The reward for capital as a factor of production is:',
+      options: ['Rent', 'Wages', 'Interest', 'Profit'],
+      correct: 2
+    },
+    {
+      id: 20,
+      question: 'A movement along the production possibility curve indicates:',
+      options: [
+        'Technological progress',
+        'Changes in resource quantity',
+        'Reallocation of resources',
+        'Economic growth'
+      ],
+      correct: 2
+    },
+    {
+      id: 21,
+      question: 'The reward for entrepreneurship is:',
+      options: ['Rent', 'Wages', 'Interest', 'Profit'],
+      correct: 3
+    },
+    {
+      id: 22,
+      question: 'If a country operates on its production possibility curve, it is:',
+      options: [
+        'Underutilizing resources',
+        'Producing inefficiently',
+        'Achieving full employment',
+        'Experiencing scarcity'
+      ],
+      correct: 2
+    },
+    {
+      id: 23,
+      question: 'The concept of scale of preference helps to:',
+      options: [
+        'Create more wants',
+        'Eliminate scarcity',
+        'Make rational choices',
+        'Increase resources'
+      ],
+      correct: 2
+    },
+    {
+      id: 24,
+      question: 'The fundamental purpose of economic activity is to:',
+      options: [
+        'Make profit',
+        'Satisfy human wants',
+        'Create employment',
+        'Accumulate wealth'
+      ],
+      correct: 1
+    },
+    {
+      id: 25,
+      question: 'Which statement about economic goods is CORRECT?',
+      options: [
+        'They are unlimited in supply',
+        'They have no opportunity cost',
+        'They command a price',
+        'They are free'
+      ],
+      correct: 2
+    },
+    {
+      id: 26,
+      question: 'In a planned economy, the central planning authority decides:',
+      options: [
+        'What, how, and for whom to produce',
+        'Only what to produce',
+        'Only how to produce',
+        'Only for whom to produce'
+      ],
+      correct: 0
+    },
+    {
+      id: 27,
+      question: 'Which economic system is characterized by private ownership of resources?',
+      options: [
+        'Command economy',
+        'Market economy',
+        'Traditional economy',
+        'Mixed economy'
+      ],
+      correct: 1
+    },
+    {
+      id: 28,
+      question: 'Most economies in the world today operate as:',
+      options: [
+        'Pure command economies',
+        'Pure market economies',
+        'Mixed economies',
+        'Traditional economies'
+      ],
+      correct: 2
+    },
+    {
+      id: 29,
+      question: 'The main objective of deregulation is to:',
+      options: [
+        'Increase government control',
+        'Reduce government intervention',
+        'Nationalize industries',
+        'Increase taxes'
+      ],
+      correct: 1
+    },
+    {
+      id: 30,
+      question: 'Banking sector consolidation in Nigeria involved:',
+      options: [
+        'Closing all banks',
+        'Merging banks to increase capital base',
+        'Opening more branches',
+        'Reducing interest rates'
+      ],
+      correct: 1
+    },
+    {
+      id: 31,
+      question: 'In a free market economy, prices are determined by:',
+      options: [
+        'Government decree',
+        'Supply and demand',
+        'Traditional customs',
+        'Central planners'
+      ],
+      correct: 1
+    },
+    {
+      id: 32,
+      question: 'Which of the following is a problem of the command economy?',
+      options: [
+        'Unemployment',
+        'Lack of incentives',
+        'Inflation',
+        'Income inequality'
+      ],
+      correct: 1
+    },
+    {
+      id: 33,
+      question: 'Privatization means:',
+      options: [
+        'Government take-over of businesses',
+        'Transfer of public enterprises to private ownership',
+        'Regulation of private businesses',
+        'Creation of new public enterprises'
+      ],
+      correct: 1
+    },
+    {
+      id: 34,
+      question: 'The cash policy reform in Nigeria aimed to:',
+      options: [
+        'Increase cash circulation',
+        'Discourage cash-based transactions',
+        'Print more currency',
+        'Devalue the Naira'
+      ],
+      correct: 1
+    },
+    {
+      id: 35,
+      question: 'In a mixed economy, the government typically provides:',
+      options: [
+        'All goods and services',
+        'Only luxury goods',
+        'Public goods and merit goods',
+        'Only agricultural products'
+      ],
+      correct: 2
+    },
+    {
+      id: 36,
+      question: 'Which economic system relies on customs and traditions?',
+      options: [
+        'Market economy',
+        'Command economy',
+        'Traditional economy',
+        'Mixed economy'
+      ],
+      correct: 2
+    },
+    {
+      id: 37,
+      question: 'The concept of "invisible hand" is associated with:',
+      options: [
+        'Karl Marx',
+        'Adam Smith',
+        'John Keynes',
+        'Milton Friedman'
+      ],
+      correct: 1
+    },
+    {
+      id: 38,
+      question: 'Under a command economy, the problem of what to produce is solved by:',
+      options: [
+        'Consumer preferences',
+        'Market prices',
+        'Government directives',
+        'Producer decisions'
+      ],
+      correct: 2
+    },
+    {
+      id: 39,
+      question: 'Commercialization of public enterprises means:',
+      options: [
+        'Selling them to foreigners',
+        'Running them profitably',
+        'Closing them down',
+        'Giving them to workers'
+      ],
+      correct: 1
+    },
+    {
+      id: 40,
+      question: 'Which of the following is a feature of capitalism?',
+      options: [
+        'Collective ownership',
+        'Central planning',
+        'Price mechanism',
+        'Government regulation'
+      ],
+      correct: 2
+    },
+    {
+      id: 41,
+      question: 'Deregulation of the oil sector in Nigeria led to:',
+      options: [
+        'Increased government control',
+        'Removal of fuel subsidies',
+        'Lower oil prices',
+        'Nationalization of oil companies'
+      ],
+      correct: 1
+    },
+    {
+      id: 42,
+      question: 'The major criticism of the market economy is that it:',
+      options: [
+        'Leads to inefficiency',
+        'Creates income inequality',
+        'Discourages innovation',
+        'Is too slow'
+      ],
+      correct: 1
+    },
+    {
+      id: 43,
+      question: 'Economic reforms in Nigeria often include:',
+      options: [
+        'Increasing tariffs',
+        'Devaluation of currency',
+        'Nationalization',
+        'Price controls'
+      ],
+      correct: 1
+    },
+    {
+      id: 44,
+      question: 'A major advantage of the command economy is:',
+      options: [
+        'Individual freedom',
+        'Efficient resource allocation',
+        'Reduction of unemployment',
+        'Innovation'
+      ],
+      correct: 2
+    },
+    {
+      id: 45,
+      question: 'The term "laissez-faire" means:',
+      options: [
+        'Government intervention',
+        'Let things alone',
+        'Central planning',
+        'Collective ownership'
+      ],
+      correct: 1
+    },
+    {
+      id: 46,
+      question: 'The law of demand states that, ceteris paribus:',
+      options: [
+        'Price and quantity demanded are positively related',
+        'Price and quantity demanded are inversely related',
+        'Demand is independent of price',
+        'Supply determines demand'
+      ],
+      correct: 1
+    },
+    {
+      id: 47,
+      question: 'Ceteris paribus means:',
+      options: [
+        'All things considered',
+        'Other things being equal',
+        'After careful analysis',
+        'In the long run'
+      ],
+      correct: 1
+    },
+    {
+      id: 48,
+      question: 'A demand schedule shows the relationship between:',
+      options: [
+        'Price and supply',
+        'Income and demand',
+        'Price and quantity demanded',
+        'Cost and output'
+      ],
+      correct: 2
+    },
+    {
+      id: 49,
+      question: 'Which of the following is NOT a determinant of demand?',
+      options: [
+        'Consumer income',
+        'Price of substitutes',
+        'Cost of production',
+        'Tastes and preferences'
+      ],
+      correct: 2
+    },
+    {
+      id: 50,
+      question: 'A movement along the demand curve is caused by a change in:',
+      options: [
+        'Income',
+        'The price of the good itself',
+        'Tastes',
+        'Price of substitutes'
+      ],
+      correct: 1
+    },
+    {
+      id: 51,
+      question: 'An increase in consumer income will shift the demand curve for a normal good to the:',
+      options: ['Left', 'Right', 'Left and right', 'Not shift'],
+      correct: 1
+    },
+    {
+      id: 52,
+      question: 'A good whose demand increases as consumer income increases is called a:',
+      options: ['Inferior good', 'Normal good', 'Giffen good', 'Luxury good'],
+      correct: 1
+    },
+    {
+      id: 53,
+      question: 'Complementary goods are those consumed:',
+      options: ['Instead of each other', 'Together', 'Independently', 'By different people'],
+      correct: 1
+    },
+    {
+      id: 54,
+      question: 'If the price of coffee increases and the demand for tea increases, coffee and tea are:',
+      options: ['Complements', 'Substitutes', 'Inferior goods', 'Normal goods'],
+      correct: 1
+    },
+    {
+      id: 55,
+      question: 'The demand for a good is said to be elastic if:',
+      options: [
+        'Quantity demanded changes proportionally to price',
+        'Quantity demanded is insensitive to price changes',
+        'Quantity demanded changes more than proportionally to price',
+        'Price changes have no effect'
+      ],
+      correct: 2
+    },
+    {
+      id: 56,
+      question: 'A commodity with price elasticity of demand less than 1 is:',
+      options: ['Elastic', 'Inelastic', 'Unitary elastic', 'Perfectly elastic'],
+      correct: 1
+    },
+    {
+      id: 57,
+      question: 'If the price elasticity of demand for bread is 0.5, a 10% increase in price will lead to:',
+      options: [
+        '20% decrease in quantity demanded',
+        '5% decrease in quantity demanded',
+        '0.5% decrease in quantity demanded',
+        'No change'
+      ],
+      correct: 1
+    },
+    {
+      id: 58,
+      question: 'Goods with many close substitutes tend to have:',
+      options: ['Inelastic demand', 'Elastic demand', 'Unitary demand', 'Zero demand'],
+      correct: 1
+    },
+    {
+      id: 59,
+      question: 'Luxury goods typically have:',
+      options: [
+        'Low price elasticity',
+        'High price elasticity',
+        'Zero price elasticity',
+        'Negative price elasticity'
+      ],
+      correct: 1
+    },
+    {
+      id: 60,
+      question: 'The demand curve for a Giffen good slopes:',
+      options: [
+        'Downward to the right',
+        'Upward to the right',
+        'Vertical',
+        'Horizontal'
+      ],
+      correct: 1
+    },
+    {
+      id: 61,
+      question: 'Which of the following would cause a shift in the demand curve for rice?',
+      options: [
+        'A change in the price of rice',
+        'A change in consumer tastes',
+        'A change in weather conditions',
+        'A change in production cost'
+      ],
+      correct: 1
+    },
+    {
+      id: 62,
+      question: 'Derived demand refers to demand for a good that arises from:',
+      options: [
+        'Consumer preferences',
+        'The demand for another good',
+        'Advertising',
+        'Seasonal factors'
+      ],
+      correct: 1
+    },
+    {
+      id: 63,
+      question: 'Cross elasticity of demand measures responsiveness of demand for good X to changes in:',
+      options: [
+        'Income',
+        'Price of good X',
+        'Price of good Y',
+        'Advertising'
+      ],
+      correct: 2
+    },
+    {
+      id: 64,
+      question: 'A negative cross elasticity of demand indicates:',
+      options: ['Substitutes', 'Complements', 'Unrelated goods', 'Inferior goods'],
+      correct: 1
+    },
+    {
+      id: 65,
+      question: 'The demand for necessities tends to be:',
+      options: ['Perfectly elastic', 'Elastic', 'Inelastic', 'Unitary'],
+      correct: 2
+    },
+    {
+      id: 66,
+      question: 'A Veblen good has a demand curve that:',
+      options: [
+        'Slopes downward',
+        'Slopes upward',
+        'Is vertical',
+        'Is horizontal'
+      ],
+      correct: 1
+    },
+    {
+      id: 67,
+      question: 'Income elasticity of demand for an inferior good is:',
+      options: ['Positive', 'Negative', 'Zero', 'One'],
+      correct: 1
+    },
+    {
+      id: 68,
+      question: 'Which of the following is an example of joint demand?',
+      options: [
+        'Tea and coffee',
+        'Petrol and engine oil',
+        'Beef and chicken',
+        'Radio and television'
+      ],
+      correct: 1
+    },
+    {
+      id: 69,
+      question: 'The price elasticity of demand is calculated as:',
+      options: [
+        '%ΔP / %ΔQ',
+        '%ΔQ / %ΔP',
+        'ΔP / ΔQ',
+        'ΔQ / ΔP'
+      ],
+      correct: 1
+    },
+    {
+      id: 70,
+      question: 'If demand is perfectly inelastic, the demand curve is:',
+      options: ['Horizontal', 'Vertical', 'Downward sloping', 'Upward sloping'],
+      correct: 1
+    },
+    {
+      id: 71,
+      question: 'The law of supply states that, ceteris paribus:',
+      options: [
+        'Price and quantity supplied are inversely related',
+        'Price and quantity supplied are positively related',
+        'Supply decreases as price increases',
+        'Supply is independent of price'
+      ],
+      correct: 1
+    },
+    {
+      id: 72,
+      question: 'A supply schedule shows the relationship between:',
+      options: [
+        'Price and quantity supplied',
+        'Income and supply',
+        'Cost and supply',
+        'Demand and supply'
+      ],
+      correct: 0
+    },
+    {
+      id: 73,
+      question: 'Which of the following will shift the supply curve to the right?',
+      options: [
+        'Increase in cost of production',
+        'Technological improvement',
+        'Increase in taxes',
+        'Decrease in number of sellers'
+      ],
+      correct: 1
+    },
+    {
+      id: 74,
+      question: 'A movement along the supply curve is caused by:',
+      options: [
+        'Change in technology',
+        'Change in input prices',
+        'Change in the price of the good',
+        'Change in number of sellers'
+      ],
+      correct: 2
+    },
+    {
+      id: 75,
+      question: 'Joint supply occurs when:',
+      options: [
+        'Two goods are produced separately',
+        'Producing one good automatically produces another',
+        'Goods are substitutes in production',
+        'Goods are complements'
+      ],
+      correct: 1
+    },
+    {
+      id: 76,
+      question: 'Which of the following is an example of competitive supply?',
+      options: [
+        'Bread and butter',
+        'Beef and leather',
+        'Maize and beans (using same land)',
+        'Petrol and engine oil'
+      ],
+      correct: 2
+    },
+    {
+      id: 77,
+      question: 'Price elasticity of supply is likely to be higher in the:',
+      options: ['Short run', 'Long run', 'Immediate run', 'Very short run'],
+      correct: 1
+    },
+    {
+      id: 78,
+      question: 'If the price elasticity of supply is 2, a 5% increase in price will lead to:',
+      options: [
+        '2.5% increase in quantity supplied',
+        '10% increase in quantity supplied',
+        '0.4% increase in quantity supplied',
+        'No change'
+      ],
+      correct: 1
+    },
+    {
+      id: 79,
+      question: 'A vertical supply curve indicates:',
+      options: [
+        'Perfectly elastic supply',
+        'Perfectly inelastic supply',
+        'Unitary elastic supply',
+        'Relatively elastic supply'
+      ],
+      correct: 1
+    },
+    {
+      id: 80,
+      question: 'Which determinant of supply refers to the cost of raw materials?',
+      options: [
+        'Technology',
+        'Input prices',
+        'Government policy',
+        'Number of sellers'
+      ],
+      correct: 1
+    },
+    {
+      id: 81,
+      question: 'An increase in the number of sellers in a market will:',
+      options: [
+        'Decrease supply',
+        'Increase supply',
+        'Increase demand',
+        'Decrease demand'
+      ],
+      correct: 1
+    },
+    {
+      id: 82,
+      question: 'The supply of agricultural products is often:',
+      options: [
+        'Highly elastic',
+        'Perfectly elastic',
+        'Inelastic in the short run',
+        'Unitary elastic'
+      ],
+      correct: 2
+    },
+    {
+      id: 83,
+      question: 'Taxes on production shift the supply curve to the:',
+      options: ['Left', 'Right', 'Not shift', 'Upward only'],
+      correct: 0
+    },
+    {
+      id: 84,
+      question: 'Which of the following would decrease supply?',
+      options: [
+        'Subsidy on production',
+        'Technological advancement',
+        'Increase in wages',
+        'Decrease in input prices'
+      ],
+      correct: 2
+    },
+    {
+      id: 85,
+      question: 'The supply curve for a firm in the short run is the:',
+      options: [
+        'Average cost curve',
+        'Total cost curve',
+        'Marginal cost curve above average variable cost',
+        'Demand curve'
+      ],
+      correct: 2
+    },
+    {
+      id: 86,
+      question: 'A subsidy on production will:',
+      options: [
+        'Decrease supply',
+        'Increase supply',
+        'Increase demand',
+        'Decrease demand'
+      ],
+      correct: 1
+    },
+    {
+      id: 87,
+      question: 'The concept of supply in economics refers to:',
+      options: [
+        'Quantity actually sold',
+        'Quantity producers are willing and able to sell',
+        'Quantity consumers want',
+        'Quantity in storage'
+      ],
+      correct: 1
+    },
+    {
+      id: 88,
+      question: 'A positive change in technology does what to the supply curve?',
+      options: [
+        'Shifts it leftward',
+        'Shifts it rightward',
+        'Causes upward movement',
+        'Causes downward movement'
+      ],
+      correct: 1
+    },
+    {
+      id: 89,
+      question: 'Composite supply refers to:',
+      options: [
+        'Supply of multiple products from one resource',
+        'Supply from multiple producers',
+        'Combined market supply',
+        'Supply of complements'
+      ],
+      correct: 0
+    },
+    {
+      id: 90,
+      question: 'If the supply curve is horizontal, supply is:',
+      options: [
+        'Perfectly elastic',
+        'Perfectly inelastic',
+        'Unit elastic',
+        'Relatively inelastic'
+      ],
+      correct: 0
+    },
+    {
+      id: 91,
+      question: 'An expectation of higher future prices will likely:',
+      options: [
+        'Increase current supply',
+        'Decrease current supply',
+        'Not affect current supply',
+        'Increase current demand'
+      ],
+      correct: 1
+    },
+    {
+      id: 92,
+      question: 'The law of diminishing returns affects:',
+      options: [
+        'Only demand',
+        'Only supply in the short run',
+        'Only supply in the long run',
+        'Both demand and supply'
+      ],
+      correct: 1
+    },
+    {
+      id: 93,
+      question: 'A good with perfectly elastic supply would have elasticity coefficient:',
+      options: ['0', '1', 'Infinity', '-1'],
+      correct: 2
+    },
+    {
+      id: 94,
+      question: 'An increase in the price of a substitute in production will:',
+      options: [
+        'Increase supply of the original good',
+        'Decrease supply of the original good',
+        'Not affect supply',
+        'Increase demand'
+      ],
+      correct: 1
+    },
+    {
+      id: 95,
+      question: 'The market supply curve is the:',
+      options: [
+        'Average of individual supply curves',
+        'Sum of individual supply curves horizontally',
+        'Sum of individual supply curves vertically',
+        'Difference between supply curves'
+      ],
+      correct: 1
+    },
+    {
+      id: 96,
+      question: 'Equilibrium price occurs when:',
+      options: [
+        'Quantity demanded exceeds quantity supplied',
+        'Quantity supplied exceeds quantity demanded',
+        'Quantity demanded equals quantity supplied',
+        'Price is at its highest'
+      ],
+      correct: 2
+    },
+    {
+      id: 97,
+      question: 'A surplus occurs when:',
+      options: [
+        'Price is below equilibrium',
+        'Price is above equilibrium',
+        'Demand exceeds supply',
+        'Market is stable'
+      ],
+      correct: 1
+    },
+    {
+      id: 98,
+      question: 'A shortage occurs when:',
+      options: [
+        'Price is above equilibrium',
+        'Price is below equilibrium',
+        'Supply exceeds demand',
+        'Market is in equilibrium'
+      ],
+      correct: 1
+    },
+    {
+      id: 99,
+      question: 'A price floor set above equilibrium price will result in:',
+      options: [
+        'Shortage',
+        'Surplus',
+        'Equilibrium',
+        'Increased demand'
+      ],
+      correct: 1
+    },
+    {
+      id: 100,
+      question: 'A price ceiling set below equilibrium price will result in:',
+      options: [
+        'Surplus',
+        'Shortage',
+        'Equilibrium',
+        'Increased supply'
+      ],
+      correct: 1
+    }
+
+
+
+
+  ],
+  '✝️ CRS': [
+
+    {
+      id: 1,
+      question: 'According to Genesis 1, what did God create on the fourth day?',
+      options: [
+        'Light and darkness',
+        'Sun, moon, and stars',
+        'Land and seas',
+        'Fish and birds'
+      ],
+      correct: 1
+    },
+    {
+      id: 2,
+      question: '"Let us make man in our own image, after our likeness" appears in:',
+      options: [
+        'Genesis 1:26',
+        'Genesis 2:7',
+        'Genesis 3:15',
+        'Genesis 1:1'
+      ],
+      correct: 0
+    },
+    {
+      id: 3,
+      question: 'The phrase "sovereignty of God" refers to:',
+      options: [
+        "God's love for humanity",
+        "God's supreme authority and control over the universe",
+        "God's presence everywhere",
+        "God's forgiveness of sins"
+      ],
+      correct: 1
+    },
+    {
+      id: 4,
+      question: 'According to Genesis 2, what was created before any plant of the field had grown?',
+      options: [
+        'Rain and man',
+        'Animals',
+        'The sun and moon',
+        'The firmament'
+      ],
+      correct: 0
+    },
+    {
+      id: 5,
+      question: 'The creation account in Genesis 1 describes creation taking place over:',
+      options: [
+        'One day',
+        'Three days',
+        'Six days',
+        'Seven days'
+      ],
+      correct: 2
+    },
+    {
+      id: 6,
+      question: 'What did God create on the fifth day?',
+      options: [
+        'Light',
+        'Sea creatures and birds',
+        'Land animals',
+        'Man'
+      ],
+      correct: 1
+    },
+    {
+      id: 7,
+      question: 'The name "Adam" means:',
+      options: [
+        'Man from heaven',
+        'Of the earth/ground',
+        "God's image",
+        'Firstborn'
+      ],
+      correct: 1
+    },
+    {
+      id: 8,
+      question: 'According to Genesis 1:31, after completing creation, God saw everything as:',
+      options: [
+        'Good',
+        'Very good',
+        'Perfect',
+        'Complete'
+      ],
+      correct: 1
+    },
+    {
+      id: 9,
+      question: 'The term "sovereignty" appears directly in which Old Testament book regarding creation?',
+      options: [
+        'Genesis',
+        'Psalms',
+        'Amos',
+        'Isaiah'
+      ],
+      correct: 1
+    },
+    {
+      id: 10,
+      question: 'In Genesis 1, God created light on:',
+      options: [
+        'First day',
+        'Second day',
+        'Third day',
+        'Fourth day'
+      ],
+      correct: 0
+    },
+    {
+      id: 11,
+      question: "According to the creation narrative, man's role is to:",
+      options: [
+        'Rule over other creatures',
+        'Worship only',
+        'Sleep and eat',
+        'Be passive'
+      ],
+      correct: 0
+    },
+    {
+      id: 12,
+      question: 'The firmament created on day two was called:',
+      options: [
+        'Sky',
+        'Heaven',
+        'Waters above',
+        'Space'
+      ],
+      correct: 1
+    },
+    {
+      id: 13,
+      question: 'What distinguished humanity from other created beings?',
+      options: [
+        'Physical strength',
+        "Creation in God's image",
+        'Ability to speak',
+        'Long life'
+      ],
+      correct: 1
+    },
+    {
+      id: 14,
+      question: "According to Amos 9:5-6, God's sovereignty is demonstrated through:",
+      options: [
+        'His control over nature and nations',
+        'His mercy only',
+        'His temple worship',
+        'His chosen people'
+      ],
+      correct: 0
+    },
+    {
+      id: 15,
+      question: 'The Tree of Knowledge of Good and Evil was located:',
+      options: [
+        'Outside the garden',
+        'In the midst of the garden',
+        'Near the river Euphrates',
+        'By the tree of life'
+      ],
+      correct: 1
+    },
+    {
+      id: 16,
+      question: "According to Isaiah 45:5-12, God's sovereignty means:",
+      options: [
+        'There is no other God beside Him',
+        'Multiple gods exist',
+        'Angels control creation',
+        'Fate determines all'
+      ],
+      correct: 0
+    },
+    {
+      id: 17,
+      question: 'Woman was created from:',
+      options: [
+        'Dust of the ground',
+        "Man's rib",
+        'Water',
+        'Breath of life'
+      ],
+      correct: 1
+    },
+    {
+      id: 18,
+      question: 'The first command God gave to man was to:',
+      options: [
+        'Build an altar',
+        'Name the animals',
+        'Be fruitful, multiply, and subdue the earth',
+        'Worship only'
+      ],
+      correct: 2
+    },
+    {
+      id: 19,
+      question: 'According to Psalm 19, creation reveals:',
+      options: [
+        "Only God's power",
+        'The glory of God',
+        'Human wisdom',
+        'Natural laws'
+      ],
+      correct: 1
+    },
+    {
+      id: 20,
+      question: 'In the sequence of creation, plants were created on:',
+      options: [
+        'First day',
+        'Second day',
+        'Third day',
+        'Fourth day'
+      ],
+      correct: 2
+    },
+    {
+      id: 21,
+      question: 'Man was given dominion over creation to:',
+      options: [
+        'Exploit it selfishly',
+        'Serve and preserve it',
+        'Ignore it completely',
+        'Worship it'
+      ],
+      correct: 1
+    },
+    {
+      id: 22,
+      question: 'The creation of man involved:',
+      options: [
+        'Only spoken word',
+        'Forming from dust and breathing life',
+        'Emerging from water',
+        'Descending from heaven'
+      ],
+      correct: 1
+    },
+    {
+      id: 23,
+      question: 'According to the syllabus, candidates should be able to:',
+      options: [
+        'Memorize all names in Genesis',
+        "Analyse God's process of creation",
+        'Recite the entire chapter',
+        'Draw the garden'
+      ],
+      correct: 1
+    },
+    {
+      id: 24,
+      question: 'The term "sovereignty" as applied to God means He is:',
+      options: [
+        'Supreme and independent',
+        'Loving only',
+        'Present everywhere but not powerful',
+        'Equal to humans'
+      ],
+      correct: 0
+    },
+    {
+      id: 25,
+      question: 'Light was created before the sun because:',
+      options: [
+        'God forgot the sun',
+        'Light precedes all',
+        'God is the source of light independent of celestial bodies',
+        'The sun was not needed'
+      ],
+      correct: 2
+    },
+    {
+      id: 26,
+      question: "God's covenant with Noah was sealed with the sign of:",
+      options: [
+        'Circumcision',
+        'A rainbow',
+        'Sacrifice',
+        'A stone'
+      ],
+      correct: 1
+    },
+    {
+      id: 27,
+      question: "God's covenant with Abraham included the promise of:",
+      options: [
+        'Wealth only',
+        'Land, descendants, and blessing to all nations',
+        'Long life only',
+        'Victory in war'
+      ],
+      correct: 1
+    },
+    {
+      id: 28,
+      question: "The sign of God's covenant with Abraham was:",
+      options: [
+        'Rainbow',
+        'Circumcision',
+        'Sacrifice of animals',
+        'Building an altar'
+      ],
+      correct: 1
+    },
+    {
+      id: 29,
+      question: 'The New Covenant prophecy in Jeremiah states God will:',
+      options: [
+        'Give more laws',
+        'Write His law on hearts',
+        'Destroy Israel',
+        'Forget His people'
+      ],
+      correct: 1
+    },
+    {
+      id: 30,
+      question: 'According to Exodus 19, God’s covenant with Israel at Sinai required:',
+      options: [
+        'Building a temple',
+        'Obedience to His commands',
+        'Offering daily sacrifices',
+        'Electing a king'
+      ],
+      correct: 1
+    },
+    {
+      id: 31,
+      question: 'The covenant with Noah was made after:',
+      options: [
+        'The creation',
+        'The flood',
+        "Abraham's call",
+        'The exodus'
+      ],
+      correct: 1
+    },
+    {
+      id: 32,
+      question: 'Abraham was called out of:',
+      options: [
+        'Egypt',
+        'Canaan',
+        'Ur of the Chaldeans/Haran',
+        'Babylon'
+      ],
+      correct: 2
+    },
+    {
+      id: 33,
+      question: 'The covenant at Sinai included the giving of:',
+      options: [
+        'The Psalms',
+        'The Ten Commandments',
+        'The temple plans',
+        'The Promised Land'
+      ],
+      correct: 1
+    },
+    {
+      id: 34,
+      question: 'Ezekiel 36 describes the New Covenant as involving:',
+      options: [
+        'A new heart and spirit',
+        'A new temple',
+        'New sacrifices',
+        'New priesthood'
+      ],
+      correct: 0
+    },
+    {
+      id: 35,
+      question: 'The concept of "covenant" in the Old Testament means:',
+      options: [
+        'A contract only',
+        'A binding agreement/relationship',
+        'A suggestion',
+        'A temporary arrangement'
+      ],
+      correct: 1
+    },
+    {
+      id: 36,
+      question: "God's promise to Abraham about descendants was made when Abraham was:",
+      options: [
+        '50 years old',
+        '75 years old',
+        '99 years old',
+        '100 years old'
+      ],
+      correct: 2
+    },
+    {
+      id: 37,
+      question: 'The covenant with Israel at Sinai was mediated by:',
+      options: [
+        'Aaron',
+        'Joshua',
+        'Moses',
+        'The elders'
+      ],
+      correct: 2
+    },
+    {
+      id: 38,
+      question: 'According to the syllabus, the New Covenant is found in:',
+      options: [
+        'Genesis only',
+        'Jeremiah and Ezekiel',
+        'Psalms only',
+        'Exodus only'
+      ],
+      correct: 1
+    },
+    {
+      id: 39,
+      question: "God tested Abraham's faith concerning the covenant by asking him to:",
+      options: [
+        'Leave his country',
+        'Sacrifice Isaac',
+        'Build an altar',
+        'Pay tithes'
+      ],
+      correct: 1
+    },
+    {
+      id: 40,
+      question: 'The blessings for obeying the covenant are listed in:',
+      options: [
+        'Exodus 20',
+        'Deuteronomy 28:1-14',
+        'Leviticus 10',
+        'Numbers 15'
+      ],
+      correct: 1
+    },
+    {
+      id: 41,
+      question: "Abraham's initial response to God's call was to:",
+      options: [
+        'Question God',
+        'Go as directed',
+        'Refuse to leave',
+        'Negotiate terms'
+      ],
+      correct: 1
+    },
+    {
+      id: 42,
+      question: 'The Abrahamic covenant included the promise that he would be:',
+      options: [
+        'Rich',
+        'The father of many nations',
+        'A king',
+        'A prophet'
+      ],
+      correct: 1
+    },
+    {
+      id: 43,
+      question: 'According to the syllabus, distinguishing between covenants requires understanding:',
+      options: [
+        'Only their signs',
+        'Their importance, implications, and differences',
+        'Only their dates',
+        'Only the people involved'
+      ],
+      correct: 1
+    },
+    {
+      id: 44,
+      question: 'The flood narrative shows God’s covenant concern for:',
+      options: [
+        'Only Noah',
+        'Preserving righteous remnant and creation',
+        'Destroying everything',
+        'Punishing only animals'
+      ],
+      correct: 1
+    },
+    {
+      id: 45,
+      question: "God's covenant promise to make Abraham's name great was intended to:",
+      options: [
+        'Make Abraham proud',
+        'Bless all families of the earth through him',
+        'Give him political power',
+        'Build a monument'
+      ],
+      correct: 1
+    },
+    {
+      id: 46,
+      question: 'The Mosaic covenant is conditional upon:',
+      options: [
+        'Sacrifices only',
+        'Obedience',
+        'Building the temple',
+        'Fasting'
+      ],
+      correct: 1
+    },
+    {
+      id: 47,
+      question: "Ezekiel's New Covenant promise includes removal of:",
+      options: [
+        'Enemies',
+        'The heart of stone',
+        'Poverty',
+        'Foreigners'
+      ],
+      correct: 1
+    },
+    {
+      id: 48,
+      question: "Abraham's name was changed from Abram meaning:",
+      options: [
+        'Father of many',
+        'Exalted father',
+        'Friend of God',
+        'Chosen one'
+      ],
+      correct: 1
+    },
+    {
+      id: 49,
+      question: 'The covenant with Noah included God’s promise to:',
+      options: [
+        'Never flood the earth again',
+        'Give them the land',
+        'Multiply their descendants',
+        'Provide daily bread'
+      ],
+      correct: 0
+    },
+    {
+      id: 50,
+      question: 'According to Exodus 24, the covenant was sealed with:',
+      options: [
+        'Water',
+        'Bread and wine',
+        'Blood sprinkled on the people',
+        'Anointing oil'
+      ],
+      correct: 2
+    },
+    {
+      id: 51,
+      question: 'Jeremiah’s New Covenant differs from the Mosaic covenant in that it is:',
+      options: [
+        'Written on stone',
+        'External only',
+        'Internal—written on hearts',
+        'Temporary'
+      ],
+      correct: 2
+    },
+    {
+      id: 52,
+      question: 'The Abrahamic covenant is described as:',
+      options: [
+        'Conditional only',
+        "Unconditional (God's promise alone)",
+        'Temporary',
+        'Based on works'
+      ],
+      correct: 1
+    },
+    {
+      id: 53,
+      question: 'The new heart promised by Ezekiel enables:',
+      options: [
+        "Walking in God's statutes",
+        'Wealth accumulation',
+        'Political power',
+        'Healing diseases'
+      ],
+      correct: 0
+    },
+    {
+      id: 54,
+      question: 'The rainbow as a covenant sign reminds God to:',
+      options: [
+        'Judge the earth',
+        'Remember His covenant',
+        'Send more floods',
+        'Destroy wickedness'
+      ],
+      correct: 1
+    },
+    {
+      id: 55,
+      question: 'Distinguishing between the Old and New Covenants involves recognizing the New as:',
+      options: [
+        'Fulfillment and internalization of the law',
+        'Abolition of all moral standards',
+        'Return to animal sacrifices',
+        'No relationship with God'
+      ],
+      correct: 0
+    },
+    {
+      id: 56,
+      question: 'What circumstance gave rise to Joseph’s leadership in Egypt?',
+      options: [
+        'His physical strength',
+        "His interpretation of Pharaoh's dreams during famine",
+        'His military conquests',
+        'His royal birth'
+      ],
+      correct: 1
+    },
+    {
+      id: 57,
+      question: "Joseph's major talent included:",
+      options: [
+        'Fighting skills',
+        'Dream interpretation and administrative wisdom',
+        'Musical ability',
+        'Architectural skills'
+      ],
+      correct: 1
+    },
+    {
+      id: 58,
+      question: 'Moses was called by God at:',
+      options: [
+        'The Nile River',
+        'The burning bush on Mount Horeb',
+        'The Red Sea',
+        'Mount Sinai'
+      ],
+      correct: 1
+    },
+    {
+      id: 59,
+      question: "Moses' initial reluctance to lead was due to:",
+      options: [
+        'Lack of military training',
+        'Speech impediment (slow of speech)',
+        'Fear of Pharaoh',
+        'Disobedience to God'
+      ],
+      correct: 1
+    },
+    {
+      id: 60,
+      question: "Joshua's leadership began after the death of:",
+      options: [
+        'Aaron',
+        'Moses',
+        'Caleb',
+        'Phinehas'
+      ],
+      correct: 1
+    },
+    {
+      id: 61,
+      question: 'The twelve spies sent by Moses included Joshua and:',
+      options: [
+        'Aaron',
+        'Caleb',
+        'Phinehas',
+        'Eleazar'
+      ],
+      correct: 1
+    },
+    {
+      id: 62,
+      question: "Joseph's brothers sold him into slavery because:",
+      options: [
+        'He stole from them',
+        'They were jealous of him',
+        'He attacked them',
+        'Pharaoh demanded it'
+      ],
+      correct: 1
+    },
+    {
+      id: 63,
+      question: "God's role in Joseph's leadership is seen in:",
+      options: [
+        'Divine interpretation of dreams and provision',
+        'Military strategy',
+        'Economic forecasting only',
+        'Building projects'
+      ],
+      correct: 0
+    },
+    {
+      id: 64,
+      question: "Joshua's major achievement included:",
+      options: [
+        'Building the temple',
+        'Conquering Jericho and Canaan',
+        'Writing the law',
+        'Establishing the monarchy'
+      ],
+      correct: 1
+    },
+    {
+      id: 65,
+      question: "Moses' leadership qualities included:",
+      options: [
+        'Eloquence only',
+        'Humility, patience, and intercession for the people',
+        'Military might',
+        'Wealth'
+      ],
+      correct: 1
+    },
+    {
+      id: 66,
+      question: 'The circumstance that led to Moses’ leadership was:',
+      options: [
+        'His birth in Egypt',
+        'The oppression of Israelites and his encounter with God',
+        'His marriage to Zipporah',
+        'His education in Egypt'
+      ],
+      correct: 1
+    },
+    {
+      id: 67,
+      question: "Joseph's interpretation of Pharaoh's dreams resulted in:",
+      options: [
+        'His imprisonment',
+        'His appointment as second-in-command over Egypt',
+        'His return to Canaan',
+        'His death'
+      ],
+      correct: 1
+    },
+    {
+      id: 68,
+      question: "Joshua was chosen as Moses' successor because:",
+      options: [
+        'He was Moses’ son',
+        'He had been Moses’ assistant and had faith',
+        'He was the oldest',
+        'He was a priest'
+      ],
+      correct: 1
+    },
+    {
+      id: 69,
+      question: 'The major talent of Joseph identified in the syllabus is:',
+      options: [
+        'Architecture',
+        'Dream interpretation and wisdom',
+        'Farming',
+        'Metalwork'
+      ],
+      correct: 1
+    },
+    {
+      id: 70,
+      question: "During the exodus, God's role in Moses' leadership included:",
+      options: [
+        'Military training',
+        'Miraculous signs and provisions',
+        'Building cities',
+        'Financial planning'
+      ],
+      correct: 1
+    },
+    {
+      id: 71,
+      question: 'The negative report from ten spies led to:',
+      options: [
+        'Immediate conquest',
+        'Forty years of wilderness wandering',
+        'Return to Egypt',
+        "Moses' death"
+      ],
+      correct: 1
+    },
+    {
+      id: 72,
+      question: "Joseph's leadership preserved:",
+      options: [
+        'Only Egypt',
+        'Egypt and surrounding nations including his family',
+        'Only Canaan',
+        'Only his brothers'
+      ],
+      correct: 1
+    },
+    {
+      id: 73,
+      question: "Moses' reluctance was overcome by:",
+      options: [
+        "Aaron's persuasion",
+        "God's promises and signs",
+        "Pharaoh's invitation",
+        "The people's demand"
+      ],
+      correct: 1
+    },
+    {
+      id: 74,
+      question: "Joshua's major talent was:",
+      options: [
+        'Preaching',
+        "Military leadership and faith in God's promises",
+        'Farming',
+        'Writing'
+      ],
+      correct: 1
+    },
+    {
+      id: 75,
+      question: "Joseph's leadership contributed to the growth of Israel as:",
+      options: [
+        'A small family saved during famine',
+        'A military nation',
+        'A trading empire',
+        'A religious sect'
+      ],
+      correct: 0
+    },
+    {
+      id: 76,
+      question: 'God affirmed Moses’ leadership before Pharaoh through:',
+      options: [
+        'Eloquent speeches',
+        "Miraculous plagues demonstrating God's power",
+        'Political negotiations',
+        'Offering gifts'
+      ],
+      correct: 1
+    },
+    {
+      id: 77,
+      question: "Joshua's leadership was tested at the battle of:",
+      options: [
+        'Jericho',
+        "Ai (after initial defeat due to Achan's sin)",
+        'Megiddo',
+        'Gilgal'
+      ],
+      correct: 1
+    },
+    {
+      id: 78,
+      question: "Joseph's ability to prosper despite adversity demonstrates:",
+      options: [
+        'Human cleverness',
+        'Divine presence and favor',
+        'Political connections',
+        'Physical strength'
+      ],
+      correct: 1
+    },
+    {
+      id: 79,
+      question: 'Moses’ achievement of leading Israel out of Egypt fulfilled:',
+      options: [
+        "Abraham's prophecy",
+        "God's promise to return them to Canaan",
+        "Joseph's dream",
+        "Aaron's prayer"
+      ],
+      correct: 1
+    },
+    {
+      id: 80,
+      question: 'According to the syllabus, assessing God’s role in these leaders includes recognizing:',
+      options: [
+        'Their natural abilities only',
+        'How God empowered and guided them',
+        'Their personal ambitions',
+        'Their political strategies'
+      ],
+      correct: 1
+    },
+    {
+      id: 81,
+      question: "Joshua's faith was demonstrated most clearly when he:",
+      options: [
+        'Spied out the land',
+        'Marched around Jericho for seven days',
+        'Built an altar',
+        'Wrote the law'
+      ],
+      correct: 1
+    },
+    {
+      id: 82,
+      question: 'The forty years of wilderness wandering resulted from:',
+      options: [
+        "Pharaoh's pursuit",
+        "The spies' negative report and Israel's lack of faith",
+        "Moses' sin",
+        "Aaron's failure"
+      ],
+      correct: 1
+    },
+    {
+      id: 83,
+      question: "Moses' final act before death was:",
+      options: [
+        'Writing the Torah',
+        'Blessing the tribes and viewing the Promised Land',
+        'Appointing judges',
+        'Fighting the Amorites'
+      ],
+      correct: 1
+    },
+    {
+      id: 84,
+      question: "Joshua's farewell address (Joshua 24) emphasized:",
+      options: [
+        'Building cities',
+        'Choosing to serve the Lord',
+        'Military conquests',
+        'Political alliances'
+      ],
+      correct: 1
+    },
+    {
+      id: 85,
+      question: 'The syllabus examines Joseph, Moses, and Joshua’s leadership to provide:',
+      options: [
+        'Historical curiosity',
+        'Models of faith and leadership for today',
+        'Political strategies',
+        'Economic principles'
+      ],
+      correct: 1
+    }
+  ],
+  '🏛️ Government': [
+    {
+      id: 1,
+      question: 'The system of government in which the central government is supreme and units are created for administrative convenience is called:',
+      options: ['Federal system', 'Confederal system', 'Unitary system', 'Parliamentary system'],
+      correct: 2
+    },
+    {
+      id: 2,
+      question: 'Who defined sovereignty as the supreme power of the state over citizens unrestrained by law?',
+      options: ['A.V. Dicey', 'Jean Bodin', 'John Locke', 'Karl Marx'],
+      correct: 1
+    },
+    {
+      id: 3,
+      question: 'The 1914 amalgamation of Northern and Southern Protectorates was motivated by:',
+      options: ['Economic convenience and administrative efficiency', 'Religious unity', 'Cultural integration', 'Military strategy'],
+      correct: 0
+    },
+    {
+      id: 4,
+      question: 'Which constitution introduced federalism in Nigeria with three regions?',
+      options: ['Richards Constitution (1946)', 'Macpherson Constitution (1951)', 'Lyttleton Constitution (1954)', 'Independence Constitution (1960)'],
+      correct: 2
+    },
+    {
+      id: 5,
+      question: 'Nigeria’s foreign policy centre piece is:',
+      options: ['United Nations', 'Commonwealth', 'Africa', 'Non-Aligned Movement'],
+      correct: 2
+    },
+    {
+      id: 6,
+      question: 'Which organization was founded in 1945 with headquarters in New York?',
+      options: ['Commonwealth', 'United Nations', 'African Union', 'ECOWAS'],
+      correct: 1
+    },
+    {
+      id: 7,
+      question: 'ECOMOG was first deployed to which country?',
+      options: ['Sierra Leone', 'Liberia', 'Côte d’Ivoire', 'Guinea'],
+      correct: 1
+    },
+    {
+      id: 8,
+      question: 'Which is NOT a function of the Federal Character Commission?',
+      options: ['Equitable representation', 'Prevent discrimination', 'Conduct local government elections', 'Promote national unity'],
+      correct: 2
+    },
+    {
+      id: 9,
+      question: 'Separation of powers was articulated by:',
+      options: ['John Locke', 'Montesquieu', 'Rousseau', 'Hobbes'],
+      correct: 1
+    },
+    {
+      id: 10,
+      question: 'First military coup in Nigeria occurred on:',
+      options: ['15 Jan 1966', '29 July 1966', '15 Jan 1970', '31 Dec 1983'],
+      correct: 0
+    },
+    {
+      id: 11,
+      question: 'Ultra vires means:',
+      options: ['Legal act', 'Beyond legal authority', 'Good faith act', 'Judicial review only'],
+      correct: 1
+    },
+    {
+      id: 12,
+      question: 'Ajaokuta Steel Project was assisted by:',
+      options: ['USA', 'Germany', 'USSR (Russia)', 'China'],
+      correct: 2
+    },
+    {
+      id: 13,
+      question: 'The Nigeria Police Force is controlled by:',
+      options: ['Legislature', 'Executive', 'Judiciary', 'Civil Service Commission'],
+      correct: 1
+    },
+    {
+      id: 14,
+      question: 'In pre-colonial Yoruba system, Alaafin ruled with:',
+      options: ['Bashorun', 'Ogboni cult', 'Oyomesi Council', 'Oba cabinet'],
+      correct: 2
+    },
+    {
+      id: 15,
+      question: 'ECOWAS disputes are settled by:',
+      options: ['Technical Commission', 'Board of Trustees', 'Community Tribunal', 'Parliamentary system'],
+      correct: 1
+    },
+    {
+      id: 16,
+      question: 'Which Nigerian constitution first introduced presidential system?',
+      options: ['1960 Constitution', '1963 Constitution', '1979 Constitution', '1999 Constitution'],
+      correct: 2
+    },
+    {
+      id: 17,
+      question: 'Biafran secession lasted approximately:',
+      options: ['2 years', '3 years', '5 years', '7 years'],
+      correct: 1
+    },
+    {
+      id: 18,
+      question: 'The civil service primarily:',
+      options: ['Makes laws', 'Adjudicates cases', 'Implements policies', 'Conducts elections'],
+      correct: 2
+    },
+    {
+      id: 19,
+      question: 'Democratic deficit refers to:',
+      options: ['Economic failure', 'Poor election practices', 'No funding', 'Military rule only'],
+      correct: 1
+    },
+    {
+      id: 20,
+      question: 'Fiscal federalism deals with:',
+      options: ['Judicial powers', 'Revenue sharing', 'Foreign policy', 'Electoral system'],
+      correct: 1
+    },
+
+    {
+      id: 21,
+      question: 'The Nigerian Council (1914) was primarily:',
+      options: ['An elected parliament', 'An advisory body', 'A judicial tribunal', 'A traditional rulers’ assembly'],
+      correct: 1
+    },
+    {
+      id: 22,
+      question: 'The UN organ that elects non-permanent Security Council members is:',
+      options: ['Secretariat', 'General Assembly', 'ECOSOC', 'ICJ'],
+      correct: 1
+    },
+    {
+      id: 23,
+      question: 'The age-grade system is a feature of:',
+      options: ['Yoruba', 'Igbo', 'Hausa-Fulani', 'Benin'],
+      correct: 1
+    },
+    {
+      id: 24,
+      question: 'The 1960 Constitution was modeled after the:',
+      options: ['US Presidential system', 'French system', 'British Westminster system', 'Soviet system'],
+      correct: 2
+    },
+    {
+      id: 25,
+      question: 'UN non-permanent members serve for:',
+      options: ['1 year', '2 years', '3 years', '5 years'],
+      correct: 1
+    },
+    {
+      id: 26,
+      question: 'General Murtala Muhammed was assassinated in:',
+      options: ['1975', '1976', '1977', '1979'],
+      correct: 1
+    },
+    {
+      id: 27,
+      question: 'The Commonwealth is made up mainly of:',
+      options: ['All countries', 'French colonies', 'British colonies', 'European countries only'],
+      correct: 2
+    },
+    {
+      id: 28,
+      question: 'Which is NOT political participation?',
+      options: ['Voting', 'Party membership', 'Military service', 'Watching news'],
+      correct: 3
+    },
+    {
+      id: 29,
+      question: 'Checks and balances means:',
+      options: ['One branch dominates', 'Mutual restraint among branches', 'Judiciary makes laws', 'Executive controls all'],
+      correct: 1
+    },
+    {
+      id: 30,
+      question: 'Highest foreign policy authority in Nigeria is:',
+      options: ['Foreign Ministry', 'National Assembly', 'President', 'Council of State'],
+      correct: 2
+    },
+    {
+      id: 31,
+      question: 'Indirect rule was most successful in:',
+      options: ['Eastern Nigeria', 'Western Nigeria', 'Northern Nigeria', 'Lagos'],
+      correct: 2
+    },
+    {
+      id: 32,
+      question: 'AU day-to-day administration is handled by:',
+      options: ['Assembly', 'Executive Council', 'PRC', 'Commission'],
+      correct: 3
+    },
+    {
+      id: 33,
+      question: 'NYM was founded in:',
+      options: ['1923', '1933', '1938', '1944'],
+      correct: 1
+    },
+    {
+      id: 34,
+      question: 'Political equality means:',
+      options: ['Equal wealth', 'Equal political rights', 'Social class balance', 'Federal character'],
+      correct: 1
+    },
+    {
+      id: 35,
+      question: 'Ministerial system was introduced by:',
+      options: ['Clifford', 'Richards', 'Macpherson', 'Lyttleton'],
+      correct: 2
+    },
+    {
+      id: 36,
+      question: 'Reserved powers belong to:',
+      options: ['Federal government', 'State government', 'Local government', 'Judiciary'],
+      correct: 1
+    },
+    {
+      id: 37,
+      question: 'Abuja was chosen mainly for:',
+      options: ['Ethnic dominance', 'Centrality and neutrality', 'Economic hub', 'Foreign influence'],
+      correct: 1
+    },
+    {
+      id: 38,
+      question: 'NOT a UN objective is:',
+      options: ['Peace', 'Human rights', 'World government', 'Development'],
+      correct: 2
+    },
+    {
+      id: 39,
+      question: 'Clifford Constitution introduced:',
+      options: ['Universal suffrage', 'Elective principle', 'Federalism', 'Prime Minister system'],
+      correct: 1
+    },
+    {
+      id: 40,
+      question: 'ECOWAS revised treaty year:',
+      options: ['1980', '1993', '2000', '2005'],
+      correct: 1
+    },
+    {
+      id: 41,
+      question: 'Jus sanguinis means citizenship by:',
+      options: ['Birthplace', 'Blood/descent', 'Marriage', 'Naturalization'],
+      correct: 1
+    },
+    {
+      id: 42,
+      question: 'SAP in Nigeria was introduced under:',
+      options: ['Gowon', 'Obasanjo', 'Babangida', 'Abacha'],
+      correct: 2
+    },
+    {
+      id: 43,
+      question: 'The party that won 1979 and 1983 elections was:',
+      options: ['UPN', 'NPN', 'NPP', 'GNPP'],
+      correct: 1
+    },
+    {
+      id: 44,
+      question: 'Cooperative federalism emphasizes:',
+      options: ['Conflict', 'Collaboration', 'Separation only', 'State supremacy'],
+      correct: 1
+    },
+    {
+      id: 45,
+      question: 'The Aburi Accord aimed to:',
+      options: ['End civil war', 'Resolve political crisis', 'Create new constitution', 'Join ECOWAS'],
+      correct: 1
+    },
+    {
+      id: 46,
+      question: 'Which is NOT a standing committee in Nigeria legislature?',
+      options: ['Public Accounts', 'Appropriation', 'Constitution Review', 'Ethics and Privileges'],
+      correct: 2
+    },
+    {
+      id: 47,
+      question: 'Pacta sunt servanda means:',
+      options: ['Treaties are optional', 'Agreements must be kept', 'Laws can be broken', 'States are unequal'],
+      correct: 1
+    },
+    {
+      id: 48,
+      question: 'The 1999 Constitution allows president to serve a maximum of:',
+      options: ['1 term', '2 terms', '3 terms', 'Unlimited terms'],
+      correct: 1
+    },
+    {
+      id: 49,
+      question: 'A political party manifesto is:',
+      options: ['Membership list', 'Policy statement', 'Financial record', 'Constitution'],
+      correct: 1
+    },
+    {
+      id: 50,
+      question: 'UN organ for legal disputes is:',
+      options: ['Security Council', 'General Assembly', 'ICJ', 'Secretariat'],
+      correct: 2
+    },
+    {
+      id: 51,
+      question: 'FPTP electoral system is also called:',
+      options: ['Proportional representation', 'Simple majority', 'Runoff system', 'Preferential voting'],
+      correct: 1
+    },
+    {
+      id: 52,
+      question: 'Presidential system replaced parliamentary system in:',
+      options: ['1960', '1963', '1979', '1999'],
+      correct: 2
+    },
+    {
+      id: 53,
+      question: 'Fourth estate refers to:',
+      options: ['Judiciary', 'Legislature', 'Media', 'Civil service'],
+      correct: 2
+    },
+    {
+      id: 54,
+      question: 'NOT a function of UN Secretary-General:',
+      options: ['Administer UN', 'Implement decisions', 'Declare war', 'Appoint staff'],
+      correct: 2
+    },
+    {
+      id: 55,
+      question: 'The Supreme Court is final because:',
+      options: ['No appeal beyond it', 'President controls it', 'It can overrule itself', 'It makes laws'],
+      correct: 0
+    },
+    {
+      id: 56,
+      question: 'Golden rule of interpretation allows:',
+      options: ['Literal meaning always', 'Avoid absurd meaning', 'Ignore law', 'Legislator opinion only'],
+      correct: 1
+    },
+    {
+      id: 57,
+      question: 'Nigerianization policy aimed to:',
+      options: ['Expel foreigners', 'Replace expatriates', 'Nationalize industries', 'Change flag'],
+      correct: 1
+    },
+    {
+      id: 58,
+      question: 'Bakassi dispute was between:',
+      options: ['Nigeria and Ghana', 'Nigeria and Cameroon', 'Nigeria and Benin', 'Nigeria and Niger'],
+      correct: 1
+    },
+    {
+      id: 59,
+      question: 'Hausa-Fulani political system had:',
+      options: ['Separate legislature', 'No legislature', 'Parliament', 'Congress'],
+      correct: 1
+    },
+    {
+      id: 60,
+      question: 'Local government autonomy means:',
+      options: ['Full independence', 'Revenue control and limited interference', 'Federal control', 'No elections'],
+      correct: 1
+    },
+    {
+      id: 61,
+      question: 'UN General Assembly meets:',
+      options: ['Monthly', 'Annually', 'Every 2 years', 'Every 5 years'],
+      correct: 1
+    },
+    {
+      id: 62,
+      question: 'Single-member constituency means:',
+      options: ['Many reps per area', 'One rep per area', 'No representatives', 'Appointed reps'],
+      correct: 1
+    },
+    {
+      id: 63,
+      question: 'Due process ensures:',
+      options: ['Fast judgment only', 'Fair hearing before punishment', 'No trial needed', 'Executive control'],
+      correct: 1
+    },
+    {
+      id: 64,
+      question: 'NCNC was founded by:',
+      options: ['Azikiwe only', 'Macaulay and Azikiwe', 'Awolowo', 'Bello'],
+      correct: 1
+    },
+    {
+      id: 65,
+      question: 'AU replaced OAU in:',
+      options: ['1999', '2001', '2002', '2005'],
+      correct: 2
+    },
+    {
+      id: 66,
+      question: 'Limited government means:',
+      options: ['Unlimited power', 'Constitutional restriction of power', 'No government', 'Military rule'],
+      correct: 1
+    },
+    {
+      id: 67,
+      question: 'Biafran secession was declared by:',
+      options: ['Gowon', 'Ojukwu', 'Obasanjo', 'Babangida'],
+      correct: 1
+    },
+    {
+      id: 68,
+      question: 'Abacha regime is known for:',
+      options: ['Free elections', 'Execution of Ogoni 9', 'Democracy transition', 'No military rule'],
+      correct: 1
+    },
+    {
+      id: 69,
+      question: 'Westphalian sovereignty emphasizes:',
+      options: ['Global rule', 'Non-interference in internal affairs', 'Colonial rule', 'Religious unity'],
+      correct: 1
+    },
+    {
+      id: 70,
+      question: 'Local government chairman term is usually:',
+      options: ['2 years', '3 years', '5 years', '6 years'],
+      correct: 1
+    },
+    {
+      id: 71,
+      question: 'Judicial independence means judges are:',
+      options: ['Controlled by executive', 'Free from external pressure', 'Elected by people', 'Military appointed'],
+      correct: 1
+    },
+    {
+      id: 72,
+      question: 'NPC dominated which region?',
+      options: ['East', 'West', 'North', 'South'],
+      correct: 2
+    },
+    {
+      id: 73,
+      question: 'Jus soli means citizenship by:',
+      options: ['Blood', 'Birthplace', 'Marriage', 'Naturalization'],
+      correct: 1
+    },
+    {
+      id: 74,
+      question: 'EU co-decision involves:',
+      options: ['Only Parliament', 'Only Council', 'Parliament and Council', 'Commission only'],
+      correct: 2
+    },
+    {
+      id: 75,
+      question: 'State creation in Nigeria was mainly for:',
+      options: ['Unity and administration', 'Religion', 'Military expansion', 'Foreign control'],
+      correct: 0
+    },
+    {
+      id: 76,
+      question: 'Hansard is:',
+      options: ['Budget document', 'Parliamentary debate record', 'Court judgment', 'Election result'],
+      correct: 1
+    },
+    {
+      id: 77,
+      question: 'Proportional representation means:',
+      options: ['Winner takes all', 'Seats based on votes', 'No elections', 'Military rule'],
+      correct: 1
+    },
+    {
+      id: 78,
+      question: 'OAU mainly aimed to:',
+      options: ['Trade union', 'End colonialism', 'Military alliance', 'Religious unity'],
+      correct: 1
+    },
+    {
+      id: 79,
+      question: 'Residual powers belong to:',
+      options: ['Federal govt', 'State govt', 'Local govt', 'Court'],
+      correct: 1
+    },
+    {
+      id: 80,
+      question: 'President can be impeached for:',
+      options: ['Poor election result', 'Gross misconduct', 'Public opinion', 'Low performance'],
+      correct: 1
+    },
+    {
+      id: 81,
+      question: 'Yoruba abdication system involves:',
+      options: ['Election', 'Empty calabash ritual', 'Military takeover', 'Hereditary only'],
+      correct: 1
+    },
+    {
+      id: 82,
+      question: 'Constitution amendment requires:',
+      options: ['President alone', 'Simple majority', 'Two-thirds approval', 'Judiciary approval'],
+      correct: 2
+    },
+    {
+      id: 83,
+      question: 'No confidence vote is found in:',
+      options: ['Presidential system', 'Parliamentary system', 'Military system', 'Unitary system'],
+      correct: 1
+    },
+    {
+      id: 84,
+      question: 'Nigeria restored ties with Israel in:',
+      options: ['1979', '1992', '1999', '2003'],
+      correct: 1
+    },
+    {
+      id: 85,
+      question: 'Township ordinance was used to:',
+      options: ['Build schools', 'Segregate races', 'Collect taxes', 'Create states'],
+      correct: 1
+    },
+    {
+      id: 86,
+      question: 'GNU in Zimbabwe involved:',
+      options: ['ZANU-PF and MDC', 'Only ZANU-PF', 'Military only', 'Opposition only'],
+      correct: 0
+    },
+    {
+      id: 87,
+      question: 'Nigeria’s concentric circle foreign policy prioritizes:',
+      options: ['Europe first', 'Africa and ECOWAS first', 'Asia first', 'UN first'],
+      correct: 1
+    },
+    {
+      id: 88,
+      question: 'Opposition in parliament mainly:',
+      options: ['Supports government', 'Criticizes and offers alternatives', 'Has no role', 'Controls army'],
+      correct: 1
+    },
+    {
+      id: 89,
+      question: 'Federal character principle was introduced in:',
+      options: ['1960', '1963', '1979', '1999'],
+      correct: 2
+    },
+    {
+      id: 90,
+      question: 'Military decree is:',
+      options: ['Proposal', 'Law with force of constitution', 'Court ruling', 'Bill'],
+      correct: 1
+    },
+    {
+      id: 91,
+      question: 'Cabinet system is also called:',
+      options: ['Presidential system', 'Westminster system', 'Federal system', 'Military system'],
+      correct: 1
+    },
+    {
+      id: 92,
+      question: 'SAP was introduced by:',
+      options: ['UN', 'IMF/World Bank', 'AU', 'ECOWAS'],
+      correct: 1
+    },
+    {
+      id: 93,
+      question: 'Senate is presided over by:',
+      options: ['Speaker', 'Senate President', 'Chief Justice', 'President'],
+      correct: 1
+    },
+    {
+      id: 94,
+      question: 'Dual mandate means:',
+      options: ['Two countries rule', 'Officials legislate and execute', 'Two presidents', 'Two constitutions'],
+      correct: 1
+    },
+    {
+      id: 95,
+      question: 'OAU liberation committee was in:',
+      options: ['Lagos', 'Dar es Salaam', 'Addis Ababa', 'Accra'],
+      correct: 1
+    },
+    {
+      id: 96,
+      question: 'Exclusive list is for:',
+      options: ['States', 'Federal government only', 'Local governments', 'Courts'],
+      correct: 1
+    },
+    {
+      id: 97,
+      question: 'White paper is:',
+      options: ['Draft law', 'Government policy statement', 'Court ruling', 'Budget'],
+      correct: 1
+    },
+    {
+      id: 98,
+      question: 'Nigeria constitution is:',
+      options: ['Flexible', 'Rigid', 'Unwritten', 'Confederal'],
+      correct: 1
+    },
+    {
+      id: 99,
+      question: 'Diplomatic immunity means:',
+      options: ['Embassy is foreign land', 'Exemption from local laws for official acts', 'No law applies', 'Diplomats can do anything'],
+      correct: 1
+    },
+    {
+      id: 100,
+      question: 'NEPAD was adopted in:',
+      options: ['1999', '2001', '2004', '2007'],
+      correct: 1
+    }
+
+  ],
+  '📚 Literature': [
+
+    {
+      id: 1,
+      question: 'The plot of a novel is best described as:',
+      options: [
+        'A summary of the story',
+        'The central character\'s journey',
+        'The sequence of events in a narrative',
+        'The moral lesson of the story'
+      ],
+      correct: 2
+    },
+    {
+      id: 2,
+      question: '"The child is the father of the man" is an example of:',
+      options: [
+        'Hyperbole',
+        'Paradox',
+        'Metaphor',
+        'Alliteration'
+      ],
+      correct: 1
+    },
+    {
+      id: 3,
+      question: 'In drama, a speech given by a character alone on stage to reveal inner thoughts is called:',
+      options: [
+        'Monologue',
+        'Aside',
+        'Soliloquy',
+        'Dialogue'
+      ],
+      correct: 2
+    },
+    {
+      id: 4,
+      question: 'Romeo and Juliet is classified as a tragedy because:',
+      options: [
+        'It contains violence',
+        'The protagonists are young',
+        'It ends unhappily with the death of the main characters',
+        'It was written by Shakespeare'
+      ],
+      correct: 2
+    },
+    {
+      id: 5,
+      question: 'The main character in a literary work is called the:',
+      options: [
+        'Antagonist',
+        'Foil',
+        'Protagonist',
+        'Narrator'
+      ],
+      correct: 2
+    },
+    {
+      id: 6,
+      question: 'Which of the following is an example of a narrative poem?',
+      options: [
+        'Ode',
+        'Sonnet',
+        'Ballad',
+        'Elegy'
+      ],
+      correct: 2
+    },
+    {
+      id: 7,
+      question: 'The novel "Things Fall Apart" by Chinua Achebe can be described as:',
+      options: [
+        'A romance novel',
+        'A historical novel',
+        'A science fiction novel',
+        'A detective novel'
+      ],
+      correct: 1
+    },
+    {
+      id: 8,
+      question: 'In *The Lion and the Jewel*, who is referred to as the "Lion"?',
+      options: [
+        'Lakunle',
+        'Baroka',
+        'Sidi',
+        'Sadiku'
+      ],
+      correct: 1
+    },
+    {
+      id: 9,
+      question: 'The setting of *The Lion and the Jewel* is:',
+      options: [
+        'A Nigerian university campus',
+        'The village of Ilujinle in Nigeria',
+        'A bustling city in Lagos',
+        'A remote village in Ghana'
+      ],
+      correct: 1
+    },
+    {
+      id: 10,
+      question: 'The substitution of a mild and pleasant expression for a harsh or blunt one is called:',
+      options: [
+        'Euphemism',
+        'Hyperbole',
+        'Irony',
+        'Oxymoron'
+      ],
+      correct: 0
+    },
+    {
+      id: 11,
+      question: 'A sonnet traditionally consists of:',
+      options: [
+        '10 lines',
+        '12 lines',
+        '14 lines',
+        '16 lines'
+      ],
+      correct: 2
+    },
+    {
+      id: 12,
+      question: 'In *Look Back in Anger*, the protagonist Jimmy Porter works as a:',
+      options: [
+        'Schoolteacher',
+        'Journalist',
+        'Factory worker',
+        'Market trader'
+      ],
+      correct: 3
+    },
+    {
+      id: 13,
+      question: 'The character who opposes the protagonist is known as the:',
+      options: [
+        'Hero',
+        'Antagonist',
+        'Narrator',
+        'Foil'
+      ],
+      correct: 1
+    },
+    {
+      id: 14,
+      question: 'Poetry that deals with emotion and ideas primarily functions to:',
+      options: [
+        'Inform only',
+        'Entertain only',
+        'Evoke emotional and intellectual responses',
+        'Persuade logically'
+      ],
+      correct: 2
+    },
+    {
+      id: 15,
+      question: '"The pen is mightier than the sword" is an example of:',
+      options: [
+        'Metaphor',
+        'Simile',
+        'Metonymy',
+        'Personification'
+      ],
+      correct: 2
+    },
+    {
+      id: 16,
+      question: 'In drama, the main purpose is to:',
+      options: [
+        'Bore the audience',
+        'Educate and entertain',
+        'Only educate',
+        'Only entertain'
+      ],
+      correct: 1
+    },
+    {
+      id: 17,
+      question: 'A novel is best defined as:',
+      options: [
+        'A short story with pictures',
+        'An extended prose narrative covering a wide range of characters and experiences',
+        'A poem about nature',
+        'A dramatic play'
+      ],
+      correct: 1
+    },
+    {
+      id: 18,
+      question: 'The dominant mood in Senghor\'s poem "In Memoriam" is one of:',
+      options: [
+        'Joy',
+        'Anger',
+        'Nostalgia',
+        'Indifference'
+      ],
+      correct: 2
+    },
+    {
+      id: 19,
+      question: 'The use of similar sounding vowels in a line of poetry is called:',
+      options: [
+        'Alliteration',
+        'Consonance',
+        'Assonance',
+        'Onomatopoeia'
+      ],
+      correct: 2
+    },
+    {
+      id: 20,
+      question: 'The title of Achebe\'s *Things Fall Apart* is taken from a poem by:',
+      options: [
+        'William Shakespeare',
+        'John Donne',
+        'W.B. Yeats',
+        'T.S. Eliot'
+      ],
+      correct: 2
+    },
+    {
+      id: 21,
+      question: 'Dialogue is important in drama because it:',
+      options: [
+        'Fills time',
+        'Reveals the minds and personalities of characters',
+        'Replaces action',
+        'Confuses the audience'
+      ],
+      correct: 1
+    },
+    {
+      id: 22,
+      question: 'A famous epic in English Literature is:',
+      options: [
+        'Romeo and Juliet',
+        'Paradise Lost',
+        'The Great Gatsby',
+        'Pride and Prejudice'
+      ],
+      correct: 1
+    },
+    {
+      id: 23,
+      question: 'The deliberate use of exaggeration for humour or emphasis is known as:',
+      options: [
+        'Understatement',
+        'Hyperbole',
+        'Irony',
+        'Litotes'
+      ],
+      correct: 1
+    },
+    {
+      id: 24,
+      question: 'In *The Lion and the Jewel*, which character represents modernity?',
+      options: [
+        'Baroka',
+        'Sidi',
+        'Lakunle',
+        'Sadiku'
+      ],
+      correct: 2
+    },
+    {
+      id: 25,
+      question: 'A poem written to express grief on the occasion of someone\'s death is called a(n):',
+      options: [
+        'Ode',
+        'Ballad',
+        'Elegy',
+        'Sonnet'
+      ],
+      correct: 2
+    },
+    {
+      id: 26,
+      question: 'A couplet consists of:',
+      options: [
+        'Two lines that rhyme',
+        'Three lines',
+        'Four lines',
+        'One line'
+      ],
+      correct: 0
+    },
+    {
+      id: 27,
+      question: 'In Amma Darko\'s *Faceless*, the narrative style adopted is best described as:',
+      options: [
+        'First-person',
+        'Second-person',
+        'Third-person omniscient',
+        'Stream of consciousness'
+      ],
+      correct: 2
+    },
+    {
+      id: 28,
+      question: 'Alliteration is the repetition of:',
+      options: [
+        'Vowel sounds',
+        'Consonant sounds at the beginning of words',
+        'Entire words',
+        'Rhyming patterns'
+      ],
+      correct: 1
+    },
+    {
+      id: 29,
+      question: 'A play is called a comedy when:',
+      options: [
+        'It contains jokes throughout',
+        'There is a happy resolution of contradictions',
+        'It has no conflict',
+        'It is short'
+      ],
+      correct: 1
+    },
+    {
+      id: 30,
+      question: 'An ode is best described as:',
+      options: [
+        'A short humorous poem',
+        'A lyrical poem addressed to a person, place, or thing with reverence',
+        'A poem about death',
+        'A narrative poem'
+      ],
+      correct: 1
+    },
+    {
+      id: 31,
+      question: 'In *The Lion and the Jewel*, what is Sidi\'s main reason for initially rejecting Lakunle\'s marriage proposal?',
+      options: [
+        'He is too old',
+        'He refuses to pay the bride price',
+        'He is uneducated',
+        'He is already married'
+      ],
+      correct: 1
+    },
+    {
+      id: 32,
+      question: 'The term "dramatis personae" refers to:',
+      options: [
+        'The stage directions',
+        'The list of characters in a play',
+        'The dialogue',
+        'The setting'
+      ],
+      correct: 1
+    },
+    {
+      id: 33,
+      question: 'Pastoral poetry is characterized by:',
+      options: [
+        'Urban themes',
+        'Nostalgic writing about simple village or rural life',
+        'War themes',
+        'Love themes only'
+      ],
+      correct: 1
+    },
+    {
+      id: 34,
+      question: 'A parody is:',
+      options: [
+        'A serious imitation of a work',
+        'An imitation that ridicules an author\'s style or ideas',
+        'A type of sonnet',
+        'A historical record'
+      ],
+      correct: 1
+    },
+    {
+      id: 35,
+      question: 'The tragic flaw (hamartia) in a protagonist often leads to:',
+      options: [
+        'Their success',
+        'Their downfall',
+        'A happy ending',
+        'No change'
+      ],
+      correct: 1
+    },
+    {
+      id: 36,
+      question: 'Blank verse is:',
+      options: [
+        'Unrhymed iambic pentameter',
+        'Free verse without meter',
+        'Rhymed couplets',
+        'Prose poetry'
+      ],
+      correct: 0
+    },
+    {
+      id: 37,
+      question: 'In Frank Ogodo Ogbeche\'s *Harvest of Corruption*, two dominant themes are:',
+      options: [
+        'Love and friendship',
+        'Corruption and justice',
+        'War and peace',
+        'Nature and beauty'
+      ],
+      correct: 1
+    },
+    {
+      id: 38,
+      question: 'The climax of a story is:',
+      options: [
+        'The beginning of the story',
+        'The point of highest emotional intensity or turning point',
+        'The resolution',
+        'The introduction of characters'
+      ],
+      correct: 1
+    },
+    {
+      id: 39,
+      question: 'An autobiography is:',
+      options: [
+        'A biography written by someone else',
+        'The story of a person\'s life written by that person',
+        'A fictional story',
+        'A historical document'
+      ],
+      correct: 1
+    },
+    {
+      id: 40,
+      question: 'Foreshadowing is a literary device that:',
+      options: [
+        'Summarizes the story',
+        'Hints at future events in the story',
+        'Describes the setting',
+        'Introduces characters'
+      ],
+      correct: 1
+    },
+    {
+      id: 41,
+      question: 'In *The Lion and the Jewel*, how does Baroka deceive Sidi into visiting him?',
+      options: [
+        'By sending her a love letter',
+        'By pretending to be ill',
+        'By offering her money',
+        'By challenging Lakunle to a duel'
+      ],
+      correct: 1
+    },
+    {
+      id: 42,
+      question: 'The epilogue in a literary composition appears:',
+      options: [
+        'At the beginning',
+        'In the middle',
+        'At the end',
+        'As a footnote'
+      ],
+      correct: 2
+    },
+    {
+      id: 43,
+      question: 'In David Diop\'s poem *The Vultures*, the poet suggests that Christian missionaries were:',
+      options: [
+        'Benefactors of Africa',
+        'Agents of colonialism',
+        'Neutral observers',
+        'Heroes'
+      ],
+      correct: 1
+    },
+    {
+      id: 44,
+      question: 'A foil in literature is a character who:',
+      options: [
+        'Is the main hero',
+        'Contrasts with another character to highlight traits',
+        'Narrates the story',
+        'Dies at the end'
+      ],
+      correct: 1
+    },
+    {
+      id: 45,
+      question: 'The "Myth of the Bagre" is recited at:',
+      options: [
+        'Funeral ceremonies',
+        'The coming of age of young men and women',
+        'Wedding celebrations',
+        'Harvest festivals'
+      ],
+      correct: 1
+    },
+    {
+      id: 46,
+      question: 'The dominant literary device in Diop\'s *Vanity* is:',
+      options: [
+        'Metaphor',
+        'Simile',
+        'Rhetorical questions',
+        'Alliteration'
+      ],
+      correct: 2
+    },
+    {
+      id: 47,
+      question: 'An omniscient narrator is one who:',
+      options: [
+        'Knows everything about all characters',
+        'Only knows one character\'s thoughts',
+        'Is unreliable',
+        'Uses second-person perspective'
+      ],
+      correct: 0
+    },
+    {
+      id: 48,
+      question: 'A ballad is:',
+      options: [
+        'A sonnet about love',
+        'A narrative poem meant to be sung',
+        'An ode to nature',
+        'An epic about war'
+      ],
+      correct: 1
+    },
+    {
+      id: 49,
+      question: 'In *The Lion and the Jewel*, who is Sadiku?',
+      options: [
+        'Sidi\'s mother',
+        'Lakunle\'s sister',
+        'Baroka\'s eldest wife',
+        'The village priestess'
+      ],
+      correct: 2
+    },
+    {
+      id: 50,
+      question: 'Caricature in literature is used to:',
+      options: [
+        'Praise a character',
+        'Ridicule a person by distorting prominent features',
+        'Describe a setting',
+        'Create suspense'
+      ],
+      correct: 1
+    },
+    {
+      id: 51,
+      question: 'The setting of a literary work refers to:',
+      options: [
+        'Only the physical location',
+        'Only the time period',
+        'The sum of physical, social, and historical circumstances',
+        'The plot structure'
+      ],
+      correct: 2
+    },
+    {
+      id: 52,
+      question: 'A dynamic character is one who:',
+      options: [
+        'Remains unchanged throughout the story',
+        'Undergoes significant internal change',
+        'Is the main antagonist',
+        'Narrates the story'
+      ],
+      correct: 1
+    },
+    {
+      id: 53,
+      question: 'In *The Pulley* by George Herbert, the line "goodness lead him not, yet weariness May toss him to my breast" contains the literary device of:',
+      options: [
+        'Simile',
+        'Personification',
+        'Paradox',
+        'Apostrophe'
+      ],
+      correct: 1
+    },
+    {
+      id: 54,
+      question: 'The main character around whom the story revolves is the:',
+      options: [
+        'Antagonist',
+        'Villain',
+        'Protagonist',
+        'Narrator'
+      ],
+      correct: 2
+    },
+    {
+      id: 55,
+      question: 'The title of Achebe\'s *Things Fall Apart* suggests:',
+      options: [
+        'Economic prosperity',
+        'Cultural disintegration and collapse',
+        'Political stability',
+        'Religious harmony'
+      ],
+      correct: 1
+    },
+    {
+      id: 56,
+      question: 'An antihero is a protagonist who:',
+      options: [
+        'Lacks conventional heroic qualities',
+        'Is always evil',
+        'Always wins',
+        'Never changes'
+      ],
+      correct: 0
+    },
+    {
+      id: 57,
+      question: 'A type of drama that combines tragedy and comedy is called:',
+      options: [
+        'Melodrama',
+        'Farce',
+        'Tragicomedy',
+        'Opera'
+      ],
+      correct: 2
+    },
+    {
+      id: 58,
+      question: 'In literature, satire is used to:',
+      options: [
+        'Praise the powerful',
+        'Criticize human vice or folly through humour',
+        'Create suspense',
+        'Describe nature'
+      ],
+      correct: 1
+    },
+    {
+      id: 59,
+      question: 'The denouement of a story is:',
+      options: [
+        'The beginning of the conflict',
+        'The final part where loose ends are tied up',
+        'The climax',
+        'The introduction'
+      ],
+      correct: 1
+    },
+    {
+      id: 60,
+      question: 'In Kofi Awoonor\'s *The Anvil and the Hammer*, a thematic preoccupation is:',
+      options: [
+        'The celebration of colonial rule',
+        'The conflict between African tradition and Western influence',
+        'The beauty of nature',
+        'The joys of love'
+      ],
+      correct: 1
+    },
+    {
+      id: 61,
+      question: 'A metaphor is a figure of speech that:',
+      options: [
+        'Uses "like" or "as" to compare',
+        'Compares two unlike things directly',
+        'Exaggerates',
+        'Gives human qualities to objects'
+      ],
+      correct: 1
+    },
+    {
+      id: 62,
+      question: 'In Morris\' *The Proud King*, Jovinian assembled the throne when he was:',
+      options: [
+        'Celebrating victory',
+        'Feeling humble',
+        'Beaten by pride',
+        'Visited by an angel'
+      ],
+      correct: 2
+    },
+    {
+      id: 63,
+      question: 'Poetry written without regular rhyme or rhythm patterns is called:',
+      options: [
+        'Blank verse',
+        'Free verse',
+        'Sonnet',
+        'Ode'
+      ],
+      correct: 1
+    },
+    {
+      id: 64,
+      question: 'A round character is one who:',
+      options: [
+        'Has simple, one-dimensional traits',
+        'Is complex, multi-faceted, and realistic',
+        'Never changes',
+        'Is the antagonist'
+      ],
+      correct: 1
+    },
+    {
+      id: 65,
+      question: 'Faction in literature refers to:',
+      options: [
+        'A completely fictional story',
+        'A completely factual account',
+        'A combination of fact and fiction',
+        'A political document'
+      ],
+      correct: 2
+    },
+    {
+      id: 66,
+      question: 'The rising action in a story:',
+      options: [
+        'Introduces characters',
+        'Builds up the main conflict toward the climax',
+        'Resolves the conflict',
+        'Ends the story'
+      ],
+      correct: 1
+    },
+    {
+      id: 67,
+      question: 'In Elechi Amadi\'s *Sunset in Biafra*, the speaker\'s attitude toward the jailer is:',
+      options: [
+        'Hatred and anger',
+        'Indifference',
+        'Some understanding given the jailer\'s difficult circumstances',
+        'Complete contempt'
+      ],
+      correct: 2
+    },
+    {
+      id: 68,
+      question: 'A flat character is one who:',
+      options: [
+        'Is highly complex',
+        'Has one or two traits, not fully developed',
+        'Is always the hero',
+        'Changes dramatically'
+      ],
+      correct: 1
+    },
+    {
+      id: 69,
+      question: 'An epiphany in literature is:',
+      options: [
+        'The climax of a play',
+        'A sudden moment of realization or insight for a character',
+        'The introduction of conflict',
+        'The resolution'
+      ],
+      correct: 1
+    },
+    {
+      id: 70,
+      question: 'In drama, "deus ex machina" refers to:',
+      options: [
+        'The main character',
+        'An unexpected power or event that solves an impossible situation',
+        'The chorus',
+        'The setting'
+      ],
+      correct: 1
+    },
+    {
+      id: 71,
+      question: 'The protagonist in John Osborne\'s *Look Back in Anger* is:',
+      options: [
+        'Cliff Lewis',
+        'Helena Charles',
+        'Jimmy Porter',
+        'Alison Porter'
+      ],
+      correct: 2
+    },
+    {
+      id: 72,
+      question: 'A memoir is a type of:',
+      options: [
+        'Fictional novel',
+        'Autobiography focused on specific experiences or time periods',
+        'Biography written by someone else',
+        'Dramatic play'
+      ],
+      correct: 1
+    },
+    {
+      id: 73,
+      question: 'Oxymoron combines:',
+      options: [
+        'Similar meanings',
+        'Contradictory terms',
+        'Rhyming words',
+        'Long sentences'
+      ],
+      correct: 1
+    },
+    {
+      id: 74,
+      question: 'The line "...where guerillas walk the land while crocodiles surf" from Hallowell\'s *The Dining Table* signifies:',
+      options: [
+        'Peace and harmony',
+        'The unnatural state of violence and danger in society',
+        'Economic prosperity',
+        'Natural beauty'
+      ],
+      correct: 1
+    },
+    {
+      id: 75,
+      question: 'In drama, an aside is:',
+      options: [
+        'A long speech alone on stage',
+        'A brief remark to the audience with other characters present',
+        'A stage direction',
+        'A song'
+      ],
+      correct: 1
+    },
+    {
+      id: 76,
+      question: 'Verbal irony occurs when:',
+      options: [
+        'The opposite of what is expected happens',
+        'A speaker says one thing but means another',
+        'Fate plays a cruel joke',
+        'A character is unaware of the full situation'
+      ],
+      correct: 1
+    },
+    {
+      id: 77,
+      question: 'A novella is typically:',
+      options: [
+        'Shorter than a short story',
+        'Longer than a short story but shorter than a novel',
+        'The same length as a novel',
+        'A type of poetry'
+      ],
+      correct: 1
+    },
+    {
+      id: 78,
+      question: 'In *The Lion and the Jewel*, what does Baroka\'s plan to build a railway represent?',
+      options: [
+        'His desire to modernize the village',
+        'His cunning nature to deceive others',
+        'His opposition to Western technology',
+        'His plan to impress Sidi'
+      ],
+      correct: 0
+    },
+    {
+      id: 79,
+      question: 'A simile is a figure of speech that:',
+      options: [
+        'Compares using "like" or "as"',
+        'Makes a direct comparison without "like" or "as"',
+        'Exaggerates',
+        'Repeats consonant sounds'
+      ],
+      correct: 0
+    },
+    {
+      id: 80,
+      question: 'Situational irony occurs when:',
+      options: [
+        'The speaker means the opposite of what is said',
+        'The opposite of what is expected occurs',
+        'The audience knows something characters don\'t',
+        'Fate punishes a character'
+      ],
+      correct: 1
+    },
+    {
+      id: 81,
+      question: 'In John Osborne\'s *Look Back in Anger*, which character represents the upper-middle-class background?',
+      options: [
+        'Jimmy Porter',
+        'Alison Porter',
+        'Cliff Lewis',
+        'Helena Charles'
+      ],
+      correct: 1
+    },
+    {
+      id: 82,
+      question: 'Elegiac mood in poetry is typically associated with:',
+      options: [
+        'Joy and celebration',
+        'Death and decay',
+        'Love and romance',
+        'Nature and beauty'
+      ],
+      correct: 1
+    },
+    {
+      id: 83,
+      question: 'The stream of consciousness technique attempts to:',
+      options: [
+        'Present a logical argument',
+        'Replicate the continuous, chaotic flow of a character\'s thoughts',
+        'Describe external events only',
+        'Use traditional rhyme schemes'
+      ],
+      correct: 1
+    },
+    {
+      id: 84,
+      question: 'A tragedy typically evokes:',
+      options: [
+        'Laughter and joy',
+        'Pity and fear (catharsis)',
+        'Indifference',
+        'Anger only'
+      ],
+      correct: 1
+    },
+    {
+      id: 85,
+      question: 'The phrase "in medias res" means:',
+      options: [
+        'At the beginning',
+        'In the middle of the action',
+        'At the end',
+        'Outside the story'
+      ],
+      correct: 1
+    },
+
+    {
+      id: 86,
+      question: 'A fable is a short story that:',
+      options: [
+        'Teaches a moral lesson, often with animal characters',
+        'Is always true',
+        'Has no moral',
+        'Is written in verse only'
+      ],
+      correct: 0
+    },
+    {
+      id: 87,
+      question: 'In *The Lion and the Jewel*, the magazine containing Sidi\'s photographs symbolizes:',
+      options: [
+        'Traditional values',
+        'Western influence and Sidi\'s inflated ego',
+        'Baroka\'s power',
+        'The village\'s poverty'
+      ],
+      correct: 1
+    },
+    {
+      id: 88,
+      question: 'A persona in poetry refers to:',
+      options: [
+        'The poet\'s real identity',
+        'The fictional speaker or voice adopted by the poet',
+        'The audience',
+        'The meter'
+      ],
+      correct: 1
+    },
+    {
+      id: 89,
+      question: 'Melodrama is characterized by:',
+      options: [
+        'Subtle character development',
+        'Exaggerated emotions, sensational events, and clear moral distinctions',
+        'Realistic dialogue',
+        'Minimal conflict'
+      ],
+      correct: 1
+    },
+    {
+      id: 90,
+      question: 'Cosmic irony (irony of fate) involves:',
+      options: [
+        'Characters manipulating events',
+        'Fate or destiny playing a cruel joke on characters',
+        'Verbal misunderstanding',
+        'Happy coincidences'
+      ],
+      correct: 1
+    },
+    {
+      id: 91,
+      question: 'A panegyric is a poem that:',
+      options: [
+        'Mourns the dead',
+        'Praises someone or something highly',
+        'Narrates a story',
+        'Describes nature'
+      ],
+      correct: 1
+    },
+    {
+      id: 92,
+      question: 'The narrative style adopted in Amma Darko\'s *Faceless* is:',
+      options: [
+        'First-person',
+        'Third-person omniscient',
+        'Epistolary',
+        'Stream of consciousness'
+      ],
+      correct: 1
+    },
+    {
+      id: 93,
+      question: 'An unreliable narrator may:',
+      options: [
+        'Always tell the truth',
+        'Distort or misinterpret events',
+        'Know everything',
+        'Never participate in the story'
+      ],
+      correct: 1
+    },
+    {
+      id: 94,
+      question: 'In *Look Back in Anger*, what instrument does Jimmy Porter play?',
+      options: [
+        'Guitar',
+        'Trumpet',
+        'Piano',
+        'Drums'
+      ],
+      correct: 1
+    },
+    {
+      id: 95,
+      question: 'Anthropomorphism is:',
+      options: [
+        'Giving human traits to animals, gods, or objects',
+        'Comparing two unlike things',
+        'Exaggerating for effect',
+        'Repeating consonant sounds'
+      ],
+      correct: 0
+    },
+    {
+      id: 96,
+      question: 'The five-act dramatic structure typically includes:',
+      options: [
+        'Introduction, development, climax, falling action, denouement',
+        'Exposition, rising action, climax, falling action, resolution',
+        'Prologue, dialogue, monologue, epilogue',
+        'Beginning, middle, end only'
+      ],
+      correct: 1
+    },
+    {
+      id: 97,
+      question: 'Pathetic fallacy is:',
+      options: [
+        'A logical error in arguments',
+        'Attributing human emotions to nature or inanimate objects',
+        'A type of tragedy',
+        'A poetic meter'
+      ],
+      correct: 1
+    },
+    {
+      id: 98,
+      question: 'The resolution of a story is where:',
+      options: [
+        'The conflict is introduced',
+        'The conflict is resolved',
+        'The climax occurs',
+        'Characters are introduced'
+      ],
+      correct: 1
+    },
+    {
+      id: 99,
+      question: 'In *The Lion and the Jewel*, how does Sidi react after her encounter with Baroka?',
+      options: [
+        'She elopes with Lakunle',
+        'She decides to marry Baroka',
+        'She leaves the village in shame',
+        'She burns the magazine'
+      ],
+      correct: 1
+    },
+    {
+      id: 100,
+      question: 'Apostrophe in poetry is:',
+      options: [
+        'A punctuation mark',
+        'Addressing an absent person or abstract concept directly',
+        'A type of rhyme',
+        'A stanza form'
+      ],
+      correct: 1
+    }
+
+
+  ],
+  '🛒 Commerce': [
+    {
+      id: 1,
+      question: 'The main purpose of commerce is to:\nA) Produce goods\nB) Create employment\nC) Facilitate exchange and distribution of goods and services\nD) Regulate trade',
+      options: [
+        'Produce goods',
+        'Create employment',
+        'Facilitate exchange and distribution of goods and services',
+        'Regulate trade'
+      ],
+      correct: 2
+    },
+    {
+      id: 2,
+      question: 'Which of the following is NOT an aid to trade?\nA) Banking\nB) Insurance\nC) Advertising\nD) Manufacturing',
+      options: [
+        'Banking',
+        'Insurance',
+        'Advertising',
+        'Manufacturing'
+      ],
+      correct: 3
+    },
+    {
+      id: 3,
+      question: 'The reward for capital as a factor of production is:\nA) Rent\nB) Wages\nC) Interest\nD) Profit',
+      options: [
+        'Rent',
+        'Wages',
+        'Interest',
+        'Profit'
+      ],
+      correct: 2
+    },
+    {
+      id: 4,
+      question: 'A wholesaler is different from a retailer because a wholesaler:\nA) Sells in small quantities\nB) Sells directly to consumers\nC) Sells to retailers or other businesses\nD) Does not store goods',
+      options: [
+        'Sells in small quantities',
+        'Sells directly to consumers',
+        'Sells to retailers or other businesses',
+        'Does not store goods'
+      ],
+      correct: 2
+    },
+    {
+      id: 5,
+      question: 'The document that contains the rules and regulations of a private limited company is called:\nA) Memorandum of Association\nB) Articles of Association\nC) Prospectus\nD) Certificate of Incorporation',
+      options: [
+        'Memorandum of Association',
+        'Articles of Association',
+        'Prospectus',
+        'Certificate of Incorporation'
+      ],
+      correct: 1
+    },
+    {
+      id: 6,
+      question: 'The principle of indemnity in insurance means that:\nA) The insured must prove loss\nB) The insurer pays more than the loss\nC) The insured is restored to the financial position before the loss\nD) The insured can profit from a claim',
+      options: [
+        'The insured must prove loss',
+        'The insurer pays more than the loss',
+        'The insured is restored to the financial position before the loss',
+        'The insured can profit from a claim'
+      ],
+      correct: 2
+    },
+    {
+      id: 7,
+      question: 'One disadvantage of sole proprietorship is:\nA) Unlimited liability\nB) Quick decision making\nC) Personal touch with customers\nD) Secrecy',
+      options: [
+        'Unlimited liability',
+        'Quick decision making',
+        'Personal touch with customers',
+        'Secrecy'
+      ],
+      correct: 0
+    },
+    {
+      id: 8,
+      question: 'F.O.B (Free On Board) in international trade means:\nA) Seller pays all costs to buyer’s warehouse\nB) Seller delivers goods onto vessel; buyer bears risk from that point\nC) Buyer pays all freight charges\nD) Seller insures goods until delivery',
+      options: [
+        'Seller pays all costs to buyer’s warehouse',
+        'Seller delivers goods onto vessel; buyer bears risk from that point',
+        'Buyer pays all freight charges',
+        'Seller insures goods until delivery'
+      ],
+      correct: 1
+    },
+    {
+      id: 9,
+      question: 'Which of the following is a function of the Central Bank of Nigeria?\nA) Accepting deposits from the public\nB) Granting loans to individuals\nC) Issuing currency notes\nD) Providing foreign exchange to tourists',
+      options: [
+        'Accepting deposits from the public',
+        'Granting loans to individuals',
+        'Issuing currency notes',
+        'Providing foreign exchange to tourists'
+      ],
+      correct: 2
+    },
+    {
+      id: 10,
+      question: 'The marketing mix element that refers to the physical distribution of products is:\nA) Product\nB) Price\nC) Promotion\nD) Place',
+      options: [
+        'Product',
+        'Price',
+        'Promotion',
+        'Place'
+      ],
+      correct: 3
+    },
+    {
+      id: 11,
+      question: 'A bill of lading is issued by:\nA) The exporter\nB) The importer\nC) The shipping company\nD) The insurance company',
+      options: [
+        'The exporter',
+        'The importer',
+        'The shipping company',
+        'The insurance company'
+      ],
+      correct: 2
+    },
+    {
+      id: 12,
+      question: 'A trade discount is given for:\nA) Prompt payment\nB) Bulk purchasing\nC) Loyalty\nD) Cash payment',
+      options: [
+        'Prompt payment',
+        'Bulk purchasing',
+        'Loyalty',
+        'Cash payment'
+      ],
+      correct: 1
+    },
+    {
+      id: 13,
+      question: 'Which of the following is a source of short-term finance?\nA) Debentures\nB) Bank overdraft\nC) Ordinary shares\nD) Preference shares',
+      options: [
+        'Debentures',
+        'Bank overdraft',
+        'Ordinary shares',
+        'Preference shares'
+      ],
+      correct: 1
+    },
+    {
+      id: 14,
+      question: 'The total value of goods sold to other countries is called:\nA) Balance of trade\nB) Import trade\nC) Visible export\nD) Entrepôt trade',
+      options: [
+        'Balance of trade',
+        'Import trade',
+        'Visible export',
+        'Entrepôt trade'
+      ],
+      correct: 2
+    },
+    {
+      id: 15,
+      question: 'The document that invites the public to subscribe for shares in a new company is the:\nA) Memorandum of Association\nB) Articles of Association\nC) Prospectus\nD) Certificate of Trading',
+      options: [
+        'Memorandum of Association',
+        'Articles of Association',
+        'Prospectus',
+        'Certificate of Trading'
+      ],
+      correct: 2
+    },
+    {
+      id: 16,
+      question: 'Insurance that covers loss of profit due to fire is called:\nA) Marine insurance\nB) Consequential loss insurance\nC) Fire insurance\nD) Liability insurance',
+      options: [
+        'Marine insurance',
+        'Consequential loss insurance',
+        'Fire insurance',
+        'Liability insurance'
+      ],
+      correct: 1
+    },
+    {
+      id: 17,
+      question: 'Which of the following is NOT a function of a stock exchange?\nA) Providing liquidity for securities\nB) Fixing prices of goods\nC) Encouraging savings and investment\nD) Regulating trading activities',
+      options: [
+        'Providing liquidity for securities',
+        'Fixing prices of goods',
+        'Encouraging savings and investment',
+        'Regulating trading activities'
+      ],
+      correct: 1
+    },
+    {
+      id: 18,
+      question: 'A person who undertakes to sell goods on behalf of another for a commission is called a:\nA) Factor\nB) Wholesaler\nC) Retailer\nD) Broker',
+      options: [
+        'Factor',
+        'Wholesaler',
+        'Retailer',
+        'Broker'
+      ],
+      correct: 0
+    },
+    {
+      id: 19,
+      question: 'The abbreviation “CIF” in international trade means:\nA) Cost, Insurance and Freight\nB) Carriage, Insurance and Freight\nC) Cash, Insurance and Freight\nD) Cost, Investment and Freight',
+      options: [
+        'Cost, Insurance and Freight',
+        'Carriage, Insurance and Freight',
+        'Cash, Insurance and Freight',
+        'Cost, Investment and Freight'
+      ],
+      correct: 0
+    },
+    {
+      id: 20,
+      question: 'The principle of subrogation in insurance means:\nA) The insured can claim twice\nB) Insurer steps into insured’s rights after payment\nC) The insured must bear part of the loss\nD) The policy is void',
+      options: [
+        'The insured can claim twice',
+        'Insurer steps into insured’s rights after payment',
+        'The insured must bear part of the loss',
+        'The policy is void'
+      ],
+      correct: 1
+    },
+
+    {
+      id: 21,
+      question: 'A cooperative society is registered under the:\nA) Companies and Allied Matters Act\nB) Cooperative Societies Act\nC) Partnership Act\nD) Trade Union Act',
+      options: [
+        'Companies and Allied Matters Act',
+        'Cooperative Societies Act',
+        'Partnership Act',
+        'Trade Union Act'
+      ],
+      correct: 1
+    },
+    {
+      id: 22,
+      question: 'The maximum number of persons allowed in a private limited company is:\nA) 20\nB) 50\nC) 100\nD) Unlimited',
+      options: [
+        '20',
+        '50',
+        '100',
+        'Unlimited'
+      ],
+      correct: 1
+    },
+    {
+      id: 23,
+      question: 'An order to a bank to pay a fixed sum regularly is a:\nA) Cheque\nB) Standing order\nC) Bank draft\nD) Credit transfer',
+      options: [
+        'Cheque',
+        'Standing order',
+        'Bank draft',
+        'Credit transfer'
+      ],
+      correct: 1
+    },
+    {
+      id: 24,
+      question: 'The market for short-term securities is the:\nA) Capital market\nB) Money market\nC) Commodity market\nD) Foreign exchange market',
+      options: [
+        'Capital market',
+        'Money market',
+        'Commodity market',
+        'Foreign exchange market'
+      ],
+      correct: 1
+    },
+    {
+      id: 25,
+      question: 'The document that provides evidence of ownership in a company is a:\nA) Debenture certificate\nB) Share certificate\nC) Bill of lading\nD) Invoice',
+      options: [
+        'Debenture certificate',
+        'Share certificate',
+        'Bill of lading',
+        'Invoice'
+      ],
+      correct: 1
+    },
+    {
+      id: 26,
+      question: 'Which of the following is an example of an invisible trade?\nA) Export of crude oil\nB) Import of machinery\nC) Payment for shipping services\nD) Sale of cocoa beans',
+      options: [
+        'Export of crude oil',
+        'Import of machinery',
+        'Payment for shipping services',
+        'Sale of cocoa beans'
+      ],
+      correct: 2
+    },
+    {
+      id: 27,
+      question: 'A person who brings together buyers and sellers without taking title to goods is a:\nA) Wholesaler\nB) Retailer\nC) Broker\nD) Factor',
+      options: [
+        'Wholesaler',
+        'Retailer',
+        'Broker',
+        'Factor'
+      ],
+      correct: 2
+    },
+    {
+      id: 28,
+      question: 'The principle of “utmost good faith” (uberrimae fidei) requires the insured to:\nA) Pay premium on time\nB) Disclose all material facts truthfully\nC) Insure only for the actual value\nD) Not cause the loss intentionally',
+      options: [
+        'Pay premium on time',
+        'Disclose all material facts truthfully',
+        'Insure only for the actual value',
+        'Not cause the loss intentionally'
+      ],
+      correct: 1
+    },
+    {
+      id: 29,
+      question: 'Which of these is a method of raising capital through the stock exchange for an already listed company?\nA) Initial Public Offer (IPO)\nB) Rights issue\nC) Offer for sale\nD) Private placement',
+      options: [
+        'Initial Public Offer (IPO)',
+        'Rights issue',
+        'Offer for sale',
+        'Private placement'
+      ],
+      correct: 1
+    },
+    {
+      id: 30,
+      question: 'The abbreviation “E&OE” on an invoice means:\nA) Errors and Omissions Excepted\nB) Errors and Omissions Expected\nC) Entered and Ordered Exempted\nD) Estimated and Official Exempted',
+      options: [
+        'Errors and Omissions Excepted',
+        'Errors and Omissions Expected',
+        'Entered and Ordered Exempted',
+        'Estimated and Official Exempted'
+      ],
+      correct: 0
+    },
+    {
+      id: 31,
+      question: 'The Nigerian Communications Commission (NCC) regulates the:\nA) Banking industry\nB) Insurance industry\nC) Telecommunications industry\nD) Stock exchange',
+      options: [
+        'Banking industry',
+        'Insurance industry',
+        'Telecommunications industry',
+        'Stock exchange'
+      ],
+      correct: 2
+    },
+    {
+      id: 32,
+      question: 'A type of retail outlet that sells a wide range of goods under one roof, with self-service, is a:\nA) Supermarket\nB) Department store\nC) Chain store\nD) Hypermarket',
+      options: [
+        'Supermarket',
+        'Department store',
+        'Chain store',
+        'Hypermarket'
+      ],
+      correct: 0
+    },
+    {
+      id: 33,
+      question: 'The type of warehouse where goods are stored pending payment of customs duties is a:\nA) Public warehouse\nB) Private warehouse\nC) Bonded warehouse\nD) Cold storage',
+      options: [
+        'Public warehouse',
+        'Private warehouse',
+        'Bonded warehouse',
+        'Cold storage'
+      ],
+      correct: 2
+    },
+    {
+      id: 34,
+      question: 'A cheque that has been marked “not negotiable” means:\nA) It cannot be cashed\nB) It cannot be transferred to another person\nC) The transferee gets no better title than the transferor\nD) The cheque is stale',
+      options: [
+        'It cannot be cashed',
+        'It cannot be transferred to another person',
+        'The transferee gets no better title than the transferor',
+        'The cheque is stale'
+      ],
+      correct: 2
+    },
+    {
+      id: 35,
+      question: 'The transfer of risk from an insurer to another insurer is called:\nA) Co-insurance\nB) Double insurance\nC) Reinsurance\nD) Underinsurance',
+      options: [
+        'Co-insurance',
+        'Double insurance',
+        'Reinsurance',
+        'Underinsurance'
+      ],
+      correct: 2
+    },
+    {
+      id: 36,
+      question: 'Which of the following is a function of the Nigerian Ports Authority (NPA)?\nA) Collecting import duties\nB) Issuing passports\nC) Managing seaports and harbours\nD) Regulating commercial banks',
+      options: [
+        'Collecting import duties',
+        'Issuing passports',
+        'Managing seaports and harbours',
+        'Regulating commercial banks'
+      ],
+      correct: 2
+    },
+    {
+      id: 37,
+      question: 'The price paid for the use of borrowed money is called:\nA) Dividend\nB) Rent\nC) Interest\nD) Profit',
+      options: [
+        'Dividend',
+        'Rent',
+        'Interest',
+        'Profit'
+      ],
+      correct: 2
+    },
+    {
+      id: 38,
+      question: 'A discount given for paying within a specified period is a:\nA) Trade discount\nB) Cash discount\nC) Bulk discount\nD) Seasonal discount',
+      options: [
+        'Trade discount',
+        'Cash discount',
+        'Bulk discount',
+        'Seasonal discount'
+      ],
+      correct: 1
+    },
+    {
+      id: 39,
+      question: 'The main function of the Nigerian Stock Exchange is to:\nA) Provide loans to companies\nB) Regulate the banking sector\nC) Provide a market for trading existing securities\nD) Issue new currency',
+      options: [
+        'Provide loans to companies',
+        'Regulate the banking sector',
+        'Provide a market for trading existing securities',
+        'Issue new currency'
+      ],
+      correct: 2
+    },
+    {
+      id: 40,
+      question: 'A document sent by a seller to a buyer stating the goods dispatched, quantity, price, and terms is a(n):\nA) Order\nB) Quotation\nC) Invoice\nD) Receipt',
+      options: [
+        'Order',
+        'Quotation',
+        'Invoice',
+        'Receipt'
+      ],
+      correct: 2
+    },
+    {
+      id: 41,
+      question: 'Which of the following is NOT a characteristic of money?',
+      options: [
+        'Divisibility',
+        'Portability',
+        'Intrinsic value',
+        'Durability'
+      ],
+      correct: 2
+    },
+    {
+      id: 42,
+      question: 'The person who draws a bill of exchange is called the:',
+      options: [
+        'Drawer',
+        'Drawee',
+        'Payee',
+        'Acceptor'
+      ],
+      correct: 0
+    },
+    {
+      id: 43,
+      question: 'The maximum liability of a shareholder in a public limited company is:',
+      options: [
+        'Unlimited',
+        'The nominal value of shares held (unpaid portion)',
+        'Twice the value of shares',
+        'The total assets of the company'
+      ],
+      correct: 1
+    },
+    {
+      id: 44,
+      question: 'Which of the following is a disadvantage of advertising?',
+      options: [
+        'It creates awareness',
+        'It adds to cost of production',
+        'It increases sales',
+        'It builds brand loyalty'
+      ],
+      correct: 1
+    },
+    {
+      id: 45,
+      question: 'An agreement that is legally enforceable is called a:',
+      options: [
+        'Contract',
+        'Promise',
+        'Negotiation',
+        'Quotation'
+      ],
+      correct: 0
+    },
+    {
+      id: 46,
+      question: 'The process of dividing the market into distinct groups with similar needs is called:',
+      options: [
+        'Market segmentation',
+        'Market research',
+        'Branding',
+        'Packaging'
+      ],
+      correct: 0
+    },
+    {
+      id: 47,
+      question: 'Which of the following insurance principles prevents an insured from claiming more than the actual loss?',
+      options: [
+        'Insurable interest',
+        'Indemnity',
+        'Subrogation',
+        'Contribution'
+      ],
+      correct: 1
+    },
+    {
+      id: 48,
+      question: 'A retailer who moves from house to house selling goods is a:',
+      options: [
+        'Peddler (hawker)',
+        'Shopkeeper',
+        'Market trader',
+        'Mail-order retailer'
+      ],
+      correct: 0
+    },
+    {
+      id: 49,
+      question: 'The document used by an importer to obtain payment from a bank after shipping goods is a:',
+      options: [
+        'Letter of credit',
+        'Bill of exchange',
+        'Bill of lading',
+        'Consular invoice'
+      ],
+      correct: 1
+    },
+    {
+      id: 50,
+      question: 'The factor of production that organizes the other factors is:',
+      options: [
+        'Land',
+        'Labour',
+        'Capital',
+        'Entrepreneur'
+      ],
+      correct: 3
+    },
+    {
+      id: 51,
+      question: 'A public limited company differs from a private limited company because it:',
+      options: [
+        'Has limited liability',
+        'Can sell shares to the general public',
+        'Has a minimum of two members',
+        'Is registered with CAC'
+      ],
+      correct: 1
+    },
+    {
+      id: 52,
+      question: 'The acronym "POS" in retail business stands for:',
+      options: [
+        'Point of Service',
+        'Point of Sale',
+        'Place of Supply',
+        'Printer of Slip'
+      ],
+      correct: 1
+    },
+    {
+      id: 53,
+      question: 'The legal document that begins a company’s existence is the:',
+      options: [
+        'Certificate of Incorporation',
+        'Memorandum of Association',
+        'Articles of Association',
+        'Prospectus'
+      ],
+      correct: 0
+    },
+    {
+      id: 54,
+      question: 'Which of the following is a feature of a monopoly?',
+      options: [
+        'Many sellers',
+        'Free entry and exit',
+        'Single seller of a product with no close substitute',
+        'Homogeneous products'
+      ],
+      correct: 2
+    },
+    {
+      id: 55,
+      question: 'A cheque that has been in circulation for more than six months is called:',
+      options: [
+        'Post-dated cheque',
+        'Stale cheque',
+        'Crossed cheque',
+        'Bearer cheque'
+      ],
+      correct: 1
+    },
+    {
+      id: 56,
+      question: 'The body responsible for the registration of businesses in Nigeria is:',
+      options: [
+        'SEC',
+        'CBN',
+        'CAC (Corporate Affairs Commission)',
+        'NAFDAC'
+      ],
+      correct: 2
+    },
+    {
+      id: 57,
+      question: 'The difference between the selling price and the cost price is called:',
+      options: [
+        'Turnover',
+        'Margin (or Mark-up)',
+        'Discount',
+        'Allowance'
+      ],
+      correct: 1
+    },
+    {
+      id: 58,
+      question: 'Which of the following is an example of a negotiable instrument?',
+      options: [
+        'Invoice',
+        'Receipt',
+        'Cheque',
+        'Quotation'
+      ],
+      correct: 2
+    },
+    {
+      id: 59,
+      question: 'The function of warehousing that evens out supply and demand is called:',
+      options: [
+        'Stabilization',
+        'Time utility',
+        'Place utility',
+        'Form utility'
+      ],
+      correct: 1
+    },
+    {
+      id: 60,
+      question: 'An organization that pools risks of many individuals and businesses is a(n):',
+      options: [
+        'Bank',
+        'Insurance company',
+        'Stock exchange',
+        'Chamber of commerce'
+      ],
+      correct: 1
+    },
+    {
+      id: 61,
+      question: 'The current account is mainly used by:',
+      options: [
+        'Business people',
+        'Salary earners',
+        'Minors',
+        'Non-profit organizations'
+      ],
+      correct: 0
+    },
+    {
+      id: 62,
+      question: 'A company’s issued share capital is part of its:',
+      options: [
+        'Authorized share capital',
+        'Unissued capital',
+        'Loan capital',
+        'Reserve capital'
+      ],
+      correct: 0
+    },
+    {
+      id: 63,
+      question: 'Which of the following is a disadvantage of road transport?',
+      options: [
+        'Flexibility',
+        'Door-to-door service',
+        'High cost for long distances (relative to rail)',
+        'Speed for short distances'
+      ],
+      correct: 2
+    },
+    {
+      id: 64,
+      question: 'A company that has its shares listed on the stock exchange is a:',
+      options: [
+        'Private limited company',
+        'Quoted public company',
+        'Sole proprietorship',
+        'Partnership'
+      ],
+      correct: 1
+    },
+    {
+      id: 65,
+      question: 'The document that specifies the names of the first directors and secretary of a new company is the:',
+      options: [
+        'Memorandum of Association',
+        'Articles of Association',
+        'Statement of Nominal Capital',
+        'Statutory Declaration of Compliance'
+      ],
+      correct: 3
+    },
+    {
+      id: 66,
+      question: 'The term “caveat emptor” means:',
+      options: [
+        'Let the seller beware',
+        'Let the buyer beware',
+        'The price is fixed',
+        'No returns accepted'
+      ],
+      correct: 1
+    },
+    {
+      id: 67,
+      question: 'Which of the following is a disadvantage of air transport?',
+      options: [
+        'High speed',
+        'Limited cargo capacity',
+        'Global reach',
+        'Low insurance cost'
+      ],
+      correct: 1
+    },
+    {
+      id: 68,
+      question: 'A business that does not take title to goods but arranges sales for a commission is a(n):',
+      options: [
+        'Wholesaler',
+        'Agent',
+        'Retailer',
+        'Merchant'
+      ],
+      correct: 1
+    },
+    {
+      id: 69,
+      question: 'The benefit of insurance to an individual includes:',
+      options: [
+        'Risk reduction',
+        'Profit maximization',
+        'Increased premiums',
+        'Speculation'
+      ],
+      correct: 0
+    },
+    {
+      id: 70,
+      question: 'The Nigerian Postal Service (NIPOST) is responsible for:',
+      options: [
+        'Telecommunication licensing',
+        'Mail delivery and postal services',
+        'Internet regulation',
+        'Courier registration only'
+      ],
+      correct: 1
+    },
+    {
+      id: 71,
+      question: 'A partner who takes no active part in the business but shares profits is a:',
+      options: [
+        'General partner',
+        'Sleeping partner',
+        'Limited partner',
+        'Nominal partner'
+      ],
+      correct: 1
+    },
+    {
+      id: 72,
+      question: 'Which of the following is an example of a direct tax?',
+      options: [
+        'VAT',
+        'Sales tax',
+        'Personal income tax',
+        'Excise duty'
+      ],
+      correct: 2
+    },
+    {
+      id: 73,
+      question: 'The market where old securities are traded is the:',
+      options: [
+        'Primary market',
+        'Secondary market',
+        'Money market',
+        'Commodity market'
+      ],
+      correct: 1
+    },
+    {
+      id: 74,
+      question: 'A cheque that is payable only to the person named on it is a:',
+      options: [
+        'Bearer cheque',
+        'Order cheque',
+        'Crossed cheque',
+        'Post-dated cheque'
+      ],
+      correct: 1
+    },
+    {
+      id: 75,
+      question: 'The main objective of the Consumer Protection Council (CPC) is to:',
+      options: [
+        'Protect manufacturers',
+        'Protect consumers from unfair practices',
+        'Regulate prices',
+        'License retailers'
+      ],
+      correct: 1
+    },
+    {
+      id: 76,
+      question: 'A public corporation is managed by a:',
+      options: [
+        'Board of Directors appointed by shareholders',
+        'Board appointed by the government',
+        'Sole proprietor',
+        'Committee of employees'
+      ],
+      correct: 1
+    },
+    {
+      id: 77,
+      question: 'The abbreviation “LPO” in purchasing means:',
+      options: [
+        'Local Purchase Order',
+        'Last Payment Order',
+        'Long-term Purchase Obligation',
+        'Legal Purchase Option'
+      ],
+      correct: 0
+    },
+    {
+      id: 78,
+      question: 'The advantage of branding is that it:',
+      options: [
+        'Increases cost',
+        'Creates product differentiation and loyalty',
+        'Reduces quality',
+        'Makes imitation easier'
+      ],
+      correct: 1
+    },
+    {
+      id: 79,
+      question: 'Which of the following is NOT a function of commercial banks?',
+      options: [
+        'Accepting deposits',
+        'Granting loans',
+        'Issuing currency',
+        'Providing overdraft facilities'
+      ],
+      correct: 2
+    },
+    {
+      id: 80,
+      question: 'A situation where there is only one buyer for a product is called:',
+      options: [
+        'Monopoly',
+        'Oligopoly',
+        'Monopsony',
+        'Perfect competition'
+      ],
+      correct: 2
+    },
+
+    {
+      id: 81,
+      question: 'The maximum number of partners in a non-banking partnership (general) is:',
+      options: [
+        '10',
+        '20',
+        '50',
+        'Unlimited'
+      ],
+      correct: 1
+    },
+    {
+      id: 82,
+      question: 'Which of the following is a disadvantage of a cooperative society?',
+      options: [
+        'Lack of capital',
+        'Limited liability for members',
+        'Democratic control',
+        'Low prices for members'
+      ],
+      correct: 0
+    },
+    {
+      id: 83,
+      question: 'A bill of exchange that is payable “on demand” is a:',
+      options: [
+        'Promissory note',
+        'Cheque',
+        'Bank draft',
+        'Time bill'
+      ],
+      correct: 1
+    },
+    {
+      id: 84,
+      question: 'A retailer who sells a variety of goods but not food is a:',
+      options: [
+        'Supermarket',
+        'Variety store',
+        'Department store',
+        'Speciality shop'
+      ],
+      correct: 1
+    },
+    {
+      id: 85,
+      question: 'The principle of contribution in insurance applies when:',
+      options: [
+        'The insured has multiple policies on the same risk',
+        'The insured is underinsured',
+        'The policy is void',
+        'The premium is late'
+      ],
+      correct: 0
+    },
+    {
+      id: 86,
+      question: 'A document that lists all the shareholders of a company is the:',
+      options: [
+        'Register of members',
+        'Annual return',
+        'Minutes book',
+        'Share certificate'
+      ],
+      correct: 0
+    },
+    {
+      id: 87,
+      question: 'The type of warehouse that is privately owned by a manufacturer is a:',
+      options: [
+        'Public warehouse',
+        'Private warehouse',
+        'Bonded warehouse',
+        'Distribution centre'
+      ],
+      correct: 1
+    },
+    {
+      id: 88,
+      question: 'A cheque on which two parallel lines are drawn is a:',
+      options: [
+        'Bearer cheque',
+        'Crossed cheque',
+        'Post-dated cheque',
+        'Stale cheque'
+      ],
+      correct: 1
+    },
+    {
+      id: 89,
+      question: 'The abbreviation “CAC” stands for:',
+      options: [
+        'Consumer Affairs Commission',
+        'Corporate Affairs Commission',
+        'Companies Audit Committee',
+        'Capital Allocation Committee'
+      ],
+      correct: 1
+    },
+    {
+      id: 90,
+      question: 'Which of the following is NOT a type of cooperative society?',
+      options: [
+        'Thrift and credit',
+        'Consumer',
+        'Producer',
+        'Public limited'
+      ],
+      correct: 3
+    },
+    {
+      id: 91,
+      question: 'An example of a professional service is:',
+      options: [
+        'Banking',
+        'Legal advice',
+        'Retail trade',
+        'Transportation'
+      ],
+      correct: 1
+    },
+    {
+      id: 92,
+      question: 'The price charged by a wholesaler to a retailer is determined by:',
+      options: [
+        'Manufacturer’s list price minus trade discount',
+        'Retail price plus markup',
+        'Cost plus freight only',
+        'Random selection'
+      ],
+      correct: 0
+    },
+    {
+      id: 93,
+      question: 'A person who signs a bill of exchange on behalf of the drawer without receiving value is a(n):',
+      options: [
+        'Acceptor',
+        'Drawee',
+        'Guarantor',
+        'Endorser'
+      ],
+      correct: 2
+    },
+    {
+      id: 94,
+      question: 'The Nigerian Export Promotion Council (NEPC) is responsible for:',
+      options: [
+        'Promoting non-oil exports',
+        'Regulating oil exports',
+        'Issuing import licenses',
+        'Collecting customs duties'
+      ],
+      correct: 0
+    },
+    {
+      id: 95,
+      question: 'Which of the following is a function of a trade association?',
+      options: [
+        'Setting industry standards',
+        'Manufacturing products',
+        'Selling directly to consumers',
+        'Issuing currency'
+      ],
+      correct: 0
+    },
+    {
+      id: 96,
+      question: 'A company that is wound up voluntarily by its members is undergoing:',
+      options: [
+        'Compulsory liquidation',
+        'Members’ voluntary liquidation',
+        'Creditors’ voluntary liquidation',
+        'Administration'
+      ],
+      correct: 1
+    },
+    {
+      id: 97,
+      question: 'The element of a contract that means each party must give something of value is:',
+      options: [
+        'Offer',
+        'Acceptance',
+        'Consideration',
+        'Capacity'
+      ],
+      correct: 2
+    },
+    {
+      id: 98,
+      question: 'Which of the following is a characteristic of perfect competition?',
+      options: [
+        'Many sellers, homogeneous products',
+        'Single seller',
+        'Differentiated products',
+        'Barriers to entry'
+      ],
+      correct: 0
+    },
+    {
+      id: 99,
+      question: 'A debenture holder is a:',
+      options: [
+        'Shareholder',
+        'Creditor of the company',
+        'Partner',
+        'Manager'
+      ],
+      correct: 1
+    },
+    {
+      id: 100,
+      question: 'The function of a central bank that involves buying and selling government securities is called:',
+      options: [
+        'Open market operations',
+        'Bank rate policy',
+        'Cash reserve ratio',
+        'Moral suasion'
+      ],
+      correct: 0
+    }
+
+  ],
+
 }
+

@@ -1,10 +1,12 @@
 export const stats = [
-    { label: 'Real Questions', value: '500+' },
+    { label: 'Real Questions', value: '1000+' },
     { label: 'Per Test', value: '50' },
     { label: 'Minutes', value: '30' },
 ]
 
-export const subjects = ['📐 Mathematics', '🔬 Chemistry', '⚡ Physics', '🌿 Biology', '📖 English']
+export const subjects = [
+  '📐 Mathematics','🔬 Chemistry','⚡ Physics','🌿 Biology','📖 English', '💰 Economics','✝️ CRS', '🏛️ Government','📚 Literature', '🛒 Commerce',
+];
 
 export const cards = [
     {
@@ -48,5 +50,28 @@ export const courses = [
     'B.Sc. Pharmacy',
     'B.Sc. Medical Laboratory Science',
     'B.Sc. Physiotherapy',
-    'Other Course',
+    'B.Sc Broadcasting',
+    ' B.Sc Film and Multimedia Studies',
+    'B.Sc Journalism and Media Studies B.Sc English Studies',
+    ' B.Sc Fine Art and Design',
+    'B.Sc Foreign Languages and Literature',
+    'B.Sc History and Diplomatic Studies',
+    'B.Sc Linguistics and Communication Studies',
+    'B.Sc Music',
+    'B.Sc Religious and Cultural Studies',
+    'B.Sc Theater and Film Studies',
+    'B.Sc Civil Law',
+    'B.Sc Social Science',
+    ' B.Sc Economics',
+    ' B.Sc Community Service and Social Work',
+    'B.Sc Geography and Environmental Management',
+    ' B.Sc Political Science and Administrative Studies',
+    'B.Sc Public Administration',
+    'B.Sc Physiology',
+    'B.Sc Accounting',
+    'B.Sc Marketing',
+    'B.Sc Hospitality Management and Tourism',
+    'B.Sc Banking and Finance Management',
+    'Other Course'
+
 ]

@@ -33,6 +33,43 @@ const courseGroups = [
         ],
     },
     {
+        label: 'Arts / Humanities',
+        options: [
+            'B.Sc Broadcasting',
+            ' B.Sc Film and Multimedia Studies',
+            'B.Sc Journalism and Media Studies B.Sc English Studies',
+            ' B.Sc Fine Art and Design',
+            'B.Sc Foreign Languages and Literature',
+            'B.Sc History and Diplomatic Studies',
+            'B.Sc Linguistics and Communication Studies',
+            'B.Sc Music',
+            'B.Sc Religious and Cultural Studies',
+            'B.Sc Theater and Film Studies',
+            'B.Sc Civil Law',
+        ],
+    },
+    {
+        label: 'Social Sciences',
+        options: [
+            'B.Sc Social Science',
+            ' B.Sc Economics',
+            ' B.Sc Community Service and Social Work',
+            'B.Sc Geography and Environmental Management',
+            ' B.Sc Political Science and Administrative Studies',
+            'B.Sc Public Administration',
+            'B.Sc Physiology',
+        ],
+    },
+    {
+        label: 'Management science ',
+        options: [
+            'B.Sc Accounting',
+            'B.Sc Marketing',
+            'B.Sc Hospitality Management and Tourism',
+            'B.Sc Banking and Finance Management',
+        ],
+    },
+    {
         label: 'Other',
         options: ['Other Course'],
     },
